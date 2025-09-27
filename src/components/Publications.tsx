@@ -79,39 +79,39 @@ export function Publications() {
           </p>
         </div>
 
-        <div className="grid gap-6 max-w-4xl mx-auto">
-          {publications.map((pub, index) => (
-            <Card key={index} className="hover:shadow-md transition-shadow">
-              <CardHeader>
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
-                    <CardTitle className="line-clamp-2 mb-2">{pub.title}</CardTitle>
-                    <CardDescription className="mb-3">
-                      {pub.authors}
-                    </CardDescription>
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                      <span><strong>{pub.journal}</strong> ({pub.year})</span>
-                      <span>Citations: {pub.citations}</span>
-
-                    </div>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="text-xs">
-                    <FileText className="w-3 h-3 mr-1" />
-                    DOI: {pub.doi}
-                  </Button>
-                  <Button variant="outline" size="sm" className="text-xs">
-                    <ExternalLink className="w-3 h-3 mr-1" />
-                    PMID: {pub.pmid}
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+ <div className="grid gap-6 w-full max-w-6xl mx-auto px-4 grid-cols-1 lg:grid-cols-2">
+  {publications.map((pub, index) => (
+    <Card key={index} className="hover:shadow-md transition-shadow">
+      <CardHeader>
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <CardTitle className="line-clamp-2 mb-2">{pub.title}</CardTitle>
+            <CardDescription className="mb-3">
+              {pub.authors}
+            </CardDescription>
+            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              <span><strong>{pub.journal}</strong> ({pub.year})</span>
+              <span>Citations: {pub.citations}</span>
+            </div>
+          </div>
         </div>
+      </CardHeader>
+      <CardContent>
+        <div className="flex gap-2 flex-wrap">
+          <Button variant="outline" size="sm" className="text-xs">
+            <FileText className="w-3 h-3 mr-1" />
+            DOI: {pub.doi}
+          </Button>
+          <Button variant="outline" size="sm" className="text-xs">
+            <ExternalLink className="w-3 h-3 mr-1" />
+            PMID: {pub.pmid}
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  ))}
+</div>
+
 
         <div className="text-center mt-12">
           <Button variant="outline">
