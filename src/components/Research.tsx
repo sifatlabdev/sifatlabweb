@@ -6,7 +6,7 @@ const researchProjects = [
   {
     title: "AI-Driven Drug Target Identification",
     description: "Developing machine learning models to predict novel drug targets for cancer therapy using multi-omics data integration.",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+    image: "https://images.unsplash.com/photo-1628587165071-8bc2b4938bad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
     tags: ["Machine Learning", "Drug Discovery", "Cancer Research"],
     status: "Ongoing",
     funding: "NIH R01"
@@ -22,7 +22,7 @@ const researchProjects = [
   {
     title: "Single-Cell RNA Sequencing Analysis Pipeline",
     description: "Building computational frameworks for analyzing single-cell transcriptomic data to understand cellular heterogeneity in disease.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+    image: "https://images.unsplash.com/photo-1628587165071-8bc2b4938bad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
     tags: ["Single-Cell", "RNA-Seq", "Computational Biology"],
     status: "Ongoing",
     funding: "University Grant"
