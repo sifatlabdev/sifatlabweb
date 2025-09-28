@@ -1,12 +1,8 @@
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Badge } from "../components/ui/badge";
+import { Button } from "../components/ui/button";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function Hero() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section className="pt-24 pb-16 px-6">
@@ -34,12 +30,11 @@ export function Hero() {
               <Badge variant="outline">Discovery</Badge>
             </div>
             <div className="flex gap-4">
-              <Button onClick={() => scrollToSection('research')}>
+              <Button >
                 View Research
               </Button>
               <Button 
                 variant="outline" 
-                onClick={() => scrollToSection('publications')}
               >
                 Publications
               </Button>

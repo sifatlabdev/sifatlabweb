@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
+import { Button } from "../components/ui/button";
 import { ExternalLink, FileText } from "lucide-react";
 
 const publications = [
@@ -69,7 +69,7 @@ const publications = [
 
 export function Publications() {
   return (
-    <section id="publications" className="py-16 px-6">
+    <section id="publications" className="pt-24 pb-16 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl mb-4">Publications</h2>
@@ -123,3 +123,4 @@ export function Publications() {
     </section>
   );
 }
+

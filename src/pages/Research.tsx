@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 const researchProjects = [
   {
@@ -31,7 +31,7 @@ const researchProjects = [
 
 export function Research() {
   return (
-    <section id="research" className="py-16 px-6 bg-secondary/20">
+    <section id="research" className="pt-24 pb-16 px-6 bg-secondary/20">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl mb-4">Research Projects</h2>

@@ -1,14 +1,14 @@
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { Label } from "./ui/label";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
+import { Label } from "../components/ui/label";
 import { Mail, MapPin, Phone, Calendar, ExternalLink } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16 px-6">
+    <section id="contact" className="pt-24 pb-16 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl mb-4">Contact</h2>

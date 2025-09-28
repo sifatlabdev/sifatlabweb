@@ -1,5 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
 import { GraduationCap, Award, Users, BookOpen } from "lucide-react";
 
 const education = [
@@ -44,7 +44,7 @@ const expertise = [
 
 export function About() {
   return (
-    <section id="about" className="py-16 px-6 bg-secondary/20">
+    <section id="about" className="pt-24 pb-16 px-6 bg-secondary/20">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl mb-4">About Me</h2>
