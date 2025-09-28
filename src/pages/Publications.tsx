@@ -79,7 +79,7 @@ export function Publications() {
           </p>
         </div>
 
- <div className="grid gap-6 w-full max-w-6xl mx-auto px-4 grid-cols-1 lg:grid-cols-2`">
+ <div className="grid gap-6 w-full max-w-6xl mx-auto px-4 grid-cols-1 lg:grid-cols-2">
   {publications.map((pub, index) => (
     <Card key={index} className="hover:shadow-md transition-shadow">
       <CardHeader>
