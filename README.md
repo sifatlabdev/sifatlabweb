@@ -1,3 +1,8 @@
+
+  # Researcher Portfolio Website
+
+  This is a code bundle for Researcher Portfolio Website. The original project is available at https://www.figma.com/design/tYLUWYy2OQIVNXlQ7auG2r/Researcher-Portfolio-Website.
+
   ## Running the code
 
   Run `npm i` to install the dependencies.
