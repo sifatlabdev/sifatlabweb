@@ -4,6 +4,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Mail, MapPin, Phone, Calendar, ExternalLink, MessageCircle, BookOpen } from "lucide-react";
+import { contactInfo, contactSectionData } from "../data/data";
 
 export function Contact() {
   return (
@@ -11,11 +12,10 @@ export function Contact() {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="mb-4 text-foreground">
-            Contact & Collaboration
+            {contactSectionData.title}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Interested in collaboration, speaking opportunities, or discussing research? 
-            I'd love to hear from you.
+            {contactSectionData.description}
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export function Contact() {
                   Get in Touch
                 </CardTitle>
                 <CardDescription>
-                  Multiple ways to connect for research collaboration and academic inquiries
+                  {contactSectionData.cardDescription}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -37,14 +37,14 @@ export function Contact() {
                   <Mail className="w-5 h-5 text-sage-green" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-sm text-sage-green hover:text-primary transition-colors cursor-pointer">nicole.alba@harvard.edu</p>
+                    <p className="text-sm text-sage-green hover:text-primary transition-colors cursor-pointer">{contactInfo.email}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-accent/50 hover:bg-accent transition-colors cursor-pointer">
                   <Phone className="w-5 h-5 text-primary" />
                   <div>
                     <p className="font-medium">Office Phone</p>
-                    <p className="text-sm text-sage-green hover:text-primary transition-colors cursor-pointer">(123) 456-7890</p>
+                    <p className="text-sm text-sage-green hover:text-primary transition-colors cursor-pointer">{contactInfo.phone}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-accent/50 hover:bg-accent transition-colors cursor-pointer">
@@ -52,9 +52,9 @@ export function Contact() {
                   <div>
                     <p className="font-medium">Office Location</p>
                     <p className="text-sm text-muted-foreground">
-                      UCSF Mission Bay Campus<br />
-                      1700 4th Street, Suite 203<br />
-                      San Francisco, CA 94158
+                      {contactInfo.officeLocation.campus}<br />
+                      {contactInfo.officeLocation.address}<br />
+                      {contactInfo.officeLocation.city}
                     </p>
                   </div>
                 </div>
@@ -62,9 +62,8 @@ export function Contact() {
                   <Calendar className="w-5 h-5 text-primary" />
                   <div>
                     <p className="font-medium">Office Hours</p>
-                    <p className="text-sm text-muted-foreground">
-                      Tuesdays & Thursdays, 2:00 PM - 4:00 PM<br />
-                      Or by appointment
+                    <p className="text-sm text-muted-foreground" style={{ whiteSpace: 'pre-line' }}>
+                      {contactInfo.officeHours}
                     </p>
                   </div>
                 </div>

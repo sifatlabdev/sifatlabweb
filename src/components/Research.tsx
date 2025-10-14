@@ -1,99 +1,202 @@
+import { useState } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ExternalLink, FileText, ChevronDown, ChevronUp } from "lucide-react";
+import {
+  type Publication,
+  type ContributionToScience,
+  researchSectionData,
+  contributions,
+  otherPublications
+} from "../data/data";
 
-const researchProjects = [
-  {
-    title: "AI for Rare Disease Diagnosis",
-    description: "Designing machine learning models to identify rare genetic disorders from medical imaging and genomic data.",
-    image: "https://via.placeholder.com/600x400?text=AI+Rare+Disease",
-    status: "Ongoing",
-    tags: ["Machine Learning", "Genomics", "Medical Imaging"]
-  },
-  {
-    title: "Single-Cell Transcriptomics Toolkit",
-    description: "Developing computational pipelines to analyze and visualize single-cell RNA sequencing data.",
-    image: "https://via.placeholder.com/600x400?text=Single-Cell+RNA",
-    status: "Completed",
-    tags: ["Transcriptomics", "Bioinformatics", "Data Visualization"]
-  },
-  {
-    title: "Neural Network Models for Protein Folding",
-    description: "Exploring deep learning methods to predict protein structures and folding pathways.",
-    image: "https://via.placeholder.com/600x400?text=Protein+Folding+AI",
-    status: "Ongoing",
-    tags: ["Proteomics", "Neural Networks", "Structural Biology"]
-  },
-];
+function PublicationCard({ publication }: { publication: Publication }) {
+  return (
+    <Card className="hover:shadow-md transition-all duration-200 border-l-2 border-l-sage-green">
+      <CardHeader className="pb-4">
+        <CardTitle className="text-base cursor-pointer hover:text-primary transition-colors">
+          {publication.title}
+        </CardTitle>
+        <CardDescription className="text-sm mt-2">
+          <span className="text-sage-green">{publication.authors}</span>
+        </CardDescription>
+        <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground mt-2">
+          <span className="text-primary">{publication.journal}</span>
+          <span>({publication.year})</span>
+          <Badge variant="outline" className="border-primary text-primary text-xs">
+            {publication.citations} citations
+          </Badge>
+        </div>
+      </CardHeader>
+      <CardContent className="pt-0">
+        <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
+          <span className="hover:text-sage-green cursor-pointer transition-colors">DOI: {publication.doi}</span>
+          <span>•</span>
+          <span className="hover:text-sage-green cursor-pointer transition-colors">PMID: {publication.pmid}</span>
+        </div>
+        <div className="flex gap-2 mt-4">
+          <Button 
+            variant="outline" 
+            size="sm"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer text-xs"
+          >
+            <FileText className="w-3 h-3 mr-1" />
+            PDF
+          </Button>
+          <Button 
+            variant="outline" 
+            size="sm"
+            className="border-sage-green text-sage-green hover:bg-sage-green hover:text-white cursor-pointer text-xs"
+          >
+            <ExternalLink className="w-3 h-3 mr-1" />
+            DOI
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
 
-
-export function Research() {
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'Ongoing':
-        return 'bg-sage-green text-white';
-      case 'Completed':
-        return 'bg-primary text-primary-foreground';
-      case 'Planning':
-        return 'bg-secondary text-secondary-foreground';
-      default:
-        return 'bg-muted text-muted-foreground';
-    }
-  };
+function ContributionSection({ contribution }: { contribution: ContributionToScience }) {
+  const [showAll, setShowAll] = useState(false);
+  const initialCount = 3;
+  const displayedPublications = showAll ? contribution.publications : contribution.publications.slice(0, initialCount);
+  const hasMore = contribution.publications.length > initialCount;
 
   return (
+    <div>
+      {/* Research Area Description - Styled Differently */}
+      <div className="mb-6 p-6 bg-gradient-to-br from-primary/5 to-sage-green/5 rounded-lg border-2 border-primary/20">
+        <p className="text-foreground mb-4 leading-relaxed">
+          {contribution.description}
+        </p>
+        <div>
+          <h4 className="text-sm text-primary mb-3">Key Achievements:</h4>
+          <ul className="space-y-2">
+            {contribution.keyAchievements.map((achievement, idx) => (
+              <li key={idx} className="text-sm text-muted-foreground flex items-start">
+                <span className="text-sage-green mr-2 mt-1">•</span>
+                <span>{achievement}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Publications List */}
+      <div className="space-y-4">
+        <h4 className="text-sm text-muted-foreground mb-3">
+          Selected Publications ({contribution.publications.length} total)
+        </h4>
+        {displayedPublications.map((pub, idx) => (
+          <PublicationCard key={idx} publication={pub} />
+        ))}
+        
+        {/* Show More/Less Button */}
+        {hasMore && (
+          <div className="text-center pt-4">
+            <Button
+              variant="outline"
+              onClick={() => setShowAll(!showAll)}
+              className="border-sage-green text-sage-green hover:bg-sage-green hover:text-white cursor-pointer"
+            >
+              {showAll ? (
+                <>
+                  <ChevronUp className="w-4 h-4 mr-2" />
+                  Show Less
+                </>
+              ) : (
+                <>
+                  <ChevronDown className="w-4 h-4 mr-2" />
+                  Show {contribution.publications.length - initialCount} More Publications
+                </>
+              )}
+            </Button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export function Research() {
+  return (
     <section id="research" className="py-16 px-6 bg-secondary/30">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="mb-4 text-foreground">
-            Current Research
+            {researchSectionData.title}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Exploring the intersection of computational biology, machine learning, and precision medicine 
-            to advance our understanding of complex biological systems.
+            {researchSectionData.description}
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {researchProjects.map((project, index) => (
-            <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-sage-green cursor-pointer">
-              <div className="aspect-video relative overflow-hidden rounded-t-lg">
-                <ImageWithFallback
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 right-4">
-                  <Badge className={`${getStatusColor(project.status)} shadow-lg`}>
-                    {project.status}
-                  </Badge>
+
+        <Accordion type="single" collapsible className="space-y-4">
+          {contributions.map((contribution) => (
+            <AccordionItem 
+              key={contribution.id} 
+              value={contribution.id}
+              className="border-2 border-border rounded-lg bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+            >
+              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-secondary/30 transition-colors cursor-pointer">
+                <div className="flex items-start text-left w-full">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-foreground pr-4">{contribution.title}</h3>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <ContributionSection contribution={contribution} />
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+          
+          {/* Other Publications Section */}
+          <AccordionItem 
+            value="other-publications"
+            className="border-2 border-border rounded-lg bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+          >
+            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-secondary/30 transition-colors cursor-pointer">
+              <div className="flex items-start text-left w-full">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-foreground pr-4">Other Publications</h3>
                 </div>
               </div>
-              <CardHeader>
-                <CardTitle className="line-clamp-2">{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-xs border-sage-green text-sage-green hover:bg-sage-green hover:text-white cursor-pointer">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="w-full mt-3 border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer"
-                  >
-                    Learn More
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+            </AccordionTrigger>
+            <AccordionContent className="px-6 pb-6">
+              <div className="space-y-4">
+                <p className="text-foreground mb-4 leading-relaxed">
+                  Additional peer-reviewed publications covering diverse topics in computational biology, 
+                  bioinformatics methodology, ethical considerations in AI-driven healthcare, and open science practices.
+                </p>
+                <h4 className="text-sm text-muted-foreground mb-3">
+                  Selected Publications ({otherPublications.length} total)
+                </h4>
+                {otherPublications.map((pub, idx) => (
+                  <PublicationCard key={idx} publication={pub} />
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+
+        <div className="text-center mt-12">
+          <Button 
+            variant="outline" 
+            size="lg"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer"
+          >
+            <ExternalLink className="w-4 h-4 mr-2" />
+            View Complete Publication List on Google Scholar
+          </Button>
         </div>
       </div>
     </section>
