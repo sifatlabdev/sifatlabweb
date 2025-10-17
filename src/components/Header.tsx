@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 bg-nav-background/95 backdrop-blur-sm border-b border-nav-muted/30 z-50">
+    <header className="fixed top-0 left-0 right-0 bg-nav-background/95 backdrop-blur-sm border-b border-nav-muted/30 z-50 flex-shrink-0">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
@@ -79,37 +79,43 @@ export function Header() {
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <SheetDescription className="sr-only">Navigate through different sections of the portfolio</SheetDescription>
               <nav className="flex flex-col space-y-6 mt-6 items-center pb-6">
+                <Link to='/about'>
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
                   About
                 </button>
+                </Link>
+                <Link to='/lab'>
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
                   Alba Lab
                 </button>
+                </Link>
+                <Link to={'/teaching'}>
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
                   Teaching
                 </button>
+                </Link>
+                <Link to='/team'>
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
                   Team
                 </button>
+                </Link>
+                <Link to='/research'>
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
                   Research
                 </button>
-                <button 
-                  className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
-                >
-                  Contact
-                </button>
-                <Link to="/contact" className="w-full">
+                </Link>
+
+                <Link to="/contact" className="w-full flex justify-center">
                 <Button 
                   className="bg-sage-green hover:bg-sage-green/90 text-nav-foreground mt-6 w-3/4"
                 >

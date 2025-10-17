@@ -131,7 +131,7 @@ function getStatusColor(status: string) {
   }
 }
 
-export function ChenLab() {
+export function Lab() {
   const [selectedProject, setSelectedProject] = useState<JeffersonProject | null>(null);
 
   return (

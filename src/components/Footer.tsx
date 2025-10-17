@@ -2,7 +2,7 @@ import { footerData } from "../data/data";
 
 export function Footer() {
   return (
-    <footer className="py-8 px-6 bg-nav-background border-t border-nav-muted/30">
+    <footer className="py-8 px-6 bg-nav-background border-t border-nav-muted/30 flex-shrink-0">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
