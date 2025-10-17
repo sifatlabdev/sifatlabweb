@@ -244,15 +244,15 @@ export function ChenLab() {
 
         {/* Jefferson Projects */}
         <div>
-          <h3 className="mb-6 text-center text-foreground">Current Projects at Jefferson</h3>
+          <h3 className="mb-6 text-center text-foreground">Current Projects</h3>
           <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Research initiatives launched since establishing the Alba Lab at Thomas Jefferson University. Click on any project to learn more.
+            Research initiatives launched since establishing the Alba Lab. Click on any project to learn more.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {jeffersonProjects.map((project, index) => (
               <Card 
                 key={index} 
-                className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-sage-green cursor-pointer"
+                className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-sage-green"
                 onClick={() => setSelectedProject(project)}
               >
                 <CardHeader>
@@ -267,7 +267,7 @@ export function ChenLab() {
                   <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-xs border-sage-green text-sage-green hover:bg-sage-green hover:text-white cursor-pointer">
+                      <Badge key={tag} variant="outline" className="text-xs border-sage-green text-sage-green hover:bg-sage-green hover:text-white">
                         {tag}
                       </Badge>
                     ))}

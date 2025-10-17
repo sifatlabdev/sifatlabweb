@@ -32,13 +32,6 @@ export function Header() {
                 Teaching
               </button>
               </Link>
-              <Link to='/team'>
-              <button 
-                className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
-              >
-                Team
-              </button>
-              </Link>
               <Link to='/lab'>
               <button 
                 className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
@@ -55,13 +48,20 @@ export function Header() {
               </button>
               
               </Link>
+              <Link to='/team'>
+              <button 
+                className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
+              >
+                 Meet the Team
+              </button>
+              </Link>
             </div>
           </div>
           
           {/* Desktop Contact Button */}
           <Link to='/contact'>
           <Button 
-            className="hidden md:inline-flex bg-sage-green hover:bg-sage-green/90 text-nav-foreground"
+            className="hidden md:inline-flex bg-sage-green hover:bg-sage-green/90 text-nav-foreground cursor-default hover:cursor-pointer"
           >
             Get in Touch
           </Button>
@@ -87,17 +87,17 @@ export function Header() {
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
+                  Alba Lab
+                </button>
+                <button 
+                  className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
+                >
                   Teaching
                 </button>
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
                   Team
-                </button>
-                <button 
-                  className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
-                >
-                  Alba Lab
                 </button>
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"

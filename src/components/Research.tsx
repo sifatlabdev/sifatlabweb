@@ -45,7 +45,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
           <Button 
             variant="outline" 
             size="sm"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer text-xs"
+            className="border-primary text-primary hover:text-sage-green cursor-pointer text-xs"
           >
             <FileText className="w-3 h-3 mr-1" />
             PDF
@@ -53,7 +53,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
           <Button 
             variant="outline" 
             size="sm"
-            className="border-sage-green text-sage-green hover:bg-sage-green hover:text-white cursor-pointer text-xs"
+            className="border-sage-green text-sage-green hover:bg-sage-green cursor-pointer text-xs"
           >
             <ExternalLink className="w-3 h-3 mr-1" />
             DOI
@@ -105,7 +105,7 @@ function ContributionSection({ contribution }: { contribution: ContributionToSci
             <Button
               variant="outline"
               onClick={() => setShowAll(!showAll)}
-              className="border-sage-green text-sage-green hover:bg-sage-green hover:text-white cursor-pointer"
+              className="border-sage-green text-sage-green hover:bg-sage-green cursor-pointer"
             >
               {showAll ? (
                 <>
@@ -192,7 +192,7 @@ export function Research() {
           <Button 
             variant="outline" 
             size="lg"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer"
+            className="border-primary text-primary hover:text-sage-green cursor-pointer"
           >
             <ExternalLink className="w-4 h-4 mr-2" />
             View Complete Publication List on Google Scholar

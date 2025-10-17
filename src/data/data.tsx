@@ -777,8 +777,8 @@ export const contactSectionData = {
 export const footerData = {
   copyright: "© 2025 Nicole Alba, PhD. All rights reserved.",
   links: [
-    { text: "Privacy Policy", href: "#" },
-    { text: "Terms of Use", href: "#" },
-    { text: "Academic CV", href: "#" }
+    { text: "Academic CV", href: "#" },
+    { text: "Linkedin", href: "#" },
+    { text: "Google Scholar", href: "#" }
   ]
 };

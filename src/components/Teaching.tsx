@@ -48,7 +48,7 @@ export function Teaching() {
                 <Button 
                   onClick={() => scrollToSection('team')}
                   variant="outline" 
-                  className="w-full border-sage-green text-sage-green hover:bg-sage-green hover:text-white"
+                  className="w-full border-sage-green text-sage-green hover:bg-sage-green cursor-pointer"
                 >
                   Meet My Team
                 </Button>
