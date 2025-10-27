@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { GraduationCap, MapPin } from "lucide-react";
-import { aboutData, education, experience, heroData } from "../data/data";
+import { GraduationCap, MapPin, Users, BookOpen } from "lucide-react";
+import { aboutData, education, experience,teachingExperience, leadershipData, heroData } from "../data/data";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { ExternalLink } from "lucide-react";
@@ -88,8 +89,12 @@ function Hero() {
   );
 }
 
-
 export function About() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
     <Hero />
@@ -97,54 +102,158 @@ export function About() {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="mb-4 text-foreground">
-            About Me
+            About {aboutData.name}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             {aboutData.description}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="space-y-8">
-            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-sage-green cursor-pointer">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-sage-green">
-                  <GraduationCap className="w-5 h-5" />
-                  Education
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {education.map((edu, index) => (
-                  <div key={index} className="border-l-2 border-l-primary pl-4 py-2">
-                    <h4 className="font-semibold">{edu.degree}</h4>
-                    <p className="text-primary font-medium">{edu.institution}</p>
-                    <p className="text-sm text-muted-foreground">{edu.year} • {edu.description}</p>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-          </div>
+        <Tabs defaultValue="education-experience" className="max-w-6xl mx-auto">
+          <TabsList className="grid w-full grid-cols-2 mb-8 h-12 bg-secondary/50 p-1">
+            <TabsTrigger 
+              value="education-experience"
+              className="cursor-pointer data-[state=active]:bg-sage-green data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200"
+            >
+              Education & Experience
+            </TabsTrigger>
+            <TabsTrigger 
+              value="mentorship-teaching"
+              className="cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200"
+            >
+              Mentorship & Teaching
+            </TabsTrigger>
+          </TabsList>
 
-          <div className="space-y-8">
-            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-primary cursor-pointer">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-primary">
-                  <MapPin className="w-5 h-5" />
-                  Experience
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {experience.map((exp, index) => (
-                  <div key={index} className="border-l-2 border-l-sage-green pl-4 py-2">
-                    <h4 className="font-semibold">{exp.position}</h4>
-                    <p className="text-sage-green font-medium">{exp.institution}</p>
-                    <p className="text-sm text-muted-foreground">{exp.period} • {exp.description}</p>
+          {/* Education & Experience Tab */}
+          <TabsContent value="education-experience">
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Education Card */}
+              <Card className="border-l-4 border-l-sage-green">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-sage-green">
+                    <GraduationCap className="w-5 h-5" />
+                    Education
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {education.map((edu, index) => (
+                    <div key={index} className="border-l-2 border-l-primary pl-4 py-2">
+                      <h4 className="text-lg">{edu.degree}</h4>
+                      <p className="text-primary">{edu.institution}</p>
+                      <div className="flex items-center gap-2 mt-1">
+                        <Badge variant="outline" className="border-sage-green text-sage-green">
+                          {edu.year}
+                        </Badge>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-2">{edu.description}</p>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+
+              {/* Experience Card */}
+              <Card className="border-l-4 border-l-primary">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-primary">
+                    <MapPin className="w-5 h-5" />
+                    Experience
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {experience.map((exp, index) => (
+                    <div key={index} className="border-l-2 border-l-sage-green pl-4 py-2">
+                      <h4 className="text-lg">{exp.position}</h4>
+                      <p className="text-sage-green">{exp.institution}</p>
+                      <div className="flex items-center gap-2 mt-1">
+                        <Badge variant="outline" className="border-primary text-primary">
+                          {exp.period}
+                        </Badge>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-2">{exp.description}</p>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+            </div>
+          </TabsContent>
+
+          {/* Mentorship & Teaching Tab */}
+          <TabsContent value="mentorship-teaching">
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Mentorship Card */}
+              <Card className="border-l-4 border-l-sage-green">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-sage-green">
+                    <Users className="w-5 h-5" />
+                    Leadership & Mentorship
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    {leadershipData.description}
+                  </p>
+                  
+                  <div className="mb-6">
+                    <h4 className="text-sm mb-4 text-primary">Key Achievements</h4>
+                    <div className="space-y-3">
+                      {leadershipData.stats.map((stat, index) => (
+                        <div key={index} className="flex items-start gap-2">
+                          <span className={`w-2 h-2 ${index % 2 === 0 ? 'bg-sage-green' : 'bg-primary'} rounded-full mt-2 shrink-0`}></span>
+                          <span className="text-sm text-muted-foreground">{stat}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                ))}
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+
+                  <div className="mb-6">
+                    <Button 
+                      onClick={() => scrollToSection('team')}
+                      className="w-full bg-sage-green hover:bg-sage-green/90 text-white"
+                    >
+                      Meet My Team
+                    </Button>
+                  </div>
+
+                  <div>
+                    <h4 className="text-sm mb-3 text-primary">Focus Areas</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {leadershipData.badges.map((badge) => (
+                        <Badge key={badge} variant="outline" className="border-sage-green text-sage-green">
+                          {badge}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Teaching Card */}
+              <Card className="border-l-4 border-l-primary">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-primary">
+                    <BookOpen className="w-5 h-5" />
+                    Teaching Experience
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {teachingExperience.map((course, index) => (
+                    <div key={index} className="border-l-2 border-l-sage-green pl-4 py-2">
+                      <h4 className="text-lg">{course.course}</h4>
+                      <div className="flex items-center gap-2 mt-1">
+                        <Badge className="bg-sage-green text-white">
+                          {course.level}
+                        </Badge>
+                        <span className="text-sm text-muted-foreground">{course.period}</span>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-2">{course.description}</p>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
     </section>
     </>
