@@ -3,6 +3,7 @@ import { GraduationCap, MapPin } from "lucide-react";
 import { aboutData, education, experience, heroData } from "../data/data";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
+import { ExternalLink } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 function Hero() {
@@ -15,21 +16,19 @@ function Hero() {
     <section id="hero" className="pt-24 pb-16 px-6">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Personal Statement */}
           <div className="space-y-6">
-            <div className="space-y-2">
-              <Badge variant="secondary" className="mb-4 bg-sage-green/20 text-primary border-sage-green">
+            <div className="space-y-4">
+              <Badge variant="secondary" className="bg-sage-green/20 text-primary border-sage-green">
                 {heroData.badge}
               </Badge>
-              <h1 className="text-4xl md:text-5xl text-foreground">
-                {heroData.name}
+              <h1 className="text-3xl md:text-4xl text-foreground h1fix">
+                My Work
               </h1>
-              <p className="text-xl text-muted-foreground">
-                {heroData.title}
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                {heroData.bio}
               </p>
             </div>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              {heroData.bio}
-            </p>
             <div className="flex flex-wrap gap-2 mb-6">
               {heroData.expertiseTags.map((tag) => (
                 <Badge key={tag} variant="outline" className="border-sage-green text-sage-green hover:bg-sage-green hover:text-white cursor-pointer">
@@ -52,7 +51,9 @@ function Hero() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center">
+
+          {/* Right Side - Image with Name and Title Below */}
+          <div className="flex flex-col items-center gap-6">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-sage-green/20 to-primary/20 rounded-full blur-xl"></div>
               <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-sage-green/10 to-primary/10 p-1">
@@ -62,6 +63,23 @@ function Hero() {
                   className="w-full h-full rounded-full object-cover border-2 border-sage-green/30 shadow-2xl"
                 />
               </div>
+            </div>
+            <div className="text-center space-y-2">
+              <h2 className="text-2xl md:text-3xl text-foreground">
+                {heroData.name}
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                {heroData.title}
+              </p>
+                            <a 
+                href={heroData.facultyPageUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-sm text-sage-green hover:text-primary transition-colors cursor-pointer"
+              >
+                View Faculty Page
+                <ExternalLink className="w-3 h-3" />
+              </a>
             </div>
           </div>
         </div>

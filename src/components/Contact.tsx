@@ -41,13 +41,6 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-accent/50 hover:bg-accent transition-colors cursor-pointer">
-                  <Phone className="w-5 h-5 text-primary" />
-                  <div>
-                    <p className="font-medium">Office Phone</p>
-                    <p className="text-sm text-sage-green hover:text-primary transition-colors cursor-pointer">{contactInfo.phone}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-accent/50 hover:bg-accent transition-colors cursor-pointer">
                   <MapPin className="w-5 h-5 text-sage-green" />
                   <div>
                     <p className="font-medium">Office Location</p>

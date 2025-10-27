@@ -18,6 +18,8 @@ import {
   jeffersonProjects
 } from "../data/data";
 
+import {Team} from "./Team";
+
 function PublicationCard({ publication }: { publication: Publication }) {
   return (
     <Card className="hover:shadow-md transition-all duration-200 border-l-2 border-l-sage-green">
@@ -135,6 +137,8 @@ export function Lab() {
   const [selectedProject, setSelectedProject] = useState<JeffersonProject | null>(null);
 
   return (
+    <>
+    
     <section id="chen-lab" className="py-16 px-6 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-12">
@@ -252,7 +256,7 @@ export function Lab() {
             {jeffersonProjects.map((project, index) => (
               <Card 
                 key={index} 
-                className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-sage-green"
+                className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-sage-green cursor-pointer"
                 onClick={() => setSelectedProject(project)}
               >
                 <CardHeader>
@@ -288,5 +292,8 @@ export function Lab() {
         />
       )}
     </section>
+    <Team />
+    
+    </>
   );
 }

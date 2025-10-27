@@ -2759,3 +2759,16 @@ html {
 section {
   margin-top: 2rem;
 }
+
+.h1fix {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: hsl(var(--foreground));
+}
+
+@media (min-width: 768px) {
+  .h1fix {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}

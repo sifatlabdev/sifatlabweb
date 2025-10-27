@@ -22,7 +22,7 @@ export function Header() {
               <button 
                 className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
               >
-                About
+                About Me
               </button>
               </Link>
               <Link to='teaching'>
@@ -39,13 +39,6 @@ export function Header() {
                 Publications
               </button>
               
-              </Link>
-              <Link to='/team'>
-              <button 
-                className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
-              >
-                 Meet the Team
-              </button>
               </Link>
             </div>
           </div>
@@ -75,7 +68,7 @@ export function Header() {
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
-                  About
+                  About Me
                 </button>
                 </Link>
                 <Link to={'/teaching'}>
@@ -83,13 +76,6 @@ export function Header() {
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
                   Teaching
-                </button>
-                </Link>
-                <Link to='/team'>
-                <button 
-                  className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
-                >
-                  Team
                 </button>
                 </Link>
                 <Link to='/research'>

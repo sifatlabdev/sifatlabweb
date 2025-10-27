@@ -65,6 +65,7 @@ export interface HeroData {
   bio: string;
   image: string;
   expertiseTags: string[];
+  facultyPageUrl: string;
 }
 
 export interface ContactInfo {
@@ -94,7 +95,8 @@ As Assistant Director of Community Outreach and Engagement at the Sidney Kimmel 
     "Genomics",
     "Bioinformatics",
     "Drug Discovery"
-  ]
+  ],
+  facultyPageUrl: `https://www.jefferson.edu/academics/colleges-schools-institutes/population-health/administration-faculty-staff/faculty/sifat.html`
 };
 
 // ============================================================
@@ -780,6 +782,38 @@ export const footerData = {
   links: [
     { text: "Academic CV", href: "#" },
     { text: "Linkedin", href: "#" },
-    { text: "Google Scholar", href: "#" }
+    { text: "Google Scholar", href: "https://scholar.google.com/citations?user=Yxpb0w8AAAAJ&hl=en&inst=9752039510217644241&oi=ao" },
+    { text: "Bibliography", href: "https://www.ncbi.nlm.nih.gov/myncbi/munjireen.sifat.3/bibliography/public/" }
   ]
+};
+
+
+// ============================================================
+// JOIN US
+// ============================================================
+
+export const joinUsData = {
+  title: "Join Us",
+  description: "We are always looking for passionate researchers to join our multidisciplinary team. Whether you're a prospective graduate student, postdoctoral fellow, or visiting scholar, we welcome dedicated individuals who share our commitment to advancing computational biology and precision medicine.",
+  openPositions: [
+    {
+      position: "Graduate Students",
+      description: "Seeking Ph.D. candidates with strong computational and quantitative backgrounds interested in machine learning applications in biology.",
+    },
+    {
+      position: "Postdoctoral Fellows",
+      description: "Looking for researchers with expertise in bioinformatics, computational biology, or related fields to lead independent research projects.",
+    },
+    {
+      position: "Visiting Scholars",
+      description: "Welcome international collaborators for short-term research visits (3-12 months) to work on joint projects.",
+    }
+  ],
+  qualifications: [
+    "Strong programming skills (Python, R, or similar)",
+    "Background in computational biology, bioinformatics, computer science, or related fields",
+    "Passion for interdisciplinary research",
+    "Excellent communication and teamwork abilities"
+  ],
+  howToApply: "Please send your CV, research statement, and names of 2-3 references to sarah.chen@jefferson.edu with the subject line 'CHEN Lab Application - [Position]'."
 };
