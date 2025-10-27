@@ -11,7 +11,7 @@ export function Header() {
           <div className="flex items-center space-x-8">
             <div className="flex items-center">
               <Link to="/">              <h1 className="text-2xl font-bold tracking-tight text-nav-foreground hover:text-sage-green transition-colors cursor-pointer">
-                Nicole Alba, PhD
+                Sifat Lab
               </h1></Link>
 
 
@@ -32,19 +32,11 @@ export function Header() {
                 Teaching
               </button>
               </Link>
-              <Link to='/lab'>
-              <button 
-                className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
-              >
-                Alba Lab
-              </button>
-              
-              </Link>
               <Link to='/research'>
               <button 
                 className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
               >
-                Research
+                Publications
               </button>
               
               </Link>
@@ -86,13 +78,6 @@ export function Header() {
                   About
                 </button>
                 </Link>
-                <Link to='/lab'>
-                <button 
-                  className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
-                >
-                  Alba Lab
-                </button>
-                </Link>
                 <Link to={'/teaching'}>
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
@@ -111,7 +96,7 @@ export function Header() {
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
-                  Research
+                  Publications
                 </button>
                 </Link>
 

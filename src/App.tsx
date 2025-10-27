@@ -16,11 +16,10 @@ export default function App() {
       <Header/>
       <main className='flex-1'>
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Lab />} />
         <Route path="/about" element={<About />} />
         <Route path="/teaching" element={<Teaching />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/lab" element={<Lab />} />
         <Route path="/research" element={<Research />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

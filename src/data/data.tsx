@@ -86,7 +86,8 @@ export const heroData: HeroData = {
   name: "Nicole Alba, PhD",
   badge: "Computational Biology Researcher",
   title: "Assistant Professor of Bioinformatics",
-  bio: "I develop computational methods for analyzing genomic data and understanding complex biological systems. My research focuses on machine learning applications in precision medicine and drug discovery.",
+  bio: `I am an Assistant Professor at Thomas Jefferson University, affiliated with Sidney Kimmel Medical College, where my research focuses on health equity, addressing modifiable health behaviors and mental health disparities in underserved populations. My work emphasizes cancer prevention, particularly tobacco-related cancers and HPV self-sampling for cervical cancer screening.
+As Assistant Director of Community Outreach and Engagement at the Sidney Kimmel Comprehensive Cancer Center, I have developed strong community partnerships that enabled a pilot study establishing the workflow for our current HPV self-sampling initiative. This formative research, supported by Sidney Kimmel Medical College's Dean's Jump Start Pilot Award, explores how to overcome barriers to cervical cancer screening by offering HPV self-sampling in diverse community settings. My work addresses the behavioral, psychosocial, and structural factors influencing health behaviors in vulnerable populations.`,
   image: "https://images.unsplash.com/photo-1618053448748-b7251851d014?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHJlc2VhcmNoZXIlMjBzY2llbnRpc3QlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTg4NTc3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
   expertiseTags: [
     "Machine Learning",
@@ -306,7 +307,7 @@ export const teamSectionData = {
 // ============================================================
 
 export const chenLabData = {
-  title: "Alba Lab",
+  title: "Sifat Lab",
   subtitle: "Computational Health and Engineering Network Laboratory at Thomas Jefferson University",
   heroImage: "https://images.unsplash.com/photo-1666558889375-798fa96b559a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYWJvcmF0b3J5JTIwcmVzZWFyY2glMjB0ZWFtfGVufDF8fHx8MTc1OTIxNjIzNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
   mission: "To advance precision medicine through innovative computational approaches, developing AI-driven solutions that transform how we understand and treat complex diseases. We are committed to translating cutting-edge research into clinical applications that improve patient outcomes at Jefferson and beyond.",
@@ -453,7 +454,7 @@ export const jeffersonProjects: JeffersonProject[] = [
 // ============================================================
 
 export const researchSectionData = {
-  title: "Research",
+  title: "Publications",
   description: "Our research spans multiple areas at the intersection of computational biology, machine learning, and precision medicine. Below are our four major contributions to scientific knowledge and their associated publications."
 };
 
