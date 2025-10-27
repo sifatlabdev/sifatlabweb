@@ -795,25 +795,5 @@ export const footerData = {
 export const joinUsData = {
   title: "Join Us",
   description: "We are always looking for passionate researchers to join our multidisciplinary team. Whether you're a prospective graduate student, postdoctoral fellow, or visiting scholar, we welcome dedicated individuals who share our commitment to advancing computational biology and precision medicine.",
-  openPositions: [
-    {
-      position: "Graduate Students",
-      description: "Seeking Ph.D. candidates with strong computational and quantitative backgrounds interested in machine learning applications in biology.",
-    },
-    {
-      position: "Postdoctoral Fellows",
-      description: "Looking for researchers with expertise in bioinformatics, computational biology, or related fields to lead independent research projects.",
-    },
-    {
-      position: "Visiting Scholars",
-      description: "Welcome international collaborators for short-term research visits (3-12 months) to work on joint projects.",
-    }
-  ],
-  qualifications: [
-    "Strong programming skills (Python, R, or similar)",
-    "Background in computational biology, bioinformatics, computer science, or related fields",
-    "Passion for interdisciplinary research",
-    "Excellent communication and teamwork abilities"
-  ],
-  howToApply: "Please send your CV, research statement, and names of 2-3 references to sarah.chen@jefferson.edu with the subject line 'CHEN Lab Application - [Position]'."
+  howToApply: "Please send your CV, research statement, and names of 2-3 references to alba@jefferson.edu with the subject line 'SIFAT Lab Application - [Position]'."
 };

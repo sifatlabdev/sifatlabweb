@@ -15,7 +15,8 @@ import {
   type Publication,
   type JeffersonProject,
   chenLabData,
-  jeffersonProjects
+  jeffersonProjects,
+  joinUsData
 } from "../data/data";
 
 import {Team} from "./Team";
@@ -283,6 +284,24 @@ export function Lab() {
         </div>
       </div>
 
+      <Team />
+
+      {/* Join Us Section */}
+        <div className="mt-16 p-6 container mx-auto">
+          <div className="bg-foreground rounded-lg p-8 border border-sage-green/20 p-12">
+            <h3 className="mb-4 text-center text-foreground pt-6">{joinUsData.title}</h3>
+            <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
+              {joinUsData.description}
+            </p>
+
+            {/* How to Apply */}
+            <div className="bg-background rounded-lg p-6 max-w-3xl mx-auto">
+              <h4 className="text-center mb-3 text-primary">How to Apply</h4>
+              <p className="text-sm text-muted-foreground text-center">{joinUsData.howToApply}</p>
+            </div>
+          </div>
+        </div>
+
       {/* Project Dialog */}
       {selectedProject && (
         <ProjectDialog 
@@ -292,7 +311,6 @@ export function Lab() {
         />
       )}
     </section>
-    <Team />
     
     </>
   );
