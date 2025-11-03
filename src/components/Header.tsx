@@ -25,19 +25,19 @@ export function Header() {
                 About Me
               </button>
               </Link>
-              <Link to='/publications'>
-              <button 
-                className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
-              >
-                Publications
-              </button>
-              
-              </Link>
               <Link to='/research'>
               <button 
                 className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
               >
                 Research
+              </button>
+              
+              </Link>
+              <Link to='/publications'>
+              <button 
+                className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
+              >
+                Publications
               </button>
               
               </Link>
@@ -72,18 +72,18 @@ export function Header() {
                   About Me
                 </button>
                 </Link>
-                <Link to='/publications'>
-                <button 
-                  className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
-                >
-                  Publications
-                </button>
-                </Link>
                 <Link to='/research'>
                 <button 
                   className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
                 >
                   Research
+                </button>
+                </Link>
+                <Link to='/publications'>
+                <button 
+                  className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer"
+                >
+                  Publications
                 </button>
                 </Link>
 
