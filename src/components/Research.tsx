@@ -1,20 +1,19 @@
 import { useState } from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "./ui/accordion";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { ExternalLink, FileText, ChevronDown, ChevronUp } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "./ui/dialog";
 import {
   type Publication,
-  type ContributionToScience,
-  researchSectionData,
-  contributions,
-  otherPublications
+  type JeffersonProject,
+  jeffersonProjects,
 } from "../data/data";
 
 function PublicationCard({ publication }: { publication: Publication }) {
@@ -45,7 +44,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
           <Button 
             variant="outline" 
             size="sm"
-            className="border-primary text-primary hover:text-sage-green cursor-pointer text-xs"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer text-xs"
           >
             <FileText className="w-3 h-3 mr-1" />
             PDF
@@ -53,7 +52,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
           <Button 
             variant="outline" 
             size="sm"
-            className="border-sage-green text-sage-green hover:bg-sage-green cursor-pointer text-xs"
+            className="border-sage-green text-sage-green hover:bg-sage-green hover:text-white cursor-pointer text-xs"
           >
             <ExternalLink className="w-3 h-3 mr-1" />
             DOI
@@ -64,141 +63,126 @@ function PublicationCard({ publication }: { publication: Publication }) {
   );
 }
 
-function ContributionSection({ contribution }: { contribution: ContributionToScience }) {
-  const [showAll, setShowAll] = useState(false);
-  const initialCount = 3;
-  const displayedPublications = showAll ? contribution.publications : contribution.publications.slice(0, initialCount);
-  const hasMore = contribution.publications.length > initialCount;
+function CardDescription({ children, className }: { children: React.ReactNode; className?: string }) {
+  return <p className={className}>{children}</p>;
+}
 
+function ProjectDialog({ project, open, onOpenChange }: { project: JeffersonProject; open: boolean; onOpenChange: (open: boolean) => void }) {
   return (
-    <div>
-      {/* Research Area Description - Styled Differently */}
-      <div className="mb-6 p-6 bg-gradient-to-br from-primary/5 to-sage-green/5 rounded-lg border-2 border-primary/20">
-        <p className="text-foreground mb-4 leading-relaxed">
-          {contribution.description}
-        </p>
-        <div>
-          <h4 className="text-sm text-primary mb-3">Key Achievements:</h4>
-          <ul className="space-y-2">
-            {contribution.keyAchievements.map((achievement, idx) => (
-              <li key={idx} className="text-sm text-muted-foreground flex items-start">
-                <span className="text-sage-green mr-2 mt-1">•</span>
-                <span>{achievement}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {/* Publications List */}
-      <div className="space-y-4">
-        <h4 className="text-sm text-muted-foreground mb-3">
-          Selected Publications ({contribution.publications.length} total)
-        </h4>
-        {displayedPublications.map((pub, idx) => (
-          <PublicationCard key={idx} publication={pub} />
-        ))}
+    <Dialog open={open} onOpenChange={onOpenChange}>
+<DialogContent className="w-11/12 sm:w-4/5 md:w-3/5 lg:w-1/2 max-h-[80vh] overflow-y-auto">        <DialogHeader>
+          <DialogTitle className="text-2xl text-foreground pr-8">{project.title}</DialogTitle>
+          <DialogDescription className="text-base">
+            <Badge className={`${getStatusColor(project.status)} mt-2`}>
+              {project.status}
+            </Badge>
+          </DialogDescription>
+        </DialogHeader>
         
-        {/* Show More/Less Button */}
-        {hasMore && (
-          <div className="text-center pt-4">
-            <Button
-              variant="outline"
-              onClick={() => setShowAll(!showAll)}
-              className="border-sage-green text-sage-green hover:bg-sage-green cursor-pointer"
-            >
-              {showAll ? (
-                <>
-                  <ChevronUp className="w-4 h-4 mr-2" />
-                  Show Less
-                </>
-              ) : (
-                <>
-                  <ChevronDown className="w-4 h-4 mr-2" />
-                  Show {contribution.publications.length - initialCount} More Publications
-                </>
-              )}
-            </Button>
+        <div className="space-y-6 mt-4">
+          {/* Detailed Description */}
+          <div>
+            <h4 className="text-sm text-primary mb-3">Project Overview</h4>
+            <p className="text-foreground leading-relaxed">
+              {project.detailedDescription}
+            </p>
           </div>
-        )}
-      </div>
-    </div>
+
+          {/* Tags */}
+          <div>
+            <h4 className="text-sm text-primary mb-3">Research Areas</h4>
+            <div className="flex flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <Badge key={tag} variant="outline" className="border-sage-green text-sage-green">
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          {/* Publications */}
+          <div>
+            <h4 className="text-sm text-primary mb-3">
+              Related Publications ({project.publications.length})
+            </h4>
+            <div className="space-y-4">
+              {project.publications.map((pub, idx) => (
+                <PublicationCard key={idx} publication={pub} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
   );
 }
 
+function getStatusColor(status: string) {
+  switch (status) {
+    case 'Ongoing':
+      return 'bg-sage-green text-white';
+    case 'Planning':
+      return 'bg-secondary text-secondary-foreground';
+    default:
+      return 'bg-muted text-muted-foreground';
+  }
+}
+
 export function Research() {
+  const [selectedProject, setSelectedProject] = useState<JeffersonProject | null>(null);
+
   return (
-    <section id="research" className="py-16 px-6 bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-12">
-          <h2 className="mb-4 text-foreground">
-            {researchSectionData.title}
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {researchSectionData.description}
+    <>
+    
+    <section id="chen-lab" className="py-16 px-6 bg-background">
+      <div className="container mx-auto">
+        {/* Jefferson Projects */}
+        <div>
+          <h2 className="mb-6 text-center text-foreground">Current Projects</h2>
+          <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Explore the diverse research initiatives and collaborative projects that have been launched since the establishment of the SIFAT Lab. Each project represents our commitment to advancing health equity and addressing critical health disparities in underserved communities. Click on any project below to learn more about its objectives, methodology, and impact."
           </p>
-        </div>
-
-        <Accordion type="single" collapsible className="space-y-4">
-          {contributions.map((contribution) => (
-            <AccordionItem 
-              key={contribution.id} 
-              value={contribution.id}
-              className="border-2 border-border rounded-lg bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-            >
-              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-secondary/30 transition-colors cursor-pointer">
-                <div className="flex items-start text-left w-full">
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-foreground pr-4">{contribution.title}</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {jeffersonProjects.map((project, index) => (
+              <Card 
+                key={index} 
+                className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-sage-green cursor-pointer"
+                onClick={() => setSelectedProject(project)}
+              >
+                <CardHeader>
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <CardTitle className="line-clamp-2 flex-1">{project.title}</CardTitle>
+                    <Badge className={`${getStatusColor(project.status)} shrink-0`}>
+                      {project.status}
+                    </Badge>
                   </div>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-6">
-                <ContributionSection contribution={contribution} />
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-          
-          {/* Other Publications Section */}
-          <AccordionItem 
-            value="other-publications"
-            className="border-2 border-border rounded-lg bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-          >
-            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-secondary/30 transition-colors cursor-pointer">
-              <div className="flex items-start text-left w-full">
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-foreground pr-4">Other Publications</h3>
-                </div>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 pb-6">
-              <div className="space-y-4">
-                <p className="text-foreground mb-4 leading-relaxed">
-                  Additional peer-reviewed publications covering diverse topics in computational biology, 
-                  bioinformatics methodology, ethical considerations in AI-driven healthcare, and open science practices.
-                </p>
-                <h4 className="text-sm text-muted-foreground mb-3">
-                  Selected Publications ({otherPublications.length} total)
-                </h4>
-                {otherPublications.map((pub, idx) => (
-                  <PublicationCard key={idx} publication={pub} />
-                ))}
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-
-        <div className="text-center mt-12">
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-primary text-primary hover:text-sage-green cursor-pointer"
-          >
-            <ExternalLink className="w-4 h-4 mr-2" />
-            View Complete Publication List on Google Scholar
-          </Button>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <Badge key={tag} variant="outline" className="text-xs border-sage-green text-sage-green hover:bg-sage-green hover:text-white">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
+
+      {/* Project Dialog */}
+      {selectedProject && (
+        <ProjectDialog 
+          project={selectedProject} 
+          open={!!selectedProject} 
+          onOpenChange={(open) => !open && setSelectedProject(null)}
+        />
+      )}
     </section>
+    
+    </>
   );
 }

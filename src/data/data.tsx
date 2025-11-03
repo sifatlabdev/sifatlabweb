@@ -309,7 +309,7 @@ export const teamSectionData = {
 // ============================================================
 
 export const chenLabData = {
-  title: "Sifat Lab",
+  title: "SIFAT Lab",
   subtitle: "Computational Health and Engineering Network Laboratory at Thomas Jefferson University",
   heroImage: "https://images.unsplash.com/photo-1666558889375-798fa96b559a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYWJvcmF0b3J5JTIwcmVzZWFyY2glMjB0ZWFtfGVufDF8fHx8MTc1OTIxNjIzNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
   mission: "To advance precision medicine through innovative computational approaches, developing AI-driven solutions that transform how we understand and treat complex diseases. We are committed to translating cutting-edge research into clinical applications that improve patient outcomes at Jefferson and beyond.",

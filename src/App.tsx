@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Header } from "./components/Header";
 import { About } from "./components/About";
-import { Team } from "./components/Team";
 import { Lab } from "./components/Lab";
-import { Research } from "./components/Research";
+import { Publications } from "./components/Publications";
+import {Research} from "./components/Research";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
@@ -16,7 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Lab />} />
         <Route path="/about" element={<About />} />
-        <Route path="/team" element={<Team />} />
+        <Route path="/publications" element={<Publications />} />
         <Route path="/research" element={<Research />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
