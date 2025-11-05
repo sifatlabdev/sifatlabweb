@@ -126,28 +126,28 @@ export const education: Education[] = [
     degree: "Postdoctoral Fellowship in Cancer Prevention/Health Disparities",
     institution:
       "The University of Oklahoma Health Sciences Center, Oklahoma City, OK",
-    year: "2023",
+    year: "2021-2023",
     description:
       "Specialized training in cancer prevention and health disparities research at the Stephenson Cancer Center's Health Promotion Research Center.",
   },
   {
     degree: "Ph.D. in Public Health/Global Mental Health",
     institution: "The University of Maryland, College Park, MD",
-    year: "2021",
+    year: "2017-2021",
     description:
       "Doctoral research focused on global mental health and behavioral and community health with emphasis on vulnerable populations.",
   },
   {
     degree: "Master of Public Health (MPH) in Health Promotion",
     institution: "The George Washington University, Washington, D.C.",
-    year: "2016",
+    year: "2014-2016",
     description:
       "Graduate studies in health promotion and public health strategies for community wellness.",
   },
   {
     degree: "Bachelor of Science in Psychology (Neuroscience)",
     institution: "The Pennsylvania State University, University Park, PA",
-    year: "2013",
+    year: "2009-2013",
     description:
       "Undergraduate studies in psychology with neuroscience focus and biology minor.",
   },
@@ -1381,7 +1381,10 @@ export const footerData = {
   copyright: "© 2025 Nicole Alba, PhD. All rights reserved.",
   links: [
     { text: "Academic CV", href: "#" },
-    { text: "Linkedin", href: "#" },
+    {
+      text: "Linkedin",
+      href: "https://www.linkedin.com/in/munjireen-sifat-b6037b94/",
+    },
     {
       text: "Google Scholar",
       href: "https://scholar.google.com/citations?user=Yxpb0w8AAAAJ&hl=en&inst=9752039510217644241&oi=ao",

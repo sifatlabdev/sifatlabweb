@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { GraduationCap, MapPin, Users, BookOpen } from "lucide-react";
 import {
   aboutData,
@@ -19,13 +13,9 @@ import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { ExternalLink } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Link } from "react-router-dom";
 
 function Hero() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section id='hero' className='pt-24 pb-16 px-6'>
       <div className='container mx-auto'>
@@ -58,18 +48,16 @@ function Hero() {
               ))}
             </div>
             <div className='flex gap-4'>
-              <Button
-                onClick={() => scrollToSection("research")}
-                className='bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer'
-              >
-                View Research
-              </Button>
-              <Button
-                onClick={() => scrollToSection("publications")}
-                className='bg-sage-green hover:bg-sage-green/90 text-white cursor-pointer'
-              >
-                Publications
-              </Button>
+              <Link to='/research'>
+                <Button className='bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer'>
+                  View Research
+                </Button>
+              </Link>
+              <Link to='/publications'>
+                <Button className='bg-sage-green hover:bg-sage-green/90 text-white cursor-pointer'>
+                  Publications
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -108,11 +96,6 @@ function Hero() {
 }
 
 export function About() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
       <Hero />
@@ -250,12 +233,11 @@ export function About() {
                     </div>
 
                     <div className='mb-6'>
-                      <Button
-                        onClick={() => scrollToSection("team")}
-                        className='w-full bg-sage-green hover:bg-sage-green/90 text-white'
-                      >
-                        Meet My Team
-                      </Button>
+                      <Link to='/'>
+                        <Button className='w-full bg-sage-green hover:bg-sage-green/90 text-white'>
+                          Meet My Team
+                        </Button>
+                      </Link>
                     </div>
 
                     <div>

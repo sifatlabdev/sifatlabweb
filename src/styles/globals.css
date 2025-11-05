@@ -205,3 +205,8 @@
 html {
   font-size: var(--font-size);
 }
+
+/* style the active tab inside the tabs-list container using Tailwind utilities */
+.tabs-list [data-state="active"] {
+  @apply bg-sage-green text-white shadow-md;
+}
