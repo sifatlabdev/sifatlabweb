@@ -234,7 +234,7 @@ export function About() {
 
                     <div className='mb-6'>
                       <Link to='/'>
-                        <Button className='w-full bg-sage-green hover:bg-sage-green/90 text-white'>
+                        <Button className='w-full bg-sage-green hover:bg-sage-green/90 text-white cursor-pointer'>
                           Meet My Team
                         </Button>
                       </Link>

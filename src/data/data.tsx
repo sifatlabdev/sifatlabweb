@@ -83,14 +83,13 @@ export interface ContactInfo {
 // ============================================================================
 // ✅ COMPLETE
 export const heroData: HeroData = {
-  name: "Dr. Munjireen S. Sifat",
+  name: "Munjireen Sifat, PhD, MPH",
   badge: "Assistant Professor",
   title: "Assistant Professor & Assistant Director of Community Outreach",
   bio: `I am an Assistant Professor at Thomas Jefferson University, affiliated with Sidney Kimmel Medical College, where my research focuses on health equity, addressing modifiable health behaviors and mental health disparities in underserved populations. My work emphasizes cancer prevention, particularly tobacco-related cancers and HPV self-sampling for cervical cancer screening.
   
   As Assistant Director of Community Outreach and Engagement at the Sidney Kimmel Comprehensive Cancer Center, I have developed strong community partnerships that enabled a pilot study establishing the workflow for our current HPV self-sampling initiative. This formative research, supported by Sidney Kimmel Medical College's Dean's Jump Start Pilot Award, explores how to overcome barriers to cervical cancer screening by offering HPV self-sampling in diverse community settings. My work addresses the behavioral, psychosocial, and structural factors influencing health behaviors in vulnerable populations.`,
-  image:
-    "https://images.unsplash.com/photo-1618053448748-b7251851d014?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHJlc2VhcmNoZXIlMjBzY2llbnRpc3QlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTg4NTc3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  image: "/src/assets/images/heroImage.jpg", // Absolute path was used
   expertiseTags: [
     "Health Equity",
     "Cancer Prevention",
@@ -1378,7 +1377,7 @@ export const contactSectionData = {
 // ============================================================
 
 export const footerData = {
-  copyright: "© 2025 Nicole Alba, PhD. All rights reserved.",
+  copyright: "© 2025 Munjireen Sifat, PhD, MPH. All rights reserved.",
   links: [
     { text: "Academic CV", href: "#" },
     {
@@ -1405,5 +1404,5 @@ export const joinUsData = {
   description:
     "We are always looking for passionate researchers to join our multidisciplinary team. Whether you're a prospective graduate student, postdoctoral fellow, or visiting scholar, we welcome dedicated individuals who share our commitment to advancing computational biology and precision medicine.",
   howToApply:
-    "Please send your CV, research statement, and names of 2-3 references to alba@jefferson.edu with the subject line 'SIFAT Lab Application - [Position]'.",
+    "Please send your CV, research statement, and names of 2-3 references to munjireen.sifat@jefferson.edu with the subject line 'SIFAT Lab Application - [Position]'.",
 };

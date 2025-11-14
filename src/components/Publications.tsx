@@ -29,7 +29,17 @@ function PublicationCard({ publication }: { publication: Publication }) {
     <Card className='hover:shadow-md transition-all duration-200 border-l-2 border-l-sage-green'>
       <CardHeader className='pb-4'>
         <CardTitle className='text-base cursor-pointer hover:text-primary transition-colors'>
-          {publication.title}
+          {publication.doi && publication.doi !== "N/A" ? (
+            <Link
+              to={publication.doi}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              {publication.title}
+            </Link>
+          ) : (
+            <span>{publication.title}</span>
+          )}
         </CardTitle>
         <CardDescription className='text-sm mt-2'>
           <span className='text-sage-green'>{publication.authors}</span>
@@ -54,24 +64,6 @@ function PublicationCard({ publication }: { publication: Publication }) {
           <span className='hover:text-sage-green cursor-pointer transition-colors'>
             PMID: {publication.pmid}
           </span>
-        </div>
-        <div className='flex gap-2 mt-4'>
-          <Button
-            variant='outline'
-            size='sm'
-            className='border-primary text-primary hover:text-sage-green cursor-pointer text-xs'
-          >
-            <FileText className='w-3 h-3 mr-1' />
-            PDF
-          </Button>
-          <Button
-            variant='outline'
-            size='sm'
-            className='border-sage-green text-sage-green hover:bg-sage-green cursor-pointer text-xs'
-          >
-            <ExternalLink className='w-3 h-3 mr-1' />
-            DOI
-          </Button>
         </div>
       </CardContent>
     </Card>
