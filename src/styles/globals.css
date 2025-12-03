@@ -210,3 +210,40 @@ html {
 .tabs-list [data-state="active"] {
   @apply bg-sage-green text-white shadow-md;
 }
+
+/* Style active tabs with a clear visual distinction */
+.tab-trigger[data-state="active"] {
+  background-color: var(--sage-green, #87a96b);
+  color: var(--primary-foreground, #ffffff);
+  box-shadow: 0 4px 12px rgba(135, 169, 107, 0.3);
+  font-weight: 500;
+}
+
+.tab-trigger[data-state="inactive"] {
+  background-color: transparent;
+  color: var(--muted-foreground, #6b7a5b);
+}
+
+/* Ensure active tab is visibly distinct (override compiled styles if needed) */
+.tabs-list [data-state="active"] {
+  background-color: var(--sage-green, #87a96b) !important;
+  color: var(--primary-foreground, #f2ede4) !important;
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08) !important;
+  font-weight: 600 !important;
+}
+
+/* subtle hover for all tab triggers */
+.tab-trigger:hover {
+  background-color: rgba(135, 169, 107, 0.08);
+}
+
+/* Ensure tab corners and active shadow match buttons */
+.tab-trigger {
+  border-radius: 0.375rem; /* rounded-md */
+}
+
+.tabs-list [data-state="active"],
+.tab-trigger[data-state="active"] {
+  border-radius: 0.375rem; /* keep active tab rounded */
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08); /* match button shadow */
+}

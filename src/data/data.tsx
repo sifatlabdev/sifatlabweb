@@ -253,10 +253,9 @@ export const leadershipData = {
 // ============================================================
 
 export const labDirector: TeamMember = {
-  name: "Nicole Alba, PhD",
+  name: "Munjireen Sifat, PhD",
   title: "Lab Director & Principal Investigator",
-  image:
-    "https://images.unsplash.com/photo-1758685848602-09e52ef9c7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzY2llbnRpc3QlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTkxMTg2Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  image: "/src/assets/images/heroImage.jpg",
   specialty: "Computational Biology & AI",
   url: "",
 };
@@ -265,25 +264,8 @@ export const universityCollaborators: TeamMember[] = [
   {
     name: "Dr. Michael Rodriguez",
     title: "Associate Professor, Computer Science",
-    image:
-      "https://images.unsplash.com/photo-1691935152210-35ae500d91d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNlYXJjaGVyJTIwc2NpZW50aXN0JTIwaGVhZHNob3R8ZW58MXx8fHwxNzU5MjE2MTkwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/src/assets/images/img1.jpg",
     specialty: "Machine Learning",
-    url: "",
-  },
-  {
-    name: "Dr. Emily Watson",
-    title: "Professor, Molecular Biology",
-    image:
-      "https://images.unsplash.com/photo-1663128637417-d0213df51462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFkdWF0ZSUyMHN0dWRlbnQlMjByZXNlYXJjaGVyfGVufDF8fHx8MTc1OTIxNjE5MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    specialty: "Genomics",
-    url: "",
-  },
-  {
-    name: "Dr. James Park",
-    title: "Assistant Professor, Biostatistics",
-    image:
-      "https://images.unsplash.com/photo-1758685848602-09e52ef9c7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzY2llbnRpc3QlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTkxMTg2Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    specialty: "Statistical Modeling",
     url: "",
   },
 ];
@@ -292,17 +274,8 @@ export const externalCollaborators: TeamMember[] = [
   {
     name: "Dr. Lisa Anderson",
     title: "Research Scientist, Broad Institute",
-    image:
-      "https://images.unsplash.com/photo-1691935152210-35ae500d91d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNlYXJjaGVyJTIwc2NpZW50aXN0JTIwaGVhZHNob3R8ZW58MXx8fHwxNzU5MjE2MTkwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/src/assets/images/img2.jpg",
     specialty: "Drug Discovery",
-    url: "",
-  },
-  {
-    name: "Dr. David Kim",
-    title: "Senior Researcher, Genentech",
-    image:
-      "https://images.unsplash.com/photo-1663128637417-d0213df51462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFkdWF0ZSUyMHN0dWRlbnQlMjByZXNlYXJjaGVyfGVufDF8fHx8MTc1OTIxNjE5MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    specialty: "Cancer Genomics",
     url: "",
   },
 ];
@@ -311,60 +284,8 @@ export const graduateResearchers: TeamMember[] = [
   {
     name: "Amanda Thompson",
     title: "Ph.D. Candidate",
-    image:
-      "https://images.unsplash.com/photo-1758685848602-09e52ef9c7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzY2llbnRpc3QlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTkxMTg2Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/src/assets/images/img3.jpg",
     specialty: "Deep Learning for Genomics",
-    url: "",
-  },
-  {
-    name: "Robert Martinez",
-    title: "Ph.D. Candidate",
-    image:
-      "https://images.unsplash.com/photo-1691935152210-35ae500d91d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNlYXJjaGVyJTIwc2NpZW50aXN0JTIwaGVhZHNob3R8ZW58MXx8fHwxNzU5MjE2MTkwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    specialty: "Precision Medicine",
-    url: "",
-  },
-  {
-    name: "Jessica Liu",
-    title: "M.S. Student",
-    image:
-      "https://images.unsplash.com/photo-1663128637417-d0213df51462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFkdWF0ZSUyMHN0dWRlbnQlMjByZXNlYXJjaGVyfGVufDF8fHx8MTc1OTIxNjE5MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    specialty: "Bioinformatics",
-    url: "",
-  },
-  {
-    name: "Kevin Brown",
-    title: "Ph.D. Candidate",
-    image:
-      "https://images.unsplash.com/photo-1758685848602-09e52ef9c7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzY2llbnRpc3QlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTkxMTg2Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    specialty: "Computational Drug Discovery",
-    url: "",
-  },
-];
-
-export const undergraduateResearchers: TeamMember[] = [
-  {
-    name: "Sarah Johnson",
-    title: "Undergraduate Researcher",
-    image:
-      "https://images.unsplash.com/photo-1691935152210-35ae500d91d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNlYXJjaGVyJTIwc2NpZW50aXN0JTIwaGVhZHNob3R8ZW58MXx8fHwxNzU5MjE2MTkwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    specialty: "Data Analysis",
-    url: "",
-  },
-  {
-    name: "Chris Patel",
-    title: "Undergraduate Researcher",
-    image:
-      "https://images.unsplash.com/photo-1663128637417-d0213df51462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFkdWF0ZSUyMHN0dWRlbnQlMjByZXNlYXJjaGVyfGVufDF8fHx8MTc1OTIxNjE5MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    specialty: "Algorithm Development",
-    url: "",
-  },
-  {
-    name: "Maya Davis",
-    title: "Undergraduate Researcher",
-    image:
-      "https://images.unsplash.com/photo-1758685848602-09e52ef9c7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzY2llbnRpc3QlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTkxMTg2Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    specialty: "Genomic Data Processing",
     url: "",
   },
 ];
@@ -383,8 +304,7 @@ export const chenLabData = {
   title: "SIFAT Lab",
   subtitle:
     "Computational Health and Engineering Network Laboratory at Thomas Jefferson University",
-  heroImage:
-    "https://images.unsplash.com/photo-1666558889375-798fa96b559a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYWJvcmF0b3J5JTIwcmVzZWFyY2glMjB0ZWFtfGVufDF8fHx8MTc1OTIxNjIzNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  heroImage: "/src/assets/images/labimg.jpg", // Absolute Path
   mission:
     "To advance precision medicine through innovative computational approaches, developing AI-driven solutions that transform how we understand and treat complex diseases. We are committed to translating cutting-edge research into clinical applications that improve patient outcomes at Jefferson and beyond.",
   whoWeAre: {
@@ -1379,7 +1299,6 @@ export const contactSectionData = {
 export const footerData = {
   copyright: "© 2025 Munjireen Sifat, PhD, MPH. All rights reserved.",
   links: [
-    { text: "Academic CV", href: "#" },
     {
       text: "Linkedin",
       href: "https://www.linkedin.com/in/munjireen-sifat-b6037b94/",

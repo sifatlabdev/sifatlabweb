@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { GraduationCap, MapPin, Users, BookOpen } from "lucide-react";
 import {
-  aboutData,
   education,
   experience,
   teachingExperience,
@@ -14,6 +13,7 @@ import { Button } from "./ui/button";
 import { ExternalLink } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Hero() {
   return (
@@ -96,32 +96,39 @@ function Hero() {
 }
 
 export function About() {
+  const [activeTab, setActiveTab] = useState<
+    "education-experience" | "mentorship-teaching"
+  >("education-experience");
+
   return (
     <>
       <Hero />
       <section id='about' className='py-16 px-6 bg-secondary/30'>
         <div className='container mx-auto'>
-          <div className='text-center mb-12'>
-            <h2 className='mb-4 text-foreground'>About {aboutData.name}</h2>
-            <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
-              {aboutData.description}
-            </p>
-          </div>
-
           <Tabs
-            defaultValue='education-experience'
+            value={activeTab}
+            onValueChange={(v: any) => setActiveTab(v as any)}
             className='max-w-6xl mx-auto'
           >
-            <TabsList className='grid w-full grid-cols-2 mb-8 h-12 bg-secondary/50 p-1'>
+            <TabsList className='tabs-list grid w-full grid-cols-2 mb-8 h-12 bg-secondary/50 p-1 rounded-md overflow-hidden'>
               <TabsTrigger
                 value='education-experience'
-                className='cursor-pointer data-[state=active]:bg-sage-green data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200'
+                className={`tab-trigger cursor-pointer transition-all duration-200 rounded-md px-4 py-2 text-center ${
+                  activeTab === "education-experience"
+                    ? "bg-sage-green text-white shadow-md font-medium"
+                    : "bg-transparent text-muted-foreground"
+                }`}
               >
                 Education & Experience
               </TabsTrigger>
+
               <TabsTrigger
                 value='mentorship-teaching'
-                className='cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200'
+                className={`tab-trigger cursor-pointer transition-all duration-200 rounded-md px-4 py-2 text-center ${
+                  activeTab === "mentorship-teaching"
+                    ? "bg-sage-green text-white shadow-md font-medium"
+                    : "bg-transparent text-muted-foreground"
+                }`}
               >
                 Mentorship & Teaching
               </TabsTrigger>
