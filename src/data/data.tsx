@@ -45,7 +45,7 @@ export interface TeamMember {
   name: string;
   title: string;
   image: string;
-  specialty: string;
+  specialty: string[];
   url: string;
 }
 
@@ -256,37 +256,53 @@ export const labDirector: TeamMember = {
   name: "Munjireen Sifat, PhD",
   title: "Lab Director & Principal Investigator",
   image: "/src/assets/images/heroImage.jpg",
-  specialty: "Computational Biology & AI",
-  url: "",
+  specialty: [
+    "Health Equity",
+    "Cancer Prevention",
+    "Tobacco Cessation",
+    "Refugee Health",
+  ],
+  url: "https://www.jefferson.edu/academics/colleges-schools-institutes/population-health/administration-faculty-staff/faculty/sifat.html",
 };
 
 export const universityCollaborators: TeamMember[] = [
   {
-    name: "Dr. Michael Rodriguez",
-    title: "Associate Professor, Computer Science",
+    name: "Joshua Godbolt, MSEd",
+    title: "Clinical Research Coordinator",
     image: "/src/assets/images/img1.jpg",
-    specialty: "Machine Learning",
+    specialty: [
+      "Oncology",
+      "Population Science",
+      "Health Disparities",
+      "Clinical Trials",
+    ],
     url: "",
   },
 ];
 
 export const externalCollaborators: TeamMember[] = [
   {
-    name: "Dr. Lisa Anderson",
-    title: "Research Scientist, Broad Institute",
+    name: "Shawn C. Chiang",
+    title:
+      "Assistant Professor, Department of Health Behavior, Texas A&M University School of Public Health",
     image: "/src/assets/images/img2.jpg",
-    specialty: "Drug Discovery",
-    url: "",
+    specialty: [
+      "Cancer Prevention",
+      "HPV-Related Cancers",
+      "Health Communication",
+      "Digital Media",
+    ],
+    url: "https://www.shawnchiang.com/",
   },
 ];
 
 export const graduateResearchers: TeamMember[] = [
   {
-    name: "Amanda Thompson",
-    title: "Ph.D. Candidate",
+    name: "Lauren Thompson",
+    title: "Medical Student, Scholarly Inquiry",
     image: "/src/assets/images/img3.jpg",
-    specialty: "Deep Learning for Genomics",
-    url: "",
+    specialty: ["Oncology", "Public Health", "Community Health"],
+    url: "www.linkedin.com/in/lauren-thompson-b4aa14398",
   },
 ];
 
