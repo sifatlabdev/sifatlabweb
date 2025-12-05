@@ -1,3 +1,8 @@
+import heroImage from "../assets/images/heroImage.jpg";
+import img1 from "../assets/images/img1.jpg";
+import img2 from "../assets/images/img2.jpg";
+import img3 from "../assets/images/img3.jpg";
+import labimg from "../assets/images/labimg.jpg";
 // ============================================================
 // TYPES & INTERFACES
 // ============================================================
@@ -89,7 +94,7 @@ export const heroData: HeroData = {
   bio: `I am an Assistant Professor at Thomas Jefferson University, affiliated with Sidney Kimmel Medical College, where my research focuses on health equity, addressing modifiable health behaviors and mental health disparities in underserved populations. My work emphasizes cancer prevention, particularly tobacco-related cancers and HPV self-sampling for cervical cancer screening.
   
   As Assistant Director of Community Outreach and Engagement at the Sidney Kimmel Comprehensive Cancer Center, I have developed strong community partnerships that enabled a pilot study establishing the workflow for our current HPV self-sampling initiative. This formative research, supported by Sidney Kimmel Medical College's Dean's Jump Start Pilot Award, explores how to overcome barriers to cervical cancer screening by offering HPV self-sampling in diverse community settings. My work addresses the behavioral, psychosocial, and structural factors influencing health behaviors in vulnerable populations.`,
-  image: "/src/assets/images/heroImage.jpg", // Absolute path was used
+  image: heroImage, // Absolute path was used
   expertiseTags: [
     "Health Equity",
     "Cancer Prevention",
@@ -255,7 +260,7 @@ export const leadershipData = {
 export const labDirector: TeamMember = {
   name: "Munjireen Sifat, PhD",
   title: "Lab Director & Principal Investigator",
-  image: "/src/assets/images/heroImage.jpg",
+  image: heroImage,
   specialty: [
     "Health Equity",
     "Cancer Prevention",
@@ -269,7 +274,7 @@ export const universityCollaborators: TeamMember[] = [
   {
     name: "Joshua Godbolt, MSEd",
     title: "Clinical Research Coordinator",
-    image: "/src/assets/images/img1.jpg",
+    image: img1,
     specialty: [
       "Oncology",
       "Population Science",
@@ -285,7 +290,7 @@ export const externalCollaborators: TeamMember[] = [
     name: "Shawn C. Chiang",
     title:
       "Assistant Professor, Department of Health Behavior, Texas A&M University School of Public Health",
-    image: "/src/assets/images/img2.jpg",
+    image: img2,
     specialty: [
       "Cancer Prevention",
       "HPV-Related Cancers",
@@ -300,7 +305,7 @@ export const graduateResearchers: TeamMember[] = [
   {
     name: "Lauren Thompson",
     title: "Medical Student, Scholarly Inquiry",
-    image: "/src/assets/images/img3.jpg",
+    image: img3,
     specialty: ["Oncology", "Public Health", "Community Health"],
     url: "www.linkedin.com/in/lauren-thompson-b4aa14398",
   },
@@ -320,7 +325,7 @@ export const chenLabData = {
   title: "SIFAT Lab",
   subtitle:
     "Computational Health and Engineering Network Laboratory at Thomas Jefferson University",
-  heroImage: "/src/assets/images/labimg.jpg", // Absolute Path
+  heroImage: labimg, // Absolute Path
   mission:
     "To advance precision medicine through innovative computational approaches, developing AI-driven solutions that transform how we understand and treat complex diseases. We are committed to translating cutting-edge research into clinical applications that improve patient outcomes at Jefferson and beyond.",
   whoWeAre: {
