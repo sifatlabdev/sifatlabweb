@@ -87,20 +87,9 @@ export function Lab() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className='space-y-3'>
-                  {chenLabData.mainFocus.map((item, index) => (
-                    <div key={index} className='flex items-start gap-2'>
-                      <span
-                        className={`w-2 h-2 ${
-                          index % 2 === 0 ? "bg-primary" : "bg-sage-green"
-                        } rounded-full mt-2 shrink-0`}
-                      ></span>
-                      <span className='text-sm text-muted-foreground'>
-                        {item}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+                <p className='text-muted-foreground leading-relaxed'>
+                  {chenLabData.mainFocus.join(". ")}.
+                </p>
               </CardContent>
             </Card>
 

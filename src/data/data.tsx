@@ -314,7 +314,7 @@ export const graduateResearchers: TeamMember[] = [
 export const teamSectionData = {
   title: "Meet the Team",
   description:
-    "A diverse and talented group of researchers dedicated to advancing computational biology and precision medicine through collaborative innovation.",
+    "A dedicated team of researchers and community partners advancing health equity through evidence-based interventions and meaningful community engagement.",
 };
 
 // ============================================================
@@ -324,26 +324,24 @@ export const teamSectionData = {
 export const chenLabData = {
   title: "SIFAT Lab",
   subtitle:
-    "Computational Health and Engineering Network Laboratory at Thomas Jefferson University",
+    "Behavioral Health & Cancer Prevention Research at Thomas Jefferson University",
   heroImage: labimg, // Absolute Path
   mission:
-    "To advance precision medicine through innovative computational approaches, developing AI-driven solutions that transform how we understand and treat complex diseases. We are committed to translating cutting-edge research into clinical applications that improve patient outcomes at Jefferson and beyond.",
+    "To advance health equity through innovative research and community partnerships that address the root causes of health disparities. We are committed to reducing tobacco-related cancer burden and improving preventive care access in underserved populations by developing culturally informed interventions, integrating social determinants of health into oncology care, and leveraging digital health solutions to create lasting, meaningful change.",
   whoWeAre: {
     description:
-      "A multidisciplinary team of computational biologists, bioinformaticians, and data scientists working at the intersection of AI and medicine. Established in 2019 at Thomas Jefferson University, we bring together expertise in machine learning, genomics, and clinical research.",
+      "We are a multidisciplinary research team based at Thomas Jefferson University’s Sidney Kimmel Cancer Center, dedicated to advancing health equity through innovative behavioral interventions. Led by Dr. Munjireen Sifat, our work bridges public health, psychology, and oncology to address disparities in cancer prevention and behavioral health among underserved populations.",
     stats: ["12 Researchers", "Est. 2019", "Jefferson University"],
   },
   mainFocus: [
-    "Machine learning for drug discovery and therapeutic target identification",
-    "Genomic data analysis for personalized medicine applications",
-    "Development of AI-driven clinical decision support tools",
-    "Biomarker discovery for early disease detection and monitoring",
+    "Our research centers on reducing tobacco - related cancer risk and improving preventive care access for vulnerable communities. We focus on modifiable health behaviors - such as smoking cessation and cervical cancer screening—while addressing structural and psychosocial barriers that perpetuate health inequities.",
   ],
   whatWeDo: [
-    "Develop novel computational algorithms and machine learning models",
-    "Analyze large-scale genomic and clinical datasets",
-    "Collaborate with clinicians to translate research into practice",
-    "Train the next generation of computational biologists",
+    "Develop and test interventions for smoking cessation and harm reduction.",
+    "Advance cancer prevention strategies through HPV self-sampling workflows in diverse communities.",
+    "Integrate social determinants of health (SDOH) into oncology care by assessing health-related social needs and designing linkage strategies.",
+    "Leverage digital health tools to improve access to care.",
+    "Engage communities through partnerships with community organizations and non-profits to ensure culturally relevant solutions.",
   ],
 };
 
@@ -470,7 +468,7 @@ export const jeffersonProjects: JeffersonProject[] = [
 export const researchSectionData = {
   title: "Publications",
   description:
-    "Our research spans multiple areas at the intersection of computational biology, machine learning, and precision medicine. Below are our four major contributions to scientific knowledge and their associated publications.",
+    "Our work addresses health equity through tobacco cessation, cancer prevention, mental health interventions, and digital health solutions. Browse our peer-reviewed publications spanning multiple disciplines.",
 };
 
 export const contributions: ContributionToScience[] = [
@@ -1308,7 +1306,7 @@ export const contactInfo: ContactInfo = {
 export const contactSectionData = {
   title: "Contact & Collaboration",
   description:
-    "Interested in collaboration, speaking opportunities, or discussing research? I'd love to hear from you.",
+    "We welcome collaboration opportunities with researchers, community organizations, and students dedicated to health equity. Reach out to discuss partnerships, research inquiries, or joining our team.",
   cardDescription:
     "Multiple ways to connect for research collaboration and academic inquiries",
 };

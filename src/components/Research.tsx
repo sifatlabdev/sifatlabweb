@@ -170,12 +170,8 @@ export function Research() {
               Current Research
             </h2>
             <p className='text-center text-muted-foreground mb-8 max-w-2xl mx-auto'>
-              Explore the diverse research initiatives and collaborative
-              projects that have been launched since the establishment of the
-              SIFAT Lab. Each project represents our commitment to advancing
-              health equity and addressing critical health disparities in
-              underserved communities. Click on any project below to learn more
-              about its objectives, methodology, and impact.
+              Explore our research initiatives advancing health equity and
+              addressing critical health disparities in underserved communities.
             </p>
             <div className='grid md:grid-cols-3 gap-6'>
               {jeffersonProjects.map((project, index) => (
