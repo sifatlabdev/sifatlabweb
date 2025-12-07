@@ -190,10 +190,7 @@ export function Publications() {
             <AccordionContent className='px-6 pb-6'>
               <div className='space-y-4'>
                 <p className='text-foreground mb-4 leading-relaxed'>
-                  Additional peer-reviewed publications covering diverse topics
-                  in computational biology, bioinformatics methodology, ethical
-                  considerations in AI-driven healthcare, and open science
-                  practices.
+                  Covering topics related to public health and health equity.
                 </p>
                 <h4 className='text-sm text-muted-foreground mb-3'>
                   Selected Publications ({otherPublications.length} total)
