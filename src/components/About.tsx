@@ -1,19 +1,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { GraduationCap, MapPin, Users, BookOpen } from "lucide-react";
+import { GraduationCap, MapPin, BookOpen } from "lucide-react";
 import {
   education,
   experience,
   teachingExperience,
-  leadershipData,
   heroData,
 } from "../data/data";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { ExternalLink } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 function Hero() {
   return (
@@ -96,207 +93,119 @@ function Hero() {
 }
 
 export function About() {
-  const [activeTab, setActiveTab] = useState<
-    "education-experience" | "mentorship-teaching"
-  >("education-experience");
-
   return (
     <>
       <Hero />
       <section id='about' className='py-16 px-6 bg-secondary/30'>
-        <div className='container mx-auto'>
-          <Tabs
-            value={activeTab}
-            onValueChange={(v: any) => setActiveTab(v as any)}
-            className='max-w-6xl mx-auto'
-          >
-            <TabsList className='tabs-list grid w-full grid-cols-2 mb-8 h-12 bg-secondary/50 p-1 rounded-md overflow-hidden'>
-              <TabsTrigger
-                value='education-experience'
-                className={`tab-trigger cursor-pointer transition-all duration-200 rounded-md px-4 py-2 text-center ${
-                  activeTab === "education-experience"
-                    ? "bg-sage-green text-white shadow-md font-medium"
-                    : "bg-transparent text-muted-foreground"
-                }`}
-              >
-                Education & Experience
-              </TabsTrigger>
+        <div className='container mx-auto max-w-6xl'>
+          {/* Section Title */}
+          <div className='text-center mb-12'>
+            <h2 className='mb-4 text-foreground'>Education and Experience</h2>
+            <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
+              A summary of my academic background and professional experience in
+              health equity research.
+            </p>
+          </div>
 
-              <TabsTrigger
-                value='mentorship-teaching'
-                className={`tab-trigger cursor-pointer transition-all duration-200 rounded-md px-4 py-2 text-center ${
-                  activeTab === "mentorship-teaching"
-                    ? "bg-sage-green text-white shadow-md font-medium"
-                    : "bg-transparent text-muted-foreground"
-                }`}
-              >
-                Mentorship & Teaching
-              </TabsTrigger>
-            </TabsList>
-
-            {/* Education & Experience Tab */}
-            <TabsContent value='education-experience'>
-              <div className='grid lg:grid-cols-2 gap-8'>
-                {/* Education Card */}
-                <Card className='border-l-4 border-l-sage-green'>
-                  <CardHeader>
-                    <CardTitle className='flex items-center gap-2 text-sage-green'>
-                      <GraduationCap className='w-5 h-5' />
-                      Education
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className='space-y-6'>
-                    {education.map((edu, index) => (
-                      <div
-                        key={index}
-                        className='border-l-2 border-l-primary pl-4 py-2'
-                      >
-                        <h4 className='text-lg'>{edu.degree}</h4>
-                        <p className='text-primary'>{edu.institution}</p>
-                        <div className='flex items-center gap-2 mt-1'>
-                          <Badge
-                            variant='outline'
-                            className='border-sage-green text-sage-green'
-                          >
-                            {edu.year}
-                          </Badge>
-                        </div>
-                        <p className='text-sm text-muted-foreground mt-2'>
-                          {edu.description}
-                        </p>
+          <div className='grid lg:grid-cols-2 gap-8'>
+            {/* Left Column - Education and Teaching Stacked */}
+            <div className='flex flex-col gap-8'>
+              {/* Education Card */}
+              <Card className='border-l-4 border-l-sage-green'>
+                <CardHeader>
+                  <CardTitle className='flex items-center gap-2 text-sage-green'>
+                    <GraduationCap className='w-5 h-5' />
+                    Education
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className='space-y-6'>
+                  {education.map((edu, index) => (
+                    <div
+                      key={index}
+                      className='border-l-2 border-l-primary pl-4 py-2'
+                    >
+                      <h4 className='text-lg'>{edu.degree}</h4>
+                      <p className='text-primary'>{edu.institution}</p>
+                      <div className='flex items-center gap-2 mt-1'>
+                        <Badge
+                          variant='outline'
+                          className='border-sage-green text-sage-green'
+                        >
+                          {edu.year}
+                        </Badge>
                       </div>
-                    ))}
-                  </CardContent>
-                </Card>
+                      <p className='text-sm text-muted-foreground mt-2'>
+                        {edu.description}
+                      </p>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
 
-                {/* Experience Card */}
-                <Card className='border-l-4 border-l-primary'>
-                  <CardHeader>
-                    <CardTitle className='flex items-center gap-2 text-primary'>
-                      <MapPin className='w-5 h-5' />
-                      Experience
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className='space-y-6'>
-                    {experience.map((exp, index) => (
-                      <div
-                        key={index}
-                        className='border-l-2 border-l-sage-green pl-4 py-2'
-                      >
-                        <h4 className='text-lg'>{exp.position}</h4>
-                        <p className='text-sage-green'>{exp.institution}</p>
-                        <div className='flex items-center gap-2 mt-1'>
-                          <Badge
-                            variant='outline'
-                            className='border-primary text-primary'
-                          >
-                            {exp.period}
-                          </Badge>
-                        </div>
-                        <p className='text-sm text-muted-foreground mt-2'>
-                          {exp.description}
-                        </p>
+              {/* Teaching Experience Card */}
+              <Card className='border-l-4 border-l-primary'>
+                <CardHeader>
+                  <CardTitle className='flex items-center gap-2 text-primary'>
+                    <BookOpen className='w-5 h-5' />
+                    Teaching Experience
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className='space-y-6'>
+                  {teachingExperience.map((course, index) => (
+                    <div
+                      key={index}
+                      className='border-l-2 border-l-sage-green pl-4 py-2'
+                    >
+                      <h4 className='text-lg'>{course.course}</h4>
+                      <div className='flex items-center gap-2 mt-1'>
+                        <Badge className='bg-sage-green text-white'>
+                          {course.level}
+                        </Badge>
+                        <span className='text-sm text-muted-foreground'>
+                          {course.period}
+                        </span>
                       </div>
-                    ))}
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
+                      <p className='text-sm text-muted-foreground mt-2'>
+                        {course.description}
+                      </p>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+            </div>
 
-            {/* Mentorship & Teaching Tab */}
-            <TabsContent value='mentorship-teaching'>
-              <div className='grid lg:grid-cols-2 gap-8'>
-                {/* Mentorship Card */}
-                <Card className='border-l-4 border-l-sage-green'>
-                  <CardHeader>
-                    <CardTitle className='flex items-center gap-2 text-sage-green'>
-                      <Users className='w-5 h-5' />
-                      Leadership & Mentorship
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className='text-muted-foreground leading-relaxed mb-6'>
-                      {leadershipData.description}
+            {/* Experience Card - Right Column */}
+            <Card className='border-l-4 border-l-primary'>
+              <CardHeader>
+                <CardTitle className='flex items-center gap-2 text-primary'>
+                  <MapPin className='w-5 h-5' />
+                  Work Experience
+                </CardTitle>
+              </CardHeader>
+              <CardContent className='space-y-6'>
+                {experience.map((exp, index) => (
+                  <div
+                    key={index}
+                    className='border-l-2 border-l-sage-green pl-4 py-2'
+                  >
+                    <h4 className='text-lg'>{exp.position}</h4>
+                    <p className='text-sage-green'>{exp.institution}</p>
+                    <div className='flex items-center gap-2 mt-1'>
+                      <Badge
+                        variant='outline'
+                        className='border-primary text-primary'
+                      >
+                        {exp.period}
+                      </Badge>
+                    </div>
+                    <p className='text-sm text-muted-foreground mt-2'>
+                      {exp.description}
                     </p>
-
-                    <div className='mb-6'>
-                      <h4 className='text-sm mb-4 text-primary'>
-                        Key Achievements
-                      </h4>
-                      <div className='space-y-3'>
-                        {leadershipData.stats.map((stat, index) => (
-                          <div key={index} className='flex items-start gap-2'>
-                            <span
-                              className={`w-2 h-2 ${
-                                index % 2 === 0 ? "bg-sage-green" : "bg-primary"
-                              } rounded-full mt-2 shrink-0`}
-                            ></span>
-                            <span className='text-sm text-muted-foreground'>
-                              {stat}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className='mb-6'>
-                      <Link to='/'>
-                        <Button className='w-full bg-sage-green hover:bg-sage-green/90 text-white cursor-pointer'>
-                          Meet My Team
-                        </Button>
-                      </Link>
-                    </div>
-
-                    <div>
-                      <h4 className='text-sm mb-3 text-primary'>Focus Areas</h4>
-                      <div className='flex flex-wrap gap-2'>
-                        {leadershipData.badges.map((badge) => (
-                          <Badge
-                            key={badge}
-                            variant='outline'
-                            className='border-sage-green text-sage-green'
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Teaching Card */}
-                <Card className='border-l-4 border-l-primary'>
-                  <CardHeader>
-                    <CardTitle className='flex items-center gap-2 text-primary'>
-                      <BookOpen className='w-5 h-5' />
-                      Teaching Experience
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className='space-y-6'>
-                    {teachingExperience.map((course, index) => (
-                      <div
-                        key={index}
-                        className='border-l-2 border-l-sage-green pl-4 py-2'
-                      >
-                        <h4 className='text-lg'>{course.course}</h4>
-                        <div className='flex items-center gap-2 mt-1'>
-                          <Badge className='bg-sage-green text-white'>
-                            {course.level}
-                          </Badge>
-                          <span className='text-sm text-muted-foreground'>
-                            {course.period}
-                          </span>
-                        </div>
-                        <p className='text-sm text-muted-foreground mt-2'>
-                          {course.description}
-                        </p>
-                      </div>
-                    ))}
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
-          </Tabs>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
     </>

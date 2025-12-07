@@ -127,19 +127,21 @@ export function Lab() {
         <Team />
 
         {/* Join Us Section */}
-        <div className='mt-16 p-6 container mx-auto'>
-          <div className='bg-foreground rounded-lg p-8 border border-sage-green/20 p-12'>
-            <h3 className='mb-4 text-center text-foreground pt-6'>
+        <div className='mt-16 px-6 py-12 container mx-auto'>
+          <div className='bg-foreground rounded-lg p-6 md:p-12 border border-sage-green/20'>
+            <h3 className='mb-4 text-center text-foreground'>
               {joinUsData.title}
             </h3>
-            <p className='text-center text-muted-foreground mb-8 max-w-3xl mx-auto'>
+            <p className='text-center text-muted-foreground mb-8 max-w-3xl mx-auto text-sm md:text-base leading-relaxed px-4'>
               {joinUsData.description}
             </p>
 
             {/* How to Apply */}
-            <div className='bg-background rounded-lg p-6 max-w-3xl mx-auto'>
-              <h4 className='text-center mb-3 text-primary'>How to Apply</h4>
-              <p className='text-sm text-muted-foreground text-center'>
+            <div className='bg-background rounded-lg p-4 md:p-6 max-w-3xl mx-auto'>
+              <h4 className='text-center mb-3 text-primary text-sm md:text-base'>
+                How to Apply
+              </h4>
+              <p className='text-sm text-muted-foreground text-center px-2'>
                 {joinUsData.howToApply}
               </p>
             </div>
