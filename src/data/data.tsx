@@ -314,7 +314,7 @@ export const chenLabData = {
     stats: ["12 Researchers", "Est. 2019", "Jefferson University"],
   },
   mainFocus: [
-    "Our research centers on reducing tobacco - related cancer risk and improving preventive care access for vulnerable communities. We focus on modifiable health behaviors - such as smoking cessation and cervical cancer screening—while addressing structural and psychosocial barriers that perpetuate health inequities",
+    "Our research centers on reducing tobacco - related cancer risk and improving preventive care access for vulnerable communities. We focus on modifiable health behaviors - such as smoking cessation and cervical cancer screening - while addressing structural and psychosocial barriers that perpetuate health inequities",
   ],
   whatWeDo: [
     "Develop and test interventions for smoking cessation and harm reduction.",
