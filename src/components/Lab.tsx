@@ -127,7 +127,7 @@ export function Lab() {
         <Team />
 
         {/* Join Us Section */}
-        <div className='mt-16 px-6 py-12 container mx-auto'>
+        <div className='mt-12 px-6 py-12 container mx-auto'>
           <div className='bg-foreground rounded-lg p-6 md:p-12 border border-sage-green/20'>
             <h3 className='mb-4 text-center text-foreground'>
               {joinUsData.title}
