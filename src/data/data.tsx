@@ -91,9 +91,7 @@ export const heroData: HeroData = {
   name: "Munjireen Sifat, PhD, MPH",
   badge: "Assistant Professor",
   title: "Assistant Professor & Assistant Director of Community Outreach",
-  bio: `I am an Assistant Professor at Thomas Jefferson University, affiliated with Sidney Kimmel Medical College, where my research focuses on health equity, addressing modifiable health behaviors and mental health disparities in underserved populations. My work emphasizes cancer prevention, particularly tobacco-related cancers and HPV self-sampling for cervical cancer screening.
-  
-  As Assistant Director of Community Outreach and Engagement at the Sidney Kimmel Comprehensive Cancer Center, I have developed strong community partnerships that enabled a pilot study establishing the workflow for our current HPV self-sampling initiative. This formative research, supported by Sidney Kimmel Medical College's Dean's Jump Start Pilot Award, explores how to overcome barriers to cervical cancer screening by offering HPV self-sampling in diverse community settings. My work addresses the behavioral, psychosocial, and structural factors influencing health behaviors in vulnerable populations.`,
+  bio: `I am an Assistant Professor at Thomas Jefferson University, affiliated with Sidney Kimmel Medical College, where my research focuses on health equity, addressing modifiable health behaviors and mental health disparities in underserved populations. My work emphasizes cancer prevention, particularly tobacco-related cancers and HPV self-sampling for cervical cancer screening.`,
   image: heroImage, // Absolute path was used
   expertiseTags: [
     "Health Equity",
@@ -1340,7 +1338,7 @@ export const footerData = {
 export const joinUsData = {
   title: "Join Us",
   description:
-    "We are always looking for passionate researchers to join our multidisciplinary team. Whether you're a prospective graduate student, postdoctoral fellow, or visiting scholar, we welcome dedicated individuals who share our commitment to advancing computational biology and precision medicine.",
+    "We are always looking for passionate researchers to join our multidisciplinary team. Whether you're a prospective graduate student, postdoctoral fellow, or visiting scholar, we welcome dedicated individuals who share our commitment to advancing health equity.",
   howToApply:
     "Please send your CV, research statement, and names of 2-3 references to munjireen.sifat@jefferson.edu with the subject line 'SIFAT Lab Application - [Position]'.",
 };
