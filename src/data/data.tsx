@@ -232,24 +232,6 @@ export const teachingExperience: TeachingCourse[] = [
   // TODO: Add additional current Jefferson courses if applicable
 ];
 
-// ============================================================
-// TODO: Add Leadership Data
-export const leadershipData = {
-  description:
-    "I am passionate about fostering the next generation of computational biologists through hands-on mentorship and collaborative research environments. I currently mentor 12 graduate students and 4 postdoctoral fellows, emphasizing both technical excellence and scientific integrity.",
-  stats: [
-    "12 Graduate Students Currently Mentored",
-    "4 Active Postdoctoral Fellows",
-    "Editorial Board Member, 3 Journals",
-    "Program Committee, Major Conferences",
-  ],
-  badges: [
-    "Student Mentorship",
-    "Diversity & Inclusion",
-    "Scientific Leadership",
-    "Community Building",
-  ],
-};
 
 // ============================================================
 // TEAM SECTION DATA
@@ -332,7 +314,7 @@ export const chenLabData = {
     stats: ["12 Researchers", "Est. 2019", "Jefferson University"],
   },
   mainFocus: [
-    "Our research centers on reducing tobacco - related cancer risk and improving preventive care access for vulnerable communities. We focus on modifiable health behaviors - such as smoking cessation and cervical cancer screening—while addressing structural and psychosocial barriers that perpetuate health inequities.",
+    "Our research centers on reducing tobacco - related cancer risk and improving preventive care access for vulnerable communities. We focus on modifiable health behaviors - such as smoking cessation and cervical cancer screening—while addressing structural and psychosocial barriers that perpetuate health inequities",
   ],
   whatWeDo: [
     "Develop and test interventions for smoking cessation and harm reduction.",
@@ -401,7 +383,7 @@ export const jeffersonProjects: JeffersonProject[] = [
       "Comprehensive assessment of social determinants of health workflows and infrastructure within Philadelphia healthcare systems.",
     detailedDescription:
       "This project involves conducting Health System Assessments (HSAs) to examine Social Determinants of Health workflows and infrastructure within a Philadelphia healthcare system. An action plan with a decision matrix is being developed to enhance SDOH screening, resource referral, and community collaboration. The project includes creating a community collaborative to assess cancer-related SDOH priorities, available resources, and identify gaps, culminating in an Action Plan for staff education, goal-setting, and interventions.",
-    status: "Active",
+    status: "Completed",
     tags: [
       "Health Equity",
       "SDOH",
