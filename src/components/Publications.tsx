@@ -190,7 +190,7 @@ export function Publications() {
             <AccordionContent className='px-6 pb-6'>
               <div className='space-y-4'>
                 <p className='text-foreground mb-4 leading-relaxed'>
-                  Covering topics related to public health and health equity.
+                  Additional topics related to public health and health equity.
                 </p>
                 <h4 className='text-sm text-muted-foreground mb-3'>
                   Selected Publications ({otherPublications.length} total)
