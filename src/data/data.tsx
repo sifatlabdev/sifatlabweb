@@ -91,7 +91,7 @@ export const heroData: HeroData = {
   name: "Munjireen Sifat, PhD, MPH",
   badge: "Assistant Professor",
   title: "Assistant Professor & Assistant Director of Community Outreach",
-  bio: `I am an Assistant Professor at Thomas Jefferson University, affiliated with Sidney Kimmel Medical College, where my research focuses on health equity, addressing modifiable health behaviors and mental health disparities in underserved populations. My work emphasizes cancer prevention, particularly tobacco-related cancers and HPV self-sampling for cervical cancer screening.`,
+  bio: `I am an Assistant Professor at Thomas Jefferson University, affiliated with Sidney Kimmel Medical College, where my research focuses on health equity, addressing modifiable health behaviors and mental health disparities in underserved populations. My work emphasizes cancer prevention, particularly tobacco-related cancers and early detection of cancer.`,
   image: heroImage, // Absolute path was used
   expertiseTags: [
     "Health Equity",
@@ -232,7 +232,6 @@ export const teachingExperience: TeachingCourse[] = [
   // TODO: Add additional current Jefferson courses if applicable
 ];
 
-
 // ============================================================
 // TEAM SECTION DATA
 // ============================================================
@@ -334,9 +333,9 @@ export const jeffersonProjects: JeffersonProject[] = [
     title:
       "Project E-Shift: A Harm Reduction Intervention for Chronically Unhoused Adults Who Smoke",
     description:
-      "Examining the feasibility of e-cigarette switching and financial incentives to promote smoking cessation among adults experiencing chronic homelessness.",
+      "Examining the feasibility of switching exclusively from combustible cigarettes (CC) to an FDA-authorized electronic cigarette (EC) and financial incentives to promote smoking cessation among adults with a history of homelessness.",
     detailedDescription:
-      "This study examines the feasibility of electronic cigarette (EC) switching and financial incentives contingent on combustible cigarette (CC) abstinence to promote CC cessation among adults experiencing chronic homelessness (N=40). Participants accessing services from Project HOME/Pathways to Housing are randomly assigned to either standard care (counseling and nicotine replacement therapy) or EC switching with small financial incentives for carbon monoxide verified CC abstinence plus counseling. The study addresses significant tobacco-related health disparities in this underserved population.",
+      "This study examines the feasibility of switching exclusively from combustible cigarettes (CC) to an FDA-authorized electronic cigarette (EC) and financial incentives contingent on CC abstinence to promote CC cessation among adults with a history of homelessness and are now in Housing First programs (N=40). Participants accessing services from Project HOME/Pathways to Housing are randomly assigned to either standard care (counseling and nicotine replacement therapy) or EC switching with small financial incentives for carbon monoxide-verified CC abstinence plus counseling. The study addresses significant tobacco-related health disparities in a population for whom standard cessation practices have not historically led to long-term cessation of combustible cigarettes.",
     status: "Active",
     tags: [
       "Tobacco Cessation",
