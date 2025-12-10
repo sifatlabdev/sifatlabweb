@@ -34,7 +34,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
             <div className="flex flex-wrap gap-2">
               {publication.category && (
                 <Badge 
-                  className="bg-sage-green text-white border-0 text-xs"
+                  className="bg-sage-green text-white border-0 text-xs whitespace-normal break-words max-w-full shrink"
                 >
                   {publication.category}
                 </Badge>
@@ -42,7 +42,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
               {publication.subcategory && (
                 <Badge 
                   variant="outline" 
-                  className="border-beige-dark text-sage-green text-xs"
+                  className="border-beige-dark text-sage-green text-xs whitespace-normal break-words max-w-full shrink"
                 >
                   {publication.subcategory}
                 </Badge>
@@ -50,7 +50,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
             </div>
           </div>
         )}
-        <CardTitle className='text-base cursor-pointer hover:text-primary transition-colors'>
+        <CardTitle className='text-base cursor-pointer hover:text-primary transition-colors whitespace-normal break-words'>
           {publication.doi && publication.doi !== "N/A" ? (
             <Link
               to={publication.doi}
@@ -64,7 +64,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
           )}
         </CardTitle>
         <CardDescription className='text-sm mt-2'>
-          <span className='text-sage-green'>{publication.authors}</span>
+          <span className='text-sage-green whitespace-normal break-words'>{publication.authors}</span>
         </CardDescription>
         <div className='flex flex-wrap items-center gap-3 text-sm text-muted-foreground mt-2'>
           <span className='text-primary'>{publication.journal}</span>
@@ -75,14 +75,14 @@ function PublicationCard({ publication }: { publication: Publication }) {
         <div className='flex flex-wrap gap-2 text-xs text-muted-foreground'>
           {publication.doi && publication.doi !== "N/A" && (
             <>
-              <span className='hover:text-sage-green cursor-pointer transition-colors'>
+              <span className='hover:text-sage-green cursor-pointer transition-colors break-all max-w-full whitespace-normal'>
                 DOI: {publication.doi}
               </span>
               {publication.pmid && <span>•</span>}
             </>
           )}
           {publication.pmid && (
-            <span className='hover:text-sage-green cursor-pointer transition-colors'>
+            <span className='hover:text-sage-green cursor-pointer transition-colors break-words whitespace-normal'>
               PMID: {publication.pmid}
             </span>
           )}

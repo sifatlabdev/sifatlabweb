@@ -1306,21 +1306,21 @@ export const citations: Publication[] = [
     subcategory:"Refugee & Migrant Health"
   },
   {
-    title:"College Students\u2019 Coping, Resilience, Well-Being, Academic Experiences, and Help-Seeking Attitudes During COVID-19. The Counseling Psychologist, 52(8), 1239-1278",
+    title:"College Students\u2019 Coping, Resilience, Well-Being, Academic Experiences, and Help-Seeking Attitudes During COVID-19. ",
     authors:"Wang, Y. W., Abebe, I., Cruz, T. E., Ar\u00e9valo Avalos, M. R., Sifat, M., Abdelwahab, S., & Li, T. (2024). ",
-    journal:"",
+    journal:"The Counseling Psychologist, 52(8), 1239-1278",
     year:'2024',
     doi:"",
     category:"Behavioral & Mental Health",
     subcategory: ''
   },
   {
-    title:"Addictive Behaviors Reports Journal",
-    authors:"Ogunsanya ME, Frank-Pearce S, Chen S, Sifat M, Cohn AM, Businelle MS, Kendzor DE. (2024). The influence of sociodemographic, tobacco use, and mental health characteristics on treatment adherence among adults enrolled in a community-based tobacco cessation program",
-    journal:"",
+    title: 'The influence of sociodemographic, tobacco use, and mental health characteristics on treatment adherence among adults enrolled in a community-based tobacco cessation program',
+    authors:"Ogunsanya ME, Frank-Pearce S, Chen S, Sifat M, Cohn AM, Businelle MS, Kendzor DE. (2024). ",
+    journal:"Addictive Behaviors Reports Journal",
     year:'2024',
     doi:"",
-    category:"Cancer Prevention & Control, Health Equity & Social Determinants of Health, Digital & Mobile Health Interventions, Behavioral & Mental Health, Access to Care & Service Navigation",
+    category:"Cancer Prevention & Control, Health Equity & Social Determinants of Health, Digital & Mobile Health Interventions",
     subcategory:"Tobacco Control & Harm Reduction"
   },
   {
@@ -1378,9 +1378,9 @@ export const citations: Publication[] = [
     subcategory:"Faith & Cultural Contexts in Health"
   },
   {
-    title:"",
-    authors:"Sifat, M. S., Kuo, C., Yoo, J. H., Holder, S., & Green, K. M. (2023). Associations Between Family Factors, Social Integration, and Suicidal Ideation Across the Life Course of an Urban African American Cohort. Journal of Black Psychology, 49(3), 404-429",
-    journal:"",
+    title:"Associations Between Family Factors, Social Integration, and Suicidal Ideation Across the Life Course of an Urban African American Cohort. ",
+    authors:"Sifat, M. S., Kuo, C., Yoo, J. H., Holder, S., & Green, K. M. (2023). ",
+    journal:"Journal of Black Psychology, 49(3), 404-429",
     year:'2023',
     doi:"",
     category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
@@ -1396,7 +1396,7 @@ export const citations: Publication[] = [
     subcategory:"Tobacco Control & Harm Reduction, Implementation Science & Systems Change"
   },
   {
-    title:"(2023) Impacts Of Census Categories On Muslim American Health",
+    title:"Impacts Of Census Categories On Muslim American Health",
     authors:"Rania Awaad, Neshwa B. Rajeh, Kubra Cabuk, Munjireen Sifat, Ali Raza Khan",
     journal:"Health Affairs Forefront",
     year:'2023',
@@ -1432,9 +1432,9 @@ export const citations: Publication[] = [
     subcategory: ''
   },
   {
-    title:"International Journal of Environmental Research and Public Health",
-    authors:"Sifat M, Huq M, Baig M, Tasnim N, Green K. An Examination of Barriers to Accessing Mental Health Care, and Their Association with Depression, Stress, Suicidal Ideation, and Wellness in a Bangladeshi University Student Sample",
-    journal:"2023; 20(2):904",
+    title:"An Examination of Barriers to Accessing Mental Health Care, and Their Association with Depression, Stress, Suicidal Ideation, and Wellness in a Bangladeshi University Student Sample",
+    authors:"Sifat M, Huq M, Baig M, Tasnim N, Green K. ",
+    journal:"International Journal of Environmental Research and Public Health 2023; 20(2):904",
     year:'2023',
     doi:"https:\/\/doi.org\/10.3390\/ijerph20020904",
     category:"Behavioral & Mental Health, Access to Care & Service Navigation",
@@ -1468,8 +1468,8 @@ export const citations: Publication[] = [
     subcategory:''
   },
   {
-    title:"",
-    authors:"Boozary, L.K., Frank-Pearce, S. G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J.C., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S., Kendzor, D.E. (2022). Tobacco use characteristics, treatment preferences, and motivation to quit among adults accessing an urban day shelter in Oklahoma City. Drug and Alcohol Dependence Reports",
+    title:"Tobacco use characteristics, treatment preferences, and motivation to quit among adults accessing a day shelter in Oklahoma City",
+    authors:"Boozary, L.K., Frank-Pearce, S. G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J.C., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S., Kendzor, D.E. (2022). ",
     journal:"",
     year:'2022',
     doi:"https:\/\/doi.org\/10.1016\/j.dadr.2022.100117",
@@ -1477,17 +1477,17 @@ export const citations: Publication[] = [
     subcategory:"Tobacco Control & Harm Reduction"
   },
   {
-    title:"The American Journal on Addictions",
-    authors:"Ehlke, S. J., Kendzor, D. E., Smith, M. A., Sifat, M. S., Boozary, L. K., & Cohn, A. M. (2022). Single-use, co-use, and polysubstance use of alcohol, tobacco, and cannabis in sexual minority and heterosexual females",
-    journal:"",
+    title:"Single-use, co-use, and polysubstance use of alcohol, tobacco, and cannabis in sexual minority and heterosexual females",
+    authors:"Ehlke, S. J., Kendzor, D. E., Smith, M. A., Sifat, M. S., Boozary, L. K., & Cohn, A. M. (2022). ",
+    journal:"The American Journal on Addictions",
     year:'2022',
     doi:"https:\/\/doi.org\/10.1111\/ajad.13344",
     category:"Cancer Prevention & Control, Behavioral & Mental Health",
     subcategory:"Tobacco Control & Harm Reduction"
   },
   {
-    title:"",
-    authors:"Holder, S., Sifat, M., Green, K. (2022) The Role of Adolescent Anxious Mood, Marijuana Use, and Locus of Control in the School to Prison Pipeline. Education and Urban Society",
+    title:"The Role of Adolescent Anxious Mood, Marijuana Use, and Locus of Control in the School to Prison Pipeline. Education and Urban Society",
+    authors:"Holder, S., Sifat, M., Green, K. (2022) ",
     journal:"",
     year: '2022',
     doi:"https:\/\/doi.org\/10.1177\/00131245221124871",
@@ -1522,8 +1522,8 @@ export const citations: Publication[] = [
     subcategory:"Faith & Cultural Contexts in Health"
   },
   {
-    title:"Global Mental Health",
-    authors:"Munjireen Sifat, N Tasnim, N Hoque, S Saperstein, K Stoebenau, R Shin, R Feldman, K Green. (2022).Motivations and Barriers for Clinical Mental Health Help-Seeking in Bangladeshi University Students, A Cross-Sectional Study",
+    title:"Motivations and Barriers for Clinical Mental Health Help-Seeking in Bangladeshi University Students, A Cross-Sectional Study",
+    authors:"Munjireen Sifat, N Tasnim, N Hoque, S Saperstein, K Stoebenau, R Shin, R Feldman, K Green. (2022).",
     journal:"",
     year:'2022',
     doi:"",
@@ -1549,9 +1549,9 @@ export const citations: Publication[] = [
     subcategory: ''
   },
   {
-    title:"Harvard Public Health Review",
-    authors:"Irfan A, Sifat M, Brown Z. (2020). Misinformation, health equity, news media: application of critical race theory (CRT) to examine news media\u2019s role in normalizing religious bigotry",
-    journal:"",
+    title:"Misinformation, health equity, news media: application of critical race theory (CRT) to examine news media\u2019s role in normalizing religious bigotry",
+    authors:"Irfan A, Sifat M, Brown Z. (2020). ",
+    journal:"Harvard Public Health Review",
     year:'2020',
     doi:"https:\/\/harvardpublichealthreview.org\/misinformation_racism\/",
     category:"Health Equity & Social Determinants of Health",
