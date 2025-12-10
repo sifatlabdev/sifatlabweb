@@ -12,9 +12,10 @@ export interface Publication {
   authors: string;
   journal: string;
   year: string;
-  citations: number;
   doi: string;
-  pmid: string;
+  pmid?: string;
+  category?: string;
+  subcategory?: string;
 }
 
 export interface ContributionToScience {
@@ -352,7 +353,7 @@ export const jeffersonProjects: JeffersonProject[] = [
           "Sifat, M., Alexander, A. C., Businelle, M. S., Frank-Pearce, S. G., Boozary, L. K., Wagener, T. L., Ahluwalia, J. S., & Kendzor, D. E.",
         journal: "Drug Abuse and Dependence Reports",
         year: "2024",
-        citations: 0,
+        
         doi: "https://doi.org/10.1016/j.dadr.2024.100XXX",
         pmid: "N/A",
       },
@@ -415,7 +416,7 @@ export const jeffersonProjects: JeffersonProject[] = [
           "Sifat, M. S., Hébert, E. T., Ahluwalia, J. S., Businelle, M. S., Waring, J. J. C., Frank-Pearce, S. G., Bryer, C., Benson, L., Madison, S., Planas, L. G., Baranskaya, I., & Kendzor, D. E.",
         journal: "JMIR Formative Research",
         year: "2023",
-        citations: 0,
+        
         doi: "https://doi.org/10.2196/48857",
         pmid: "37889541",
       },
@@ -470,7 +471,7 @@ export const contributions: ContributionToScience[] = [
           "Sifat, M., Alexander, A. C., Businelle, M. S., Frank-Pearce, S. G., Boozary, L. K., Wagener, T. L., Ahluwalia, J. S., & Kendzor, D. E.",
         journal: "Drug Abuse and Dependence Reports",
         year: "2024",
-        citations: 0,
+        
         doi: "https://doi.org/10.1016/j.dadr.2024.100XXX",
         pmid: "N/A",
       },
@@ -481,7 +482,7 @@ export const contributions: ContributionToScience[] = [
           "Kendzor, D. E., Frank-Pearce, S. G., Waring, J. J. C., Chen, S., Hebert, E. T., Swartz, M. D., Alexander, A. C., Sifat, M. S., Boozary, L. K., & Wetter, D. W.",
         journal: "JAMA Network Open",
         year: "2024",
-        citations: 0,
+        
         doi: "https://doi.org/10.1001/jamanetworkopen.2024",
         pmid: "N/A",
       },
@@ -492,7 +493,7 @@ export const contributions: ContributionToScience[] = [
           "Sifat, M. S., Hébert, E. T., Ahluwalia, J. S., Businelle, M. S., Waring, J. J. C., Frank-Pearce, S. G., Bryer, C., Benson, L., Madison, S., Planas, L. G., Baranskaya, I., & Kendzor, D. E.",
         journal: "JMIR Formative Research",
         year: "2023",
-        citations: 0,
+        
         doi: "https://doi.org/10.2196/48857",
         pmid: "37889541",
       },
@@ -503,7 +504,7 @@ export const contributions: ContributionToScience[] = [
           "Ogunsanya, M.E., Frank-Pearce, S.G., Chen, S., Sifat, M., Cohn, A.M., Businelle, M.S. and Kendzor, D.E.",
         journal: "Addictive Behaviors Reports",
         year: "2024",
-        citations: 0,
+        
         doi: "https://doi.org/10.1016/j.abrep.2024.100568",
         pmid: "N/A",
       },
@@ -527,7 +528,7 @@ export const contributions: ContributionToScience[] = [
         authors: "Bekteshi, V., Sifat, M., & Kendzor, D. E.",
         journal: "International Journal for Equity in Health",
         year: "2024",
-        citations: 0,
+        
         doi: "N/A",
         pmid: "N/A",
       },
@@ -538,7 +539,7 @@ export const contributions: ContributionToScience[] = [
           "Boozary, L.K., Frank-Pearce, S.G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S. and Kendzor, D.E.",
         journal: "Drug and Alcohol Dependence Reports",
         year: "2022",
-        citations: 0,
+        
         doi: "https://doi.org/10.1016/j.dadr.2022.100117",
         pmid: "N/A",
       },
@@ -549,7 +550,7 @@ export const contributions: ContributionToScience[] = [
           "Sifat, M.S., Ehlke, S.J., Ogunsanya, M., Frank-Pearce, S.G., Boozary, L.K., Alexander, A.C., Businelle, M.S. and Kendzor, D.E.",
         journal: "Journal of Racial and Ethnic Health Disparities",
         year: "2024",
-        citations: 0,
+        
         doi: "https://doi.org/10.1007/s40615-022-01496-z",
         pmid: "N/A",
       },
@@ -574,7 +575,7 @@ export const contributions: ContributionToScience[] = [
           "Sifat, M.S., Kenney, S., Bekteshi, V., Chiang, S.C., Ogunsanya, M., Boozary, L.K., Alexander, A.C. and Kendzor, D.E.",
         journal: "Journal of Migration and Health",
         year: "2024",
-        citations: 0,
+        
         doi: "https://doi.org/10.1016/j.jmh.2024.100282",
         pmid: "N/A",
       },
@@ -585,7 +586,7 @@ export const contributions: ContributionToScience[] = [
         journal:
           "International Journal of Environmental Research and Public Health",
         year: "2023",
-        citations: 0,
+        
         doi: "https://doi.org/10.3390/ijerph20020904",
         pmid: "36673660",
       },
@@ -596,7 +597,7 @@ export const contributions: ContributionToScience[] = [
           "Sifat M, Tasnim N, Hoque N, Saperstein S, Stoebenau K, Shin R, Feldman R, Green K.",
         journal: "Global Mental Health",
         year: "2022",
-        citations: 0,
+        
         doi: "N/A",
         pmid: "N/A",
       },
@@ -607,7 +608,7 @@ export const contributions: ContributionToScience[] = [
           "Sifat, M. S., Kuo, C., Yoo, J. H., Holder, S., & Green, K. M.",
         journal: "Journal of Black Psychology",
         year: "2023",
-        citations: 0,
+        
         doi: "https://doi.org/10.1177/00957984221150062",
         pmid: "N/A",
       },
@@ -632,7 +633,7 @@ export const contributions: ContributionToScience[] = [
           "Sifat M, Hébert ET, Ahluwalia JS, Businelle MS, Waring JJC, Frank-Pearce SG, Bryer C, Benson L, Madison S, Planas LG, Baranskaya I, Kendzor DE.",
         journal: "JMIR Formative Research",
         year: "2023",
-        citations: 0,
+        
         doi: "https://doi.org/10.2196/48857",
         pmid: "37889541",
       },
@@ -642,7 +643,7 @@ export const contributions: ContributionToScience[] = [
         authors: "Sifat M, Tasnim N, Saperstein S, Green K.",
         journal: "JMIR Formative Research",
         year: "2022",
-        citations: 0,
+        
         doi: "https://doi.org/10.2196/34901",
         pmid: "35254267",
       },
@@ -653,7 +654,7 @@ export const contributions: ContributionToScience[] = [
         journal:
           "International Journal of Qualitative Studies on Health and Well-being",
         year: "2022",
-        citations: 0,
+        
         doi: "https://doi.org/10.1080/17482631.2022.2113015",
         pmid: "N/A",
       },
@@ -669,7 +670,7 @@ export const otherPublications: Publication[] = [
     authors: "Song, Y., Sifat, M., Phan, L. et al.",
     journal: "Journal of Racial and Ethnic Health Disparities",
     year: "2025",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s40615-025-02565-9",
     pmid: "N/A",
   },
@@ -679,7 +680,7 @@ export const otherPublications: Publication[] = [
     authors: "Kuo, C., Ahn, L. H., Sifat, M., & Green, K. M.",
     journal: "Cultural Diversity & Ethnic Minority Psychology",
     year: "2025",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1037/cdp0000759",
     pmid: "N/A",
   },
@@ -692,7 +693,7 @@ export const otherPublications: Publication[] = [
       "Wang, Y. W., Abebe, I., Cruz, T. E., Arévalo Avalos, M. R., Sifat, M., Abdelwahab, S., & Li, T.",
     journal: "The Counseling Psychologist",
     year: "2024",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/00110000241234567",
     pmid: "N/A",
   },
@@ -703,7 +704,7 @@ export const otherPublications: Publication[] = [
       "Kendzor, D. E., Davie, M., Chen, M., Hart, J., Frank-Pearce, S. G., Doescher, M. P., Alexander, A. C., Businelle, M. S., Ogunsanya, M. E., Sifat, M. S., Boozary, L. K.",
     journal: "American Journal of Preventive Medicine",
     year: "2024",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "N/A",
     pmid: "N/A",
   },
@@ -714,7 +715,7 @@ export const otherPublications: Publication[] = [
       "Awaad, Rania, Mona Midani, Tasmeer Ali, Munjireen S. Sifat, and Mawdah Albatnuni.",
     journal: "Journal of Religion and Health",
     year: "2024",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "N/A",
     pmid: "N/A",
   },
@@ -725,7 +726,7 @@ export const otherPublications: Publication[] = [
       "Awaad, Rania, Zuha Durrani, Yasmeen Quadri, Munjireen S. Sifat, Anwar Hussein, Taimur Kouser, Osama El-Gabalawy, Neshwa Rajeh, and Sana Shareef.",
     journal: "Journal of Religion and Health",
     year: "2024",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "N/A",
     pmid: "N/A",
   },
@@ -736,7 +737,7 @@ export const otherPublications: Publication[] = [
       "Awaad, R., Quadri, Y., Sifat, M., Elzamzamy, K., Suleiman, K., Rehman, O., Husain, A., Abdelrehim, A., Rushdi, R., Belanger, C.C. and Hill, T.D.",
     journal: "Journal of Religion and Health",
     year: "2024",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "N/A",
     pmid: "N/A",
   },
@@ -748,7 +749,7 @@ export const otherPublications: Publication[] = [
       "Awaad, Rania, Neshwa B. Rajeh, Kubra Cabuk, Munjireen Sifat, Ali Raza Khan.",
     journal: "Health Affairs Forefront",
     year: "2023",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1377/forefront.20230614.685636",
     pmid: "N/A",
   },
@@ -759,7 +760,7 @@ export const otherPublications: Publication[] = [
       "Abebe, Israel; Wang, Yu-Wei; O'Connor, Seini; Cruz, Tiana; Keum, Brian; Sifat, Munjireen.",
     journal: "Current Psychology",
     year: "2023",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "N/A",
     pmid: "N/A",
   },
@@ -770,7 +771,7 @@ export const otherPublications: Publication[] = [
       "Nolan, M., Waring, J.J., Noble, B., Bradley, D., Olurotimi, O., Fronheiser, J., Sifat, M., Boozary, L.K., McQuoid, J., Kendzor, D.E. and Alexander, A.C.",
     journal: "Journal of Racial and Ethnic Health Disparities",
     year: "2023",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s40615-023-01615-4",
     pmid: "N/A",
   },
@@ -780,7 +781,7 @@ export const otherPublications: Publication[] = [
       "Azizoddin, D.R., Cohn, A.M., Ulahannan, S.V., Henson, C.E., Alexander, A.C., Moore, K.N., Holman, L.L., Boozary, L.K., Sifat, M.S., and Kendzor, D.E.",
     journal: "Cancer",
     year: "2023",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1002/cncr.34922",
     pmid: "N/A",
   },
@@ -791,7 +792,7 @@ export const otherPublications: Publication[] = [
       "Ogunsanya, M. E., Sifat, M., Bamidele, O. O., Ezenwankwo, E. F., Clifton, S., Ton, C., Knight, J. M., Odedina, F. T., Greer, J. A., Dwyer, K., & Kendzor, D. E.",
     journal: "Journal of Cancer Survivorship",
     year: "2023",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s11764-022-01328-3",
     pmid: "N/A",
   },
@@ -804,7 +805,7 @@ export const otherPublications: Publication[] = [
       "Falb, K. L., Blackwell, A., Hategekimana, J. de D., Sifat, M., Roth, D., & O'Connor, M.",
     journal: "Violence Against Women",
     year: "2022",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/10778012221145302",
     pmid: "N/A",
   },
@@ -815,7 +816,7 @@ export const otherPublications: Publication[] = [
       "Ehlke, S. J., Kendzor, D. E., Smith, M. A., Sifat, M. S., Boozary, L. K., & Cohn, A. M.",
     journal: "The American Journal on Addictions",
     year: "2022",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1111/ajad.13344",
     pmid: "N/A",
   },
@@ -825,7 +826,7 @@ export const otherPublications: Publication[] = [
     authors: "Holder, S., Sifat, M., Green, K.",
     journal: "Education and Urban Society",
     year: "2022",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/00131245221124871",
     pmid: "N/A",
   },
@@ -836,7 +837,7 @@ export const otherPublications: Publication[] = [
       "Brewer, K., Waring, J.J.C., Noble, B., Bradley, D., Olurotimi, O., Fronheiser, J., Sifat, M., Ehlke, S.J., Boozary, L.K., McQuoid, J., Kendzor, D. & Alexander, A.C.",
     journal: "Journal of Racial and Ethnic Health Disparities",
     year: "2022",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s40615-022-01383-7",
     pmid: "N/A",
   },
@@ -847,7 +848,7 @@ export const otherPublications: Publication[] = [
       "Alexander, A.C., Waring, J.J.C., Noble, B., Bradley, D. Olurotimi, O., Fronheiser, J., Sifat, M., Ehlke, S.J., Boozary, L.K., McQuoid, J., & Kendzor, D.E.",
     journal: "Journal of Racial and Ethnic Health Disparities",
     year: "2022",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s40615-022-01326-2",
     pmid: "N/A",
   },
@@ -859,7 +860,7 @@ export const otherPublications: Publication[] = [
     authors: "Sifat, M., Chiang, S., Irfan, A., Green, K.",
     journal: "Harvard Public Health Review",
     year: "2021",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "N/A",
     pmid: "N/A",
   },
@@ -869,7 +870,7 @@ export const otherPublications: Publication[] = [
     authors: "Irfan A, Sifat M, Brown Z.",
     journal: "Harvard Public Health Review",
     year: "2020",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "N/A",
     pmid: "N/A",
   },
@@ -880,7 +881,7 @@ export const otherPublications: Publication[] = [
       "Winston, G., Sifat, M., Phillips, E., Dietz, W., Wikner, E., Barrow, M., Khurana, K., & Charlson, M.",
     journal: "Health Education & Behavior",
     year: "2019",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/1090198119853005",
     pmid: "N/A",
   },
@@ -890,7 +891,7 @@ export const otherPublications: Publication[] = [
     authors: "Green, K. M., Doherty, E. E., Sifat, M. S., & Ensminger, M. E.",
     journal: "Drug and Alcohol Dependence",
     year: "2019",
-    citations: 0, // TODO: Update from Google Scholar
+     // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1016/j.drugalcdep.2018.09.033",
     pmid: "N/A",
   },
@@ -900,7 +901,7 @@ export const otherPublications: Publication[] = [
     authors: "Song, Y., Sifat, M., Phan, L. et al.",
     journal: "Journal of Racial and Ethnic Health Disparities",
     year: "2025",
-    citations: 0,
+    
     doi: "https://doi.org/10.1007/s40615-025-02565-9",
     pmid: "N/A",
   },
@@ -910,7 +911,7 @@ export const otherPublications: Publication[] = [
     authors: "Kuo, C., Ahn, L. H., Sifat, M., & Green, K. M.",
     journal: "Cultural Diversity & Ethnic Minority Psychology",
     year: "2025",
-    citations: 0,
+    
     doi: "https://doi.org/10.1037/cdp0000759",
     pmid: "N/A",
   },
@@ -923,7 +924,7 @@ export const otherPublications: Publication[] = [
       "Sifat, M, Alexander, A.C., Businelle, M.S., Frank-Pearce, S.G., Boozary, L.K., Wagener, T.L., Ahluwalia, J.S., and Kendzor, D.E.",
     journal: "Drug Abuse and Dependence Reports",
     year: "2024",
-    citations: 0,
+    
     doi: "https://doi.org/10.1016/j.dadr.2024.100XXX",
     pmid: "N/A",
   },
@@ -934,7 +935,7 @@ export const otherPublications: Publication[] = [
       "Sifat M, Kenney S, Chiang S, Boozary L, Ogusunya M, Alexander A, Kendzor D.",
     journal: "Journal of Migration and Health",
     year: "2024",
-    citations: 0,
+    
     doi: "https://doi.org/10.1016/j.jmh.2024.100282",
     pmid: "N/A",
   },
@@ -945,7 +946,7 @@ export const otherPublications: Publication[] = [
       "Wang, Y. W., Abebe, I., Cruz, T. E., Arévalo Avalos, M. R., Sifat, M., Abdelwahab, S., & Li, T.",
     journal: "The Counseling Psychologist",
     year: "2024",
-    citations: 0,
+    
     doi: "https://doi.org/10.1177/00110000241234567",
     pmid: "N/A",
   },
@@ -956,7 +957,7 @@ export const otherPublications: Publication[] = [
       "Ogunsanya ME, Frank-Pearce S, Chen S, Sifat M, Cohn AM, Businelle MS, Kendzor DE.",
     journal: "Addictive Behaviors Reports",
     year: "2024",
-    citations: 0,
+    
     doi: "https://doi.org/10.1016/j.abrep.2024.100568",
     pmid: "N/A",
   },
@@ -967,7 +968,7 @@ export const otherPublications: Publication[] = [
       "Kendzor, D. E., Davie, M., Chen, M., Hart, J., Frank-Pearce, S. G., Doescher, M. P., Alexander, A. C., Businelle, M. S., Ogunsanya, M. E., Sifat, M. S., Boozary, L. K.",
     journal: "American Journal of Preventive Medicine",
     year: "2024",
-    citations: 0,
+    
     doi: "N/A",
     pmid: "N/A",
   },
@@ -978,7 +979,7 @@ export const otherPublications: Publication[] = [
       "Kendzor, D. E., Frank-Pearce, S. G., Waring, J. J.C., Chen, S., Hebert, E. T., Swartz, M. D., Alexander, A. C., Sifat, M. S., Boozary, L. K., Wetter, D. W.",
     journal: "JAMA Network Open",
     year: "2024",
-    citations: 0,
+    
     doi: "https://doi.org/10.1001/jamanetworkopen.2024",
     pmid: "N/A",
   },
@@ -988,7 +989,7 @@ export const otherPublications: Publication[] = [
     authors: "Bekteshi, V., Sifat, M. and Kendzor, D.E.",
     journal: "International Journal for Equity in Health",
     year: "2024",
-    citations: 0,
+    
     doi: "N/A",
     pmid: "N/A",
   },
@@ -999,7 +1000,7 @@ export const otherPublications: Publication[] = [
       "Awaad, Rania, Mona Midani, Tasmeer Ali, Munjireen S. Sifat, and Mawdah Albatnuni.",
     journal: "Journal of Religion and Health",
     year: "2024",
-    citations: 0,
+    
     doi: "N/A",
     pmid: "N/A",
   },
@@ -1010,7 +1011,7 @@ export const otherPublications: Publication[] = [
       "Awaad, Rania, Zuha Durrani, Yasmeen Quadri, Munjireen S. Sifat, Anwar Hussein, Taimur Kouser, Osama El-Gabalawy, Neshwa Rajeh, and Sana Shareef.",
     journal: "Journal of Religion and Health",
     year: "2024",
-    citations: 0,
+    
     doi: "N/A",
     pmid: "N/A",
   },
@@ -1021,7 +1022,7 @@ export const otherPublications: Publication[] = [
       "Awaad, R., Quadri, Y., Sifat, M., Elzamzamy, K., Suleiman, K., Rehman, O., Husain, A., Abdelrehim, A., Rushdi, R., Belanger, C.C. and Hill, T.D.",
     journal: "Journal of Religion and Health",
     year: "2024",
-    citations: 0,
+    
     doi: "N/A",
     pmid: "N/A",
   },
@@ -1033,7 +1034,7 @@ export const otherPublications: Publication[] = [
     authors: "Sifat, M. S., Kuo, C., Yoo, J. H., Holder, S., & Green, K. M.",
     journal: "Journal of Black Psychology",
     year: "2023",
-    citations: 0,
+    
     doi: "https://doi.org/10.1177/00957984221150062",
     pmid: "N/A",
   },
@@ -1044,7 +1045,7 @@ export const otherPublications: Publication[] = [
       "Sifat M, Hébert ET, Ahluwalia JS, Businelle MS, Waring JJC, Frank-Pearce SG, Bryer C, Benson L, Madison S, Planas LG, Baranskaya I, Kendzor DE.",
     journal: "JMIR Formative Research",
     year: "2023",
-    citations: 0,
+    
     doi: "https://doi.org/10.2196/48857",
     pmid: "37889541",
   },
@@ -1054,7 +1055,7 @@ export const otherPublications: Publication[] = [
       "Awaad, Rania, Neshwa B. Rajeh, Kubra Cabuk, Munjireen Sifat, Ali Raza Khan.",
     journal: "Health Affairs Forefront",
     year: "2023",
-    citations: 0,
+    
     doi: "https://doi.org/10.1377/forefront.20230614.685636",
     pmid: "N/A",
   },
@@ -1065,7 +1066,7 @@ export const otherPublications: Publication[] = [
       "Abebe, Israel; Wang, Yu-Wei; O'Connor, Seini; Cruz, Tiana; Keum, Brian; Sifat, Munjireen.",
     journal: "Current Psychology",
     year: "2023",
-    citations: 0,
+    
     doi: "N/A",
     pmid: "N/A",
   },
@@ -1076,7 +1077,7 @@ export const otherPublications: Publication[] = [
       "Nolan, M., Waring, J.J., Noble, B., Bradley, D., Olurotimi, O., Fronheiser, J., Sifat, M., Boozary, L.K., McQuoid, J., Kendzor, D.E. and Alexander, A.C.",
     journal: "Journal of Racial and Ethnic Health Disparities",
     year: "2023",
-    citations: 0,
+    
     doi: "https://doi.org/10.1007/s40615-023-01615-4",
     pmid: "N/A",
   },
@@ -1086,7 +1087,7 @@ export const otherPublications: Publication[] = [
       "Azizoddin, D.R., Cohn, A.M., Ulahannan, S.V., Henson, C.E., Alexander, A.C., Moore, K.N., Holman, L.L., Boozary, L.K., Sifat, M.S., and Kendzor, D.E.",
     journal: "Cancer",
     year: "2023",
-    citations: 0,
+    
     doi: "https://doi.org/10.1002/cncr.34922",
     pmid: "N/A",
   },
@@ -1097,7 +1098,7 @@ export const otherPublications: Publication[] = [
     journal:
       "International Journal of Environmental Research and Public Health",
     year: "2023",
-    citations: 0,
+    
     doi: "https://doi.org/10.3390/ijerph20020904",
     pmid: "36673660",
   },
@@ -1108,7 +1109,7 @@ export const otherPublications: Publication[] = [
       "Sifat, M. S., Ehlke, S. J., Ogunsanya, M., Frank-Pearce, S. G., Boozary, L. K., Alexander, A. C., Businelle, M. S., & Kendzor, D. E.",
     journal: "Journal of Racial and Ethnic Health Disparities",
     year: "2023",
-    citations: 0,
+    
     doi: "https://doi.org/10.1007/s40615-022-01496-z",
     pmid: "N/A",
   },
@@ -1119,7 +1120,7 @@ export const otherPublications: Publication[] = [
       "Ogunsanya, M. E., Sifat, M., Bamidele, O. O., Ezenwankwo, E. F., Clifton, S., Ton, C., Knight, J. M., Odedina, F. T., Greer, J. A., Dwyer, K., & Kendzor, D. E.",
     journal: "Journal of Cancer Survivorship",
     year: "2023",
-    citations: 0,
+    
     doi: "https://doi.org/10.1007/s11764-022-01328-3",
     pmid: "N/A",
   },
@@ -1132,7 +1133,7 @@ export const otherPublications: Publication[] = [
       "Falb, K. L., Blackwell, A., Hategekimana, J. de D., Sifat, M., Roth, D., & O'Connor, M.",
     journal: "Violence Against Women",
     year: "2022",
-    citations: 0,
+    
     doi: "https://doi.org/10.1177/10778012221145302",
     pmid: "N/A",
   },
@@ -1143,7 +1144,7 @@ export const otherPublications: Publication[] = [
       "Boozary, L.K., Frank-Pearce, S. G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J.C., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S., Kendzor, D.E.",
     journal: "Drug and Alcohol Dependence Reports",
     year: "2022",
-    citations: 0,
+    
     doi: "https://doi.org/10.1016/j.dadr.2022.100117",
     pmid: "N/A",
   },
@@ -1154,7 +1155,7 @@ export const otherPublications: Publication[] = [
       "Ehlke, S. J., Kendzor, D. E., Smith, M. A., Sifat, M. S., Boozary, L. K., & Cohn, A. M.",
     journal: "The American Journal on Addictions",
     year: "2022",
-    citations: 0,
+    
     doi: "https://doi.org/10.1111/ajad.13344",
     pmid: "N/A",
   },
@@ -1164,7 +1165,7 @@ export const otherPublications: Publication[] = [
     authors: "Holder, S., Sifat, M., Green, K.",
     journal: "Education and Urban Society",
     year: "2022",
-    citations: 0,
+    
     doi: "https://doi.org/10.1177/00131245221124871",
     pmid: "N/A",
   },
@@ -1175,7 +1176,7 @@ export const otherPublications: Publication[] = [
     journal:
       "International Journal of Qualitative Studies on Health and Well-being",
     year: "2022",
-    citations: 0,
+    
     doi: "https://doi.org/10.1080/17482631.2022.2113015",
     pmid: "N/A",
   },
@@ -1186,7 +1187,7 @@ export const otherPublications: Publication[] = [
       "Brewer, K., Waring, J.J.C., Noble, B., Bradley, D., Olurotimi, O., Fronheiser, J., Sifat, M., Ehlke, S.J., Boozary, L.K., McQuoid, J., Kendzor, D. & Alexander, A.C.",
     journal: "Journal of Racial and Ethnic Health Disparities",
     year: "2022",
-    citations: 0,
+    
     doi: "https://doi.org/10.1007/s40615-022-01383-7",
     pmid: "N/A",
   },
@@ -1197,7 +1198,7 @@ export const otherPublications: Publication[] = [
       "Alexander, A.C., Waring, J.J.C., Noble, B., Bradley, D. Olurotimi, O., Fronheiser, J., Sifat, M., Ehlke, S.J., Boozary, L.K., McQuoid, J., & Kendzor, D.E.",
     journal: "Journal of Racial and Ethnic Health Disparities",
     year: "2022",
-    citations: 0,
+    
     doi: "https://doi.org/10.1007/s40615-022-01326-2",
     pmid: "N/A",
   },
@@ -1208,7 +1209,7 @@ export const otherPublications: Publication[] = [
       "Sifat, M., Tasnim, N., Hoque, N., Saperstein, S., Stoebenau, K., Shin, R., Feldman, R., Green, K.",
     journal: "Global Mental Health",
     year: "2022",
-    citations: 0,
+    
     doi: "N/A",
     pmid: "N/A",
   },
@@ -1218,7 +1219,7 @@ export const otherPublications: Publication[] = [
     authors: "Sifat MS, Saperstein SL, Tasnim N, Green KM.",
     journal: "JMIR Formative Research",
     year: "2022",
-    citations: 0,
+    
     doi: "https://doi.org/10.2196/34901",
     pmid: "35254267",
   },
@@ -1230,7 +1231,7 @@ export const otherPublications: Publication[] = [
     authors: "Sifat, M., Chiang, S., Irfan, A., Green, K.",
     journal: "Harvard Public Health Review",
     year: "2021",
-    citations: 0,
+    
     doi: "N/A",
     pmid: "N/A",
   },
@@ -1240,7 +1241,7 @@ export const otherPublications: Publication[] = [
     authors: "Irfan A, Sifat M, Brown Z.",
     journal: "Harvard Public Health Review",
     year: "2020",
-    citations: 0,
+    
     doi: "N/A",
     pmid: "N/A",
   },
@@ -1251,7 +1252,7 @@ export const otherPublications: Publication[] = [
       "Winston, G., Sifat, M., Phillips, E., Dietz, W., Wikner, E., Barrow, M., Khurana, K., & Charlson, M.",
     journal: "Health Education & Behavior",
     year: "2019",
-    citations: 0,
+    
     doi: "https://doi.org/10.1177/1090198119853005",
     pmid: "N/A",
   },
@@ -1261,10 +1262,319 @@ export const otherPublications: Publication[] = [
     authors: "Green, K. M., Doherty, E. E., Sifat, M. S., & Ensminger, M. E.",
     journal: "Drug and Alcohol Dependence",
     year: "2019",
-    citations: 0,
+    
     doi: "https://doi.org/10.1016/j.drugalcdep.2018.09.033",
     pmid: "N/A",
   },
+];
+
+export const citations: Publication[] = [
+  {
+    title:"Sociodemographic Correlates of Cancer-Related Beliefs Among Chinese Speaking Adults in Greater Philadelphia",
+    authors:"Song, Y., Sifat, M., Phan, L. et al",
+    journal:"J. Racial and Ethnic Health Disparities",
+    year:'2025',
+    doi:"https:\/\/doi.org\/10.1007\/s40615-025-02565-9",
+    category:"Cancer Prevention & Control, Health Equity & Social Determinants of Health",
+    subcategory:"Faith & Cultural Contexts in Health"
+  },
+  {
+    title:"Does parental racial socialization protect Black youth from the impact of racism on problematic substance use over the long term?\u00a0Cultural Diversity & Ethnic Minority Psychology",
+    authors:"Kuo, C., Ahn, L. H., Sifat, M., & Green, K. M.",
+    journal:"Advance online publication",
+    year:'2025',
+    doi:"https:\/\/doi.org\/10.1037\/cdp0000759",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory:"Faith & Cultural Contexts in Health"
+  },
+  {
+    title:"E-Cigarette Switching and Financial Incentives to Promote Combustible Cigarette Cessation Among Adults Accessing Shelter Services: a Pilot Study",
+    authors:"Sifat, M, Adam C. Alexander,Michael S. Businelle, Summer G. Frank-Pearce, Laili Kharazi Boozary, Theodore L. Wagener, Jasjit S. Ahluwalia, and Darla E. Kendzor",
+    journal:"Drug Abuse and Dependence Reports",
+    year: '',
+    doi:"",
+    category:"Cancer Prevention & Control, Health Equity & Social Determinants of Health, Access to Care & Service Navigation",
+    subcategory:"Tobacco Control & Harm Reduction, Implementation Science & Systems Change"
+  },
+  {
+    title:"The Association of Migration-Related Stress with Poor Mental Health Among Recently Resettled Afghan Refugees",
+    authors:"Sifat M, Kenney S, Chiang S, Boozary L, Ogusunya M, Alexander A, Kendzor D.",
+    journal:"Journal of Migration and Health",
+    year:'2024',
+    doi:"",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory:"Refugee & Migrant Health"
+  },
+  {
+    title:"",
+    authors:"Wang, Y. W., Abebe, I., Cruz, T. E., Ar\u00e9valo Avalos, M. R., Sifat, M., Abdelwahab, S., & Li, T. (2024). College Students\u2019 Coping, Resilience, Well-Being, Academic Experiences, and Help-Seeking Attitudes During COVID-19. The Counseling Psychologist, 52(8), 1239-1278",
+    journal:"",
+    year:'2024',
+    doi:"",
+    category:"Behavioral & Mental Health",
+    subcategory: ''
+  },
+  {
+    title:"Addictive Behaviors Reports Journal",
+    authors:"Ogunsanya ME, Frank-Pearce S, Chen S, Sifat M, Cohn AM, Businelle MS, Kendzor DE. (2024). The influence of sociodemographic, tobacco use, and mental health characteristics on treatment adherence among adults enrolled in a community-based tobacco cessation program",
+    journal:"",
+    year:'2024',
+    doi:"",
+    category:"Cancer Prevention & Control, Health Equity & Social Determinants of Health, Digital & Mobile Health Interventions, Behavioral & Mental Health, Access to Care & Service Navigation",
+    subcategory:"Tobacco Control & Harm Reduction"
+  },
+  {
+    title:"Incentivizing Tobacco Helpline Engagement in Persistent Poverty Counties: A Randomized Trial",
+    authors:"Kendzor, D. E., Davie, M., Chen, M., Hart, J., Frank-Pearce, S. G., Doescher, M. P., Alexander, A. C., Businelle, M. S., Ogunsanya, M. E., Sifat, M. S., Boozary, L. K.",
+    journal:"American Journal of Preventive Medicine",
+    year:'2024',
+    doi:"",
+    category:"Cancer Prevention & Control, Health Equity & Social Determinants of Health, Access to Care & Service Navigation",
+    subcategory:"Tobacco Control & Harm Reduction, Implementation Science & Systems Change"
+  },
+  {
+    title:"Small financial incentives for smoking cessation among socioeconomically disadvantaged adults: A randomized controlled trial",
+    authors:"Kendzor, D. E ., Frank-Pearce, S. G., Waring, J. J.C., Chen, S., Hebert, E. T., Swartz, M. D., Alexander, A. C., Sifat, M. S., Boozary, L. K., Wetter, D. W.",
+    journal:"JAMA Network Open",
+    year:'2024',
+    doi:"",
+    category:"Cancer Prevention & Control",
+    subcategory:"Tobacco Control & Harm Reduction, Implementation Science & Systems Change"
+  },
+  {
+    title:"Reaching the unheard: overcoming challenges in health research with hard-to-reach populations",
+    authors:"Bekteshi, V., Sifat, M. and Kendzor, D.E., 2024",
+    journal:"International Journal for Equity in Health, 23(1), p.61",
+    year:'2024',
+    doi:"",
+    category:"Health Equity & Social Determinants of Health",
+    subcategory: ''
+  },
+  {
+    title:"The development and implementation of a custom-tailored suicide response training for Muslim communities",
+    authors:"Awaad, Rania, Mona Midani, Tasmeer Ali, Munjireen S. Sifat, and Mawdah Albatnuni",
+    journal:"Journal of religion and health (2024): 1-13",
+    year:'2024',
+    doi:"",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory:"Faith & Cultural Contexts in Health, Implementation Science & Systems Change"
+  },
+  {
+    title:"Developing a suicide crisis response team in America: an Islamic perspective",
+    authors:"Awaad, Rania, Zuha Durrani, Yasmeen Quadri, Munjireen S. Sifat, Anwar Hussein, Taimur Kouser, Osama El-Gabalawy, Neshwa Rajeh, and Sana Shareef",
+    journal:"Journal of religion and health (2024): 1-17",
+    year:'2024',
+    doi:"",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory:"Faith & Cultural Contexts in Health"
+  },
+  {
+    title:"An exploratory qualitative analysis of the Stanford-Templeton convenings on Islam and suicide",
+    authors:"Awaad, R., Quadri, Y., Sifat, M., Elzamzamy, K., Suleiman, K., Rehman, O., Husain, A., Abdelrehim, A., Rushdi, R., Belanger, C.C. and Hill, T.D., 2024",
+    journal:"Journal of religion and health, pp.1-14",
+    year:'2024',
+    doi:"",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory:"Faith & Cultural Contexts in Health"
+  },
+  {
+    title:"",
+    authors:"Sifat, M. S., Kuo, C., Yoo, J. H., Holder, S., & Green, K. M. (2023). Associations Between Family Factors, Social Integration, and Suicidal Ideation Across the Life Course of an Urban African American Cohort. Journal of Black Psychology, 49(3), 404-429",
+    journal:"",
+    year:'2023',
+    doi:"",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory:"Faith & Cultural Contexts in Health, Implementation Science & Systems Change"
+  },
+  {
+    title:"Varenicline Combined With Oral Nicotine Replacement Therapy and Smartphone-Based Medication Reminders for Smoking Cessation: Feasibility Randomized Controlled Trial JMIR Form Res 2023;7:e48857",
+    authors:"Sifat M, H\u00e9bert ET, Ahluwalia JS, Businelle MS, Waring JJC, Frank-Pearce SG, Bryer C, Benson L, Madison S, Planas LG, Baranskaya I, Kendzor DE",
+    journal:"",
+    year:'2023',
+    doi:"",
+    category:"Cancer Prevention & Control, Digital & Mobile Health Interventions",
+    subcategory:"Tobacco Control & Harm Reduction, Implementation Science & Systems Change"
+  },
+  {
+    title:"(2023) Impacts Of Census Categories On Muslim American Health",
+    authors:"Rania Awaad, Neshwa B. Rajeh, Kubra Cabuk, Munjireen Sifat, Ali Raza Khan",
+    journal:"Health Affairs Forefront",
+    year:'2023',
+    doi:"https:\/\/doi.org\/10.1377\/forefront.20230614.685636",
+    category:"Health Equity & Social Determinants of Health",
+    subcategory:"Faith & Cultural Contexts in Health"
+  },
+  {
+    title:"Satisfaction with Online\/In-person Social Interactions and Psychological Well-being: The Mediating Role of Social Connectedness",
+    authors:"Abebe, Israel; Wang, Yu-Wei; O\u2019Connor, Seini; Cruz, Tiana; Keum, Brian; Sifat, Munjireen.",
+    journal:"Current Psychology",
+    year:'2023',
+    doi:"",
+    category:"Behavioral & Mental Health",
+    subcategory: ''
+  },
+  {
+    title:"The Association of Cultural Identification with Obesity among African Americans",
+    authors:"Nolan, M., Waring, J.J., Noble, B., Bradley, D., Olurotimi, O., Fronheiser, J., Sifat, M., Boozary, L.K., McQuoid, J., Kendzor, D.E. and Alexander, A.C., 2023",
+    journal:"Journal of Racial and Ethnic Health Disparities, pp.1-9",
+    year:'2023',
+    doi:"https:\/\/doi.org\/10.1007\/s40615-023-01615-4",
+    category:"Health Equity & Social Determinants of Health",
+    subcategory:"Faith & Cultural Contexts in Health"
+  },
+  {
+    title:"Cannabis Use Among Adults Undergoing Cancer Treatment",
+    authors:"Desiree R. Azizoddin, Amy M. Cohn, Susanna V. Ulahannan, Christina E. Henson, Adam C. Alexander, Kathleen N. Moore, Laura L. Holman, Laili Kharazi Boozary, Munjireen S. Sifat, and Darla E. Kendzor.",
+    journal:"Cancer",
+    year:'2023',
+    doi:"https:\/\/doi.org\/10.1002\/cncr.34922",
+    category:"Cancer Prevention & Control",
+    subcategory: ''
+  },
+  {
+    title:"International Journal of Environmental Research and Public Health",
+    authors:"Sifat M, Huq M, Baig M, Tasnim N, Green K. An Examination of Barriers to Accessing Mental Health Care, and Their Association with Depression, Stress, Suicidal Ideation, and Wellness in a Bangladeshi University Student Sample",
+    journal:"2023; 20(2):904",
+    year:'2023',
+    doi:"https:\/\/doi.org\/10.3390\/ijerph20020904",
+    category:"Behavioral & Mental Health, Access to Care & Service Navigation",
+    subcategory: ''
+  },
+  {
+    title:"Greater Discrimination Frequency and Lower Distress Tolerance Are Associated with Mental Health Problems Among Racially Privileged and Minoritized Adults Accessing an Urban Day Shelter",
+    authors:"Sifat, M. S., Ehlke, S. J., Ogunsanya, M., Frank-Pearce, S. G., Boozary, L. K., Alexander, A. C., Businelle, M. S., & Kendzor, D. E.",
+    journal:"Journal of racial and ethnic health disparities, 10.1007\/s40615-022-01496-z. Advance online publication",
+    year:'2023',
+    doi:"https:\/\/doi.org\/10.1007\/s40615-022-01496-z",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory: ''
+  },
+  {
+    title:"Mobile health (mHealth) interventions in prostate cancer survivorship: a scoping review",
+    authors:"Ogunsanya, M. E., Sifat, M., Bamidele, O. O., Ezenwankwo, E. F., Clifton, S., Ton, C., Knight, J. M., Odedina, F. T., Greer, J. A., Dwyer, K., & Kendzor, D. E.",
+    journal:"Journal of cancer survivorship : research and practice,",
+    year: '2023',
+    doi:"https:\/\/doi.org\/10.1007\/s11764-022-01328-3",
+    category:"Cancer Prevention & Control, Digital & Mobile Health Interventions",
+    subcategory: ''
+  },
+  {
+    title:"Co-Occurring Intimate Partner Violence and Child Abuse in Eastern Democratic Republic of Congo: The Influence of Early Life Experiences of Abuse",
+    authors:"Falb, K. L., Blackwell, A., Hategekimana, J. de D., Sifat, M., Roth, D., & O\u2019Connor, M.",
+    journal:"Violence Against Women, 0(0)",
+    year:'2022',
+    doi:"https:\/\/doi.org\/10.1177\/10778012221145302",
+    category:"Other Publications",
+    subcategory:''
+  },
+  {
+    title:"",
+    authors:"Boozary, L.K., Frank-Pearce, S. G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J.C., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S., Kendzor, D.E. (2022). Tobacco use characteristics, treatment preferences, and motivation to quit among adults accessing an urban day shelter in Oklahoma City. Drug and Alcohol Dependence Reports",
+    journal:"",
+    year:'2022',
+    doi:"https:\/\/doi.org\/10.1016\/j.dadr.2022.100117",
+    category:"Cancer Prevention & Control, Health Equity & Social Determinants of Health",
+    subcategory:"Tobacco Control & Harm Reduction"
+  },
+  {
+    title:"The American Journal on Addictions",
+    authors:"Ehlke, S. J., Kendzor, D. E., Smith, M. A., Sifat, M. S., Boozary, L. K., & Cohn, A. M. (2022). Single-use, co-use, and polysubstance use of alcohol, tobacco, and cannabis in sexual minority and heterosexual females",
+    journal:"",
+    year:'2022',
+    doi:"https:\/\/doi.org\/10.1111\/ajad.13344",
+    category:"Cancer Prevention & Control, Behavioral & Mental Health",
+    subcategory:"Tobacco Control & Harm Reduction"
+  },
+  {
+    title:"",
+    authors:"Holder, S., Sifat, M., Green, K. (2022) The Role of Adolescent Anxious Mood, Marijuana Use, and Locus of Control in the School to Prison Pipeline. Education and Urban Society",
+    journal:"",
+    year: '2022',
+    doi:"https:\/\/doi.org\/10.1177\/00131245221124871",
+    category:"Behavioral & Mental Health",
+    subcategory: ''
+  },
+  {
+    title:"A qualitative exploration of university student perspectives on mindfulness-based stress reduction exercises via smartphone app in Bangladesh International Journal of Qualitative Studies on Health and Well-being",
+    authors:"Munjireen S. Sifat, Naima Tasnim, Kirsten Stoebenau, Kerry M. Green.",
+    journal:"",
+    year:'2022',
+    doi:"https:\/\/doi.org\/10.1080\/17482631.2022.2113015",
+    category:"Digital & Mobile Health Interventions, Behavioral & Mental Health",
+    subcategory: ''
+  },
+  {
+    title:"Pandemic-related stress is associated with poor mental health outcomes among African Americans",
+    authors:"Khandis Brewer, Joseph J.C. Waring, Bishop Noble, David Bradley, Oluwakemi Olurotimi, Jack Fronheiser, Munjireen Sifat, Sarah J. Ehlke, Laili K. Boozary, Julia McQuoid, Darla Kendzor & Adam C. Alexander.",
+    journal:"Journal of Racial and Ethnic Health Disparities",
+    year:'2022',
+    doi:"https:\/\/doi.org\/10.1007\/s40615-022-01383-7",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory:"Faith & Cultural Contexts in Health"
+  },
+  {
+    title:"Perceptions of Mental Health and Exploring the Role of Social Activism Among African Americans Exposed to Media Coverage of Police Brutality and Protests",
+    authors:"Alexander, A.C., Waring, J.J.C., Noble, B., Bradley, D. Olurotimi, O., Fronheiser, J., Sifat, M., Ehlke, S.J., Boozary, L.K., McQuoid, J., & Kendzor, D.E.",
+    journal:"Journal of Racial and Ethnic Health Disparities",
+    year:'2022',
+    doi:"https:\/\/doi.org\/10.1007\/s40615-022-01326-2",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory:"Faith & Cultural Contexts in Health"
+  },
+  {
+    title:"Global Mental Health",
+    authors:"Munjireen Sifat, N Tasnim, N Hoque, S Saperstein, K Stoebenau, R Shin, R Feldman, K Green. (2022).Motivations and Barriers for Clinical Mental Health Help-Seeking in Bangladeshi University Students, A Cross-Sectional Study",
+    journal:"",
+    year:'2022',
+    doi:"",
+    category:"Behavioral & Mental Health, Access to Care & Service Navigation",
+    subcategory: ''
+  },
+  {
+    title:"Motivations Toward Using Digital Health and Exploring the Possibility of Using Digital Health for Mental Health in Bangladesh University Students: Cross-sectional Questionnaire Study",
+    authors:"Sifat MS, Saperstein SL, Tasnim N, Green KM.",
+    journal:"JMIR Form Res; 6(3):e34901. PMID: 35254267",
+    year:'2022',
+    doi:"https:\/\/doi.org\/10.2196\/34901",
+    category:"Digital & Mobile Health Interventions, Behavioral & Mental Health",
+    subcategory: ''
+  },
+  {
+    title:"Beyond Performative Activism- An Exploration of Motivators to Participate Social Media Activism Through the Lens of Self-Determination Theory",
+    authors:"M Sifat, S Chiang, A Irfan, K Green.",
+    journal:"Harvard Public Health Review",
+    year:'2021',
+    doi:"https:\/\/hphr.org\/53-article-sifat\/",
+    category:"Other Publications",
+    subcategory: ''
+  },
+  {
+    title:"Harvard Public Health Review",
+    authors:"Irfan A, Sifat M, Brown Z. (2020). Misinformation, health equity, news media: application of critical race theory (CRT) to examine news media\u2019s role in normalizing religious bigotry",
+    journal:"",
+    year:'2020',
+    doi:"https:\/\/harvardpublichealthreview.org\/misinformation_racism\/",
+    category:"Health Equity & Social Determinants of Health",
+    subcategory:"Faith & Cultural Contexts in Health"
+  },
+  {
+    title:"Engaging Children to Support Parental Weight Loss: A Randomized Trial",
+    authors:"Winston, G., Sifat, M., Phillips, E., Dietz, W., Wikner, E., Barrow, M., Khurana, K., & Charlson, M.",
+    journal:"Health education & behavior: 46(5), 755\u2013762",
+    year:'2019',
+    doi:"https:\/\/doi.org\/10.1177\/1090198119853005",
+    category:"Other Publications",
+    subcategory:"Implementation Science & Systems Change"
+  },
+  {
+    title:"Explaining continuity in substance use: The role of criminal justice system involvement over the life course of an urban African American prospective cohort",
+    authors:"Green, K. M., Doherty, E. E., Sifat, M. S., & Ensminger, M. E.",
+    journal:"Drug and alcohol dependence, 195, 74\u201381",
+    year:'2019',
+    doi:"https:\/\/doi.org\/10.1016\/j.drugalcdep.2018.09.033",
+    category:"Health Equity & Social Determinants of Health, Behavioral & Mental Health",
+    subcategory:"Faith & Cultural Contexts in Health, Implementation Science & Systems Change"
+  }
 ];
 
 // ============================================================================

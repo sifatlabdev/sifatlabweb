@@ -21,6 +21,7 @@ import {
   researchSectionData,
   contributions,
   otherPublications,
+  citations,
 } from "../data/data";
 import { Link } from "react-router-dom";
 
@@ -28,6 +29,27 @@ function PublicationCard({ publication }: { publication: Publication }) {
   return (
     <Card className='hover:shadow-md transition-all duration-200 border-l-2 border-l-sage-green'>
       <CardHeader className='pb-4'>
+        {(publication.category || publication.subcategory) && (
+          <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+            <div className="flex flex-wrap gap-2">
+              {publication.category && (
+                <Badge 
+                  className="bg-sage-green text-white border-0 text-xs"
+                >
+                  {publication.category}
+                </Badge>
+              )}
+              {publication.subcategory && (
+                <Badge 
+                  variant="outline" 
+                  className="border-beige-dark text-sage-green text-xs"
+                >
+                  {publication.subcategory}
+                </Badge>
+              )}
+            </div>
+          </div>
+        )}
         <CardTitle className='text-base cursor-pointer hover:text-primary transition-colors'>
           {publication.doi && publication.doi !== "N/A" ? (
             <Link
@@ -47,23 +69,23 @@ function PublicationCard({ publication }: { publication: Publication }) {
         <div className='flex flex-wrap items-center gap-3 text-sm text-muted-foreground mt-2'>
           <span className='text-primary'>{publication.journal}</span>
           <span>({publication.year})</span>
-          <Badge
-            variant='outline'
-            className='border-primary text-primary text-xs'
-          >
-            {publication.citations} citations
-          </Badge>
         </div>
       </CardHeader>
       <CardContent className='pt-0'>
         <div className='flex flex-wrap gap-2 text-xs text-muted-foreground'>
-          <span className='hover:text-sage-green cursor-pointer transition-colors'>
-            DOI: {publication.doi}
-          </span>
-          <span>•</span>
-          <span className='hover:text-sage-green cursor-pointer transition-colors'>
-            PMID: {publication.pmid}
-          </span>
+          {publication.doi && publication.doi !== "N/A" && (
+            <>
+              <span className='hover:text-sage-green cursor-pointer transition-colors'>
+                DOI: {publication.doi}
+              </span>
+              {publication.pmid && <span>•</span>}
+            </>
+          )}
+          {publication.pmid && (
+            <span className='hover:text-sage-green cursor-pointer transition-colors'>
+              PMID: {publication.pmid}
+            </span>
+          )}
         </div>
       </CardContent>
     </Card>
@@ -201,7 +223,35 @@ export function Publications() {
               </div>
             </AccordionContent>
           </AccordionItem>
+
+          {/* Citations Section */}
+          <AccordionItem
+            value='citations'
+            className='border-2 border-border rounded-lg bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow'
+          >
+            <AccordionTrigger className='px-6 py-4 hover:no-underline hover:bg-secondary/30 transition-colors cursor-pointer'>
+              <div className='flex items-start text-left w-full'>
+                <div className='flex-1 min-w-0'>
+                  <h3 className='text-foreground pr-4'>Citations</h3>
+                </div>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className='px-6 pb-6'>
+              <div className='space-y-4'>
+                <p className='text-foreground mb-4 leading-relaxed'>
+                  Citations
+                </p>
+                <h4 className='text-sm text-muted-foreground mb-3'>
+                  Selected Publications ({citations.length} total)
+                </h4>
+                {citations.map((pub, idx) => (
+                  <PublicationCard key={idx} publication={pub} />
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
+
 
         <div className='text-center mt-12'>
           <Link
