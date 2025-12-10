@@ -1306,8 +1306,8 @@ export const citations: Publication[] = [
     subcategory:"Refugee & Migrant Health"
   },
   {
-    title:"",
-    authors:"Wang, Y. W., Abebe, I., Cruz, T. E., Ar\u00e9valo Avalos, M. R., Sifat, M., Abdelwahab, S., & Li, T. (2024). College Students\u2019 Coping, Resilience, Well-Being, Academic Experiences, and Help-Seeking Attitudes During COVID-19. The Counseling Psychologist, 52(8), 1239-1278",
+    title:"College Students\u2019 Coping, Resilience, Well-Being, Academic Experiences, and Help-Seeking Attitudes During COVID-19. The Counseling Psychologist, 52(8), 1239-1278",
+    authors:"Wang, Y. W., Abebe, I., Cruz, T. E., Ar\u00e9valo Avalos, M. R., Sifat, M., Abdelwahab, S., & Li, T. (2024). ",
     journal:"",
     year:'2024',
     doi:"",
