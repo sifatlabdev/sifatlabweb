@@ -51,7 +51,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
           </div>
         )}
         <CardTitle className='text-base cursor-pointer hover:text-primary transition-colors whitespace-normal break-words'>
-          {publication.doi && publication.doi !== "N/A" ? (
+          {publication.doi && publication.doi !== "" ? (
             <Link
               to={publication.doi}
               target='_blank'
@@ -73,7 +73,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
       </CardHeader>
       <CardContent className='pt-0'>
         <div className='flex flex-wrap gap-2 text-xs text-muted-foreground'>
-          {publication.doi && publication.doi !== "N/A" && (
+          {publication.doi && publication.doi !== "" && (
             <>
               <span className='hover:text-sage-green cursor-pointer transition-colors break-all max-w-full whitespace-normal'>
                 DOI: {publication.doi}

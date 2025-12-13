@@ -355,7 +355,7 @@ export const jeffersonProjects: JeffersonProject[] = [
         year: "2024",
         
         doi: "https://doi.org/10.1016/j.dadr.2024.100XXX",
-        pmid: "N/A",
+        pmid: "",
       },
     ],
   },
@@ -473,7 +473,7 @@ export const contributions: ContributionToScience[] = [
         year: "2024",
         
         doi: "https://doi.org/10.1016/j.dadr.2024.100XXX",
-        pmid: "N/A",
+        pmid: "",
       },
       {
         title:
@@ -484,7 +484,7 @@ export const contributions: ContributionToScience[] = [
         year: "2024",
         
         doi: "https://doi.org/10.1001/jamanetworkopen.2024",
-        pmid: "N/A",
+        pmid: "",
       },
       {
         title:
@@ -506,7 +506,7 @@ export const contributions: ContributionToScience[] = [
         year: "2024",
         
         doi: "https://doi.org/10.1016/j.abrep.2024.100568",
-        pmid: "N/A",
+        pmid: "",
       },
     ],
   },
@@ -529,8 +529,8 @@ export const contributions: ContributionToScience[] = [
         journal: "International Journal for Equity in Health",
         year: "2024",
         
-        doi: "N/A",
-        pmid: "N/A",
+        doi: "",
+        pmid: "",
       },
       {
         title:
@@ -541,7 +541,7 @@ export const contributions: ContributionToScience[] = [
         year: "2022",
         
         doi: "https://doi.org/10.1016/j.dadr.2022.100117",
-        pmid: "N/A",
+        pmid: "",
       },
       {
         title:
@@ -552,7 +552,7 @@ export const contributions: ContributionToScience[] = [
         year: "2024",
         
         doi: "https://doi.org/10.1007/s40615-022-01496-z",
-        pmid: "N/A",
+        pmid: "",
       },
     ],
   },
@@ -577,7 +577,7 @@ export const contributions: ContributionToScience[] = [
         year: "2024",
         
         doi: "https://doi.org/10.1016/j.jmh.2024.100282",
-        pmid: "N/A",
+        pmid: "",
       },
       {
         title:
@@ -598,8 +598,8 @@ export const contributions: ContributionToScience[] = [
         journal: "Global Mental Health",
         year: "2022",
         
-        doi: "N/A",
-        pmid: "N/A",
+        doi: "",
+        pmid: "",
       },
       {
         title:
@@ -610,7 +610,7 @@ export const contributions: ContributionToScience[] = [
         year: "2023",
         
         doi: "https://doi.org/10.1177/00957984221150062",
-        pmid: "N/A",
+        pmid: "",
       },
     ],
   },
@@ -656,7 +656,7 @@ export const contributions: ContributionToScience[] = [
         year: "2022",
         
         doi: "https://doi.org/10.1080/17482631.2022.2113015",
-        pmid: "N/A",
+        pmid: "",
       },
     ],
   },
@@ -672,7 +672,7 @@ export const otherPublications: Publication[] = [
     year: "2025",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s40615-025-02565-9",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -682,7 +682,7 @@ export const otherPublications: Publication[] = [
     year: "2025",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1037/cdp0000759",
-    pmid: "N/A",
+    pmid: "",
   },
 
   // 2024
@@ -695,7 +695,7 @@ export const otherPublications: Publication[] = [
     year: "2024",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/00110000241234567",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -705,8 +705,8 @@ export const otherPublications: Publication[] = [
     journal: "American Journal of Preventive Medicine",
     year: "2024",
      // TODO: Update from Google Scholar
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -716,8 +716,8 @@ export const otherPublications: Publication[] = [
     journal: "Journal of Religion and Health",
     year: "2024",
      // TODO: Update from Google Scholar
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -727,8 +727,8 @@ export const otherPublications: Publication[] = [
     journal: "Journal of Religion and Health",
     year: "2024",
      // TODO: Update from Google Scholar
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -738,8 +738,8 @@ export const otherPublications: Publication[] = [
     journal: "Journal of Religion and Health",
     year: "2024",
      // TODO: Update from Google Scholar
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
 
   // 2023
@@ -751,7 +751,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1377/forefront.20230614.685636",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -761,8 +761,8 @@ export const otherPublications: Publication[] = [
     journal: "Current Psychology",
     year: "2023",
      // TODO: Update from Google Scholar
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -773,7 +773,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s40615-023-01615-4",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title: "Cannabis Use Among Adults Undergoing Cancer Treatment",
@@ -783,7 +783,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1002/cncr.34922",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -794,7 +794,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s11764-022-01328-3",
-    pmid: "N/A",
+    pmid: "",
   },
 
   // 2022
@@ -807,7 +807,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/10778012221145302",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -818,7 +818,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1111/ajad.13344",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -828,7 +828,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/00131245221124871",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -839,7 +839,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s40615-022-01383-7",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -850,7 +850,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1007/s40615-022-01326-2",
-    pmid: "N/A",
+    pmid: "",
   },
 
   // 2019-2021
@@ -861,8 +861,8 @@ export const otherPublications: Publication[] = [
     journal: "Harvard Public Health Review",
     year: "2021",
      // TODO: Update from Google Scholar
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -871,8 +871,8 @@ export const otherPublications: Publication[] = [
     journal: "Harvard Public Health Review",
     year: "2020",
      // TODO: Update from Google Scholar
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -883,7 +883,7 @@ export const otherPublications: Publication[] = [
     year: "2019",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/1090198119853005",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -893,7 +893,7 @@ export const otherPublications: Publication[] = [
     year: "2019",
      // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1016/j.drugalcdep.2018.09.033",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -903,7 +903,7 @@ export const otherPublications: Publication[] = [
     year: "2025",
     
     doi: "https://doi.org/10.1007/s40615-025-02565-9",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -913,7 +913,7 @@ export const otherPublications: Publication[] = [
     year: "2025",
     
     doi: "https://doi.org/10.1037/cdp0000759",
-    pmid: "N/A",
+    pmid: "",
   },
 
   // 2024
@@ -926,7 +926,7 @@ export const otherPublications: Publication[] = [
     year: "2024",
     
     doi: "https://doi.org/10.1016/j.dadr.2024.100XXX",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -937,7 +937,7 @@ export const otherPublications: Publication[] = [
     year: "2024",
     
     doi: "https://doi.org/10.1016/j.jmh.2024.100282",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -948,7 +948,7 @@ export const otherPublications: Publication[] = [
     year: "2024",
     
     doi: "https://doi.org/10.1177/00110000241234567",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -959,7 +959,7 @@ export const otherPublications: Publication[] = [
     year: "2024",
     
     doi: "https://doi.org/10.1016/j.abrep.2024.100568",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -969,8 +969,8 @@ export const otherPublications: Publication[] = [
     journal: "American Journal of Preventive Medicine",
     year: "2024",
     
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -981,7 +981,7 @@ export const otherPublications: Publication[] = [
     year: "2024",
     
     doi: "https://doi.org/10.1001/jamanetworkopen.2024",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -990,8 +990,8 @@ export const otherPublications: Publication[] = [
     journal: "International Journal for Equity in Health",
     year: "2024",
     
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -1001,8 +1001,8 @@ export const otherPublications: Publication[] = [
     journal: "Journal of Religion and Health",
     year: "2024",
     
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -1012,8 +1012,8 @@ export const otherPublications: Publication[] = [
     journal: "Journal of Religion and Health",
     year: "2024",
     
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -1023,8 +1023,8 @@ export const otherPublications: Publication[] = [
     journal: "Journal of Religion and Health",
     year: "2024",
     
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
 
   // 2023
@@ -1036,7 +1036,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
     
     doi: "https://doi.org/10.1177/00957984221150062",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1057,7 +1057,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
     
     doi: "https://doi.org/10.1377/forefront.20230614.685636",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1067,8 +1067,8 @@ export const otherPublications: Publication[] = [
     journal: "Current Psychology",
     year: "2023",
     
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -1079,7 +1079,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
     
     doi: "https://doi.org/10.1007/s40615-023-01615-4",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title: "Cannabis Use Among Adults Undergoing Cancer Treatment",
@@ -1089,7 +1089,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
     
     doi: "https://doi.org/10.1002/cncr.34922",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1111,7 +1111,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
     
     doi: "https://doi.org/10.1007/s40615-022-01496-z",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1122,7 +1122,7 @@ export const otherPublications: Publication[] = [
     year: "2023",
     
     doi: "https://doi.org/10.1007/s11764-022-01328-3",
-    pmid: "N/A",
+    pmid: "",
   },
 
   // 2022
@@ -1135,7 +1135,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
     
     doi: "https://doi.org/10.1177/10778012221145302",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1146,7 +1146,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
     
     doi: "https://doi.org/10.1016/j.dadr.2022.100117",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1157,7 +1157,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
     
     doi: "https://doi.org/10.1111/ajad.13344",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1167,7 +1167,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
     
     doi: "https://doi.org/10.1177/00131245221124871",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1178,7 +1178,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
     
     doi: "https://doi.org/10.1080/17482631.2022.2113015",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1189,7 +1189,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
     
     doi: "https://doi.org/10.1007/s40615-022-01383-7",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1200,7 +1200,7 @@ export const otherPublications: Publication[] = [
     year: "2022",
     
     doi: "https://doi.org/10.1007/s40615-022-01326-2",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1210,8 +1210,8 @@ export const otherPublications: Publication[] = [
     journal: "Global Mental Health",
     year: "2022",
     
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -1232,8 +1232,8 @@ export const otherPublications: Publication[] = [
     journal: "Harvard Public Health Review",
     year: "2021",
     
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -1242,8 +1242,8 @@ export const otherPublications: Publication[] = [
     journal: "Harvard Public Health Review",
     year: "2020",
     
-    doi: "N/A",
-    pmid: "N/A",
+    doi: "",
+    pmid: "",
   },
   {
     title:
@@ -1254,7 +1254,7 @@ export const otherPublications: Publication[] = [
     year: "2019",
     
     doi: "https://doi.org/10.1177/1090198119853005",
-    pmid: "N/A",
+    pmid: "",
   },
   {
     title:
@@ -1264,7 +1264,7 @@ export const otherPublications: Publication[] = [
     year: "2019",
     
     doi: "https://doi.org/10.1016/j.drugalcdep.2018.09.033",
-    pmid: "N/A",
+    pmid: "",
   },
 ];
 
@@ -1589,7 +1589,7 @@ export const contactInfo: ContactInfo = {
       "Sidney Kimmel Comprehensive Cancer Center, Department of Medical Oncology",
     city: "Philadelphia, PA",
   },
-  officeHours: "N/A", // TODO: Add office hours
+  officeHours: "", // TODO: Add office hours
 };
 
 export const contactSectionData = {
