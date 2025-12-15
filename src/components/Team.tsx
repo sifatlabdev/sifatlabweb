@@ -98,47 +98,49 @@ export function Team() {
         </div>
 
         {/* Lab Director */}
-        <div className='mb-16'>
-          <h3 className='mb-6 text-center text-primary'>Lab Director</h3>
-          <div className='max-w-xs mx-auto'>
-            <Card className='hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden border-2 border-primary'>
-                <div className="aspect-square relative overflow-hidden">
-                  <ImageWithFallback
-                    src={labDirector.image}
-                    alt={labDirector.name}
-                    className="w-full h-full object-cover"
-                  />
+        <div className="mb-16">
+          <h3 className="mb-6 text-center text-primary">Lab Director</h3>
+          <div className="max-w-xs mx-auto">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden border-2 border-primary">
+              <div className="aspect-square relative overflow-hidden">
+                <ImageWithFallback
+                  src={labDirector.image}
+                  alt={labDirector.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="pt-4 pb-4 text-center">
+                <a
+                  href={labDirector.url || "#"}
+                  className="font-semibold text-foreground mb-1 inline-block hover:text-primary transition-colors cursor-pointer"
+                  onClick={(e) => {
+                    if (!labDirector.url) e.preventDefault();
+                  }}
+                >
+                  {labDirector.name}
+                </a>
+                <p className="text-sm text-muted-foreground mb-2">
+                  {labDirector.title}
+                </p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {(Array.isArray(labDirector.specialty)
+                    ? labDirector.specialty
+                    : [labDirector.specialty]
+                  ).map((s, i) => (
+                    <Badge
+                      key={i}
+                      variant="outline"
+                      className="text-xs border-primary text-primary"
+                    >
+                      {String(s).trim()}
+                    </Badge>
+                  ))}
                 </div>
-                <CardContent className="pt-4 pb-4 text-center">
-                  <a
-                    href={labDirector.url || "#"}
-                    className="font-semibold text-foreground mb-1 inline-block hover:text-primary transition-colors cursor-pointer"
-                    onClick={(e) => {
-                      if (!labDirector.url) e.preventDefault();
-                    }}
-                  >
-                    {labDirector.name}
-                  </a>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    {labDirector.title}
-                  </p>
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {(Array.isArray(labDirector.specialty)
-                      ? labDirector.specialty
-                      : [labDirector.specialty]
-                    ).map((s, i) => (
-                      <Badge
-                        key={i}
-                        variant="outline"
-                        className="text-xs border-primary text-primary"
-                      >
-                        {String(s).trim()}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
         {/* Combined Collaborators */}
         <div className="mb-16">
           <h3 className="mb-6 text-center text-sage-green">Collaborators</h3>
