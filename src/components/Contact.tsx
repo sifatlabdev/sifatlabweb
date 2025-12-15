@@ -14,7 +14,7 @@ import { contactInfo, contactSectionData } from "../data/data";
 
 export function Contact() {
   return (
-    <section id='contact' className='py-16 px-6 bg-secondary/30'>
+    <section id='contact' className='py-16 px-6 bg-secondary/30 mt-8'>
       <div className='container mx-auto'>
         <div className='text-center mb-12'>
           <h2 className='mb-4 text-foreground'>{contactSectionData.title}</h2>
@@ -80,7 +80,7 @@ export function Contact() {
             <CardHeader>
               <CardTitle className='text-primary'>Send a Message</CardTitle>
               <CardDescription>
-                Use this form for research inquiries, collaboration proposals,
+                Use this form for research or media inquiries, collaboration proposals,
                 or general questions
               </CardDescription>
             </CardHeader>

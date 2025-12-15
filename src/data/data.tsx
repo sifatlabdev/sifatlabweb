@@ -84,6 +84,21 @@ export interface ContactInfo {
   officeHours: string;
 }
 
+export interface PublicEngagementItem {
+  id: number;
+  authors: string;
+  title: string;
+  type?: string;
+  venue: string;
+  date: string;
+  location: string;
+}
+
+export interface PublicEngagementYear {
+  year: string;
+  items: PublicEngagementItem[];
+}
+
 // ============================================================================
 // HERO DATA
 // ============================================================================
@@ -182,7 +197,7 @@ export const experience: Experience[] = [
     position: "Consultant, Suicide Prevention Team",
     institution:
       "Stanford University, Muslim Mental Health and Islamic Psychology Lab",
-    period: "September 2022 - Present",
+    period: "September 2022 - December 2023",
     description:
       "Contributing to suicide prevention initiatives and mental health research in Muslim communities under Dr. Rania Awaad.",
   },
@@ -1595,10 +1610,252 @@ export const contactInfo: ContactInfo = {
 export const contactSectionData = {
   title: "Contact & Collaboration",
   description:
-    "We welcome collaboration opportunities with researchers, community organizations, and students dedicated to health equity. Reach out to discuss partnerships, research inquiries, or joining our team.",
+    "We welcome collaboration opportunities with researchers, community organizations, and students dedicated to health equity. Reach out to discuss partnerships, research, media inquiries, or joining our team.",
   cardDescription:
-    "Multiple ways to connect for research collaboration and academic inquiries",
+    "Multiple ways to connect for research collaboration and academic or media inquiries",
 };
+
+export const publicEngagementSectionData = {
+  title: "Public Engagement",
+  subtitle: "Sharing research insights with the scientific community and general public through presentations, workshops, and outreach activities",
+  heroImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwcHJlc2VudGF0aW9uJTIwYXVkaWVuY2V8ZW58MXx8fHwxNzU5MjE2Mjc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+};
+
+export const publicEngagementData: PublicEngagementYear[] = [
+  {
+    year: "2026",
+    items: [
+      {
+        id: 1,
+        authors: "Sifat, M.",
+        type: "Invited Talk",
+        title: "Community Center on Climate and Disaster Risk Reduction",
+        venue: "University of Minnesota",
+        date: "March 2026",
+        location: "Minneapolis, MN",
+      },
+      {
+        id: 2,
+        authors: "Sifat, M.",
+        type: "Invited Talk",
+        title: "Combustible Cities and Climate Risk",
+        venue: "Annual Lung Cancer Symposium",
+        date: "March 12, 2026",
+        location: "Philadelphia, PA",
+      },
+    ],
+  },
+  {
+    year: "2025",
+    items: [
+      {
+        id: 1,
+        authors: "Sifat, M.",
+        type: "Invited Pop Talk",
+        title: "Making the Invisible Visible: Environmental Risk & Cancer",
+        venue: "Sidney Kimmel Comprehensive Cancer Center",
+        date: "December 11, 2025",
+        location: "Philadelphia, PA",
+      },
+      {
+        id: 2,
+        authors: "M. Sifat, S. Chiang, D. Kendzor",
+        title: "Correlates of Community-Level Tobacco Exposure",
+        venue: "Society for Research on Nicotine & Tobacco Health Conference",
+        date: "June 26–29, 2025",
+        location: "Nova Scotia, Canada",
+      },
+      {
+        id: 3,
+        authors: "Sifat, M.",
+        type: "Invited Speaker",
+        title: "Importance of Community Outreach",
+        venue: "SKCCC Summit",
+        date: "June 25, 2025",
+        location: "Philadelphia, PA",
+      },
+      {
+        id: 4,
+        authors: "Sifat, M.; Cammy, R.; Dimino, et al.",
+        title: "Community Connections",
+        venue: "CCCIF Annual Meeting",
+        date: "2024",
+        location: "Salt Lake City, UT",
+      },
+      {
+        id: 5,
+        authors: "M. Sifat, A. Leader",
+        title: "Community Health Engagement Strategies",
+        venue: "Society for Behavioral Medicine Conference",
+        date: "2024",
+        location: "Philadelphia, PA",
+      },
+      {
+        id: 6,
+        authors: "M. Sifat, M. Chen",
+        title: "Global Tobacco Control Perspectives",
+        venue: "Society for Research on Nicotine & Tobacco",
+        date: "2024",
+        location: "Edinburgh, Scotland",
+      },
+    ],
+  },
+  {
+    year: "2023",
+    items: [
+      {
+        id: 12,
+        authors: "Sifat, M.S.",
+        type: "Invited Speaker",
+        title: "Practices that Harm, Practices that Heal",
+        venue: "Health Equity Symposium",
+        date: "2023",
+        location: "San Diego, CA",
+      },
+      {
+        id: 13,
+        authors: "Sifat, M.S.; Zaring-Hinkle, B.",
+        title: "Community-Centered Cancer Prevention",
+        venue: "University of Oklahoma Health Science Center",
+        date: "2023",
+        location: "Oklahoma City, OK",
+      },
+      {
+        id: 15,
+        authors: "M. Sifat, B. Noble, B. Zaring",
+        title: "Community Tobacco Prevention",
+        venue: "SRNT Annual Meeting",
+        date: "2023",
+        location: "San Antonio, TX",
+      },
+      {
+        id: 16,
+        authors: "S. Chiang, M. Sifat, P. Mas",
+        title: "Health Behavior & Disparities",
+        venue: "Society of Health Behavior Meeting",
+        date: "2023",
+        location: "San Francisco, CA",
+      },
+      {
+        id: 17,
+        authors: "M. Sifat, B. Noble, D. Kendzor",
+        title: "Community Engagement Models",
+        venue: "Michigan State University",
+        date: "2023",
+        location: "Lansing, MI",
+      },
+    ],
+  },
+  {
+    year: "2022",
+    items: [
+      {
+        id: 20,
+        authors: "Sifat, M.",
+        title: "Mental Health in Refugee Communities",
+        venue: "Johns Hopkins Bloomberg School of Public Health",
+        date: "April 4, 2022",
+        location: "Baltimore, MD",
+      },
+      {
+        id: 21,
+        authors: "Sifat, M.; Ehlke, S.; Alexander, A.",
+        title: "Community Mental Health Interventions",
+        venue: "Prevention Research Annual Meeting",
+        date: "2022",
+        location: "Seattle, WA",
+      },
+      {
+        id: 22,
+        authors: "Sifat, M.",
+        title: "Refugee Mental Health",
+        venue: "University of Arkansas",
+        date: "April 2022",
+        location: "Fayetteville, AR",
+      },
+    ],
+  },
+  {
+    year: "2021",
+    items: [
+      {
+        id: 27,
+        authors: "Sifat, M.",
+        title: "Mental Health Promotion",
+        venue: "University of Arkansas",
+        date: "September 2021",
+        location: "Fayetteville, AR",
+      },
+      {
+        id: 28,
+        authors: "M. Sifat, S. Chiang, N. Amin",
+        title: "Community Tobacco Research",
+        venue: "SPR Annual Meeting",
+        date: "2021",
+        location: "Washington, DC",
+      },
+    ],
+  },
+  {
+    year: "2020",
+    items: [
+      {
+        id: 31,
+        authors: "Sifat, M.",
+        title: "Muslim Mental Health Awareness",
+        venue: "Instagram Live",
+        date: "October 30, 2020",
+        location: "Online",
+      },
+      {
+        id: 33,
+        authors: "Sifat, M.; Kuo, C.; Green, K.",
+        title: "Adolescent Health Promotion",
+        venue: "APHA Annual Meeting",
+        date: "July 2020",
+        location: "Virtual",
+      },
+    ],
+  },
+  {
+    year: "2015–2019",
+    items: [
+      {
+        id: 34,
+        authors: "Sifat, M.; Green, K.; Holder, S.; Kuo, C.",
+        title: "Public Health Education",
+        venue: "APHA Annual Meeting & Expo",
+        date: "2019",
+        location: "Philadelphia, PA",
+      },
+      {
+        id: 35,
+        authors: "Holder, S.; Sifat, M.; Green, K.; Kuo, C.",
+        title: "Community Prevention Programs",
+        venue: "APHA Annual Meeting & Expo",
+        date: "2019",
+        location: "Philadelphia, PA",
+      },
+      {
+        id: 36,
+        authors: "Sifat, M.; Holder, S.; Green, K.",
+        title: "Preventative Research",
+        venue: "Preventative Research Annual Conference",
+        date: "2018",
+        location: "San Diego, CA",
+      },
+      {
+        id: 40,
+        authors: "Sifat, M.",
+        title: "Adverse Childhood Experiences & Obesity",
+        venue: "GW Research Days",
+        date: "April 2017",
+        location: "Washington, DC",
+      },
+    ],
+  },
+];
+
 
 // ============================================================
 // FOOTER DATA

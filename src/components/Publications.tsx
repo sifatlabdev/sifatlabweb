@@ -166,7 +166,7 @@ function ContributionSection({
 
 export function Publications() {
   return (
-    <section id='research' className='py-16 px-6 bg-secondary/30'>
+    <section id='research' className='py-16 px-6 bg-secondary/30 mt-8'>
       <div className='container mx-auto max-w-5xl'>
         <div className='text-center mb-12'>
           <h2 className='mb-4 text-foreground'>{researchSectionData.title}</h2>

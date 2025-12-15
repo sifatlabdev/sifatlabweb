@@ -18,7 +18,7 @@ import { Research } from "./Research";
 export function Lab() {
   return (
     <>
-      <section id='chen-lab' className='py-16 px-6 bg-background'>
+      <section id='chen-lab' className='py-16 px-6 bg-background mt-8'>
         <div className='container mx-auto'>
           <div className='text-center mb-12'>
             <h2 className='mb-4 text-foreground'>{chenLabData.title}</h2>
@@ -128,8 +128,8 @@ export function Lab() {
 
         {/* Join Us Section */}
         <div className='mt-12 px-6 py-12 container mx-auto'>
-          <div className='bg-foreground rounded-lg p-6 md:p-12 border border-sage-green/20'>
-            <h3 className='mb-4 text-center text-foreground'>
+          <div className='bg-beige/10 rounded-lg p-8 md:p-12 border border-sage-green/30'>
+            <h3 className='mb-6 text-center text-foreground'>
               {joinUsData.title}
             </h3>
             <p className='text-center text-muted-foreground mb-8 max-w-3xl mx-auto text-sm md:text-base leading-relaxed px-4'>
@@ -137,11 +137,11 @@ export function Lab() {
             </p>
 
             {/* How to Apply */}
-            <div className='bg-background rounded-lg p-4 md:p-6 max-w-3xl mx-auto'>
-              <h4 className='text-center mb-3 text-primary text-sm md:text-base'>
+            <div className='bg-card rounded-lg p-6 md:p-8 max-w-3xl mx-auto border border-sage-green/20 hover:shadow-md transition-shadow duration-200'>
+              <h4 className='text-center mb-4 text-sage-green font-semibold'>
                 How to Apply
               </h4>
-              <p className='text-sm text-muted-foreground text-center px-2'>
+              <p className='text-sm text-muted-foreground text-center px-2 leading-relaxed'>
                 {joinUsData.howToApply}
               </p>
             </div>

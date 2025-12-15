@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <section id='hero' className='pt-24 pb-16 px-6'>
+    <section id='hero' className='pt-32 pb-16 px-6'>
       <div className='container mx-auto'>
         <div className='grid md:grid-cols-2 gap-12 items-center'>
           {/* Left Side - Personal Statement */}
@@ -71,7 +71,7 @@ function Hero() {
               </div>
             </div>
             <div className='text-center space-y-2'>
-              <h2 className='text-2xl md:text-3xl text-foreground'>
+              <h2 className='text-lg md:text-xl text-foreground'>
                 {heroData.name}
               </h2>
               <p className='text-lg text-muted-foreground'>{heroData.title}</p>
@@ -96,7 +96,7 @@ export function About() {
   return (
     <>
       <Hero />
-      <section id='about' className='py-16 px-6 bg-secondary/30'>
+      <section id='about' className='py-16 px-6 bg-secondary/30 mt-8'>
         <div className='container mx-auto max-w-6xl'>
           {/* Section Title */}
           <div className='text-center mb-12'>

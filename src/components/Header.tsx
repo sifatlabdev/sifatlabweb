@@ -36,6 +36,11 @@ export function Header() {
                   Research
                 </button>
               </Link>
+                              <Link to='/publicengagement'>
+                  <button className='text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer'>
+                    Public Engagement
+                  </button>
+                </Link>
               <Link to='/publications'>
                 <button className='text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer'>
                   Publications
@@ -78,11 +83,17 @@ export function Header() {
                     Research
                   </button>
                 </Link>
+                                <Link to='/publicengagement'>
+                  <button className='text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer'>
+                    Public Engagement
+                  </button>
+                </Link>
                 <Link to='/publications'>
                   <button className='text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer'>
                     Publications
                   </button>
                 </Link>
+
 
                 <Link to='/contact' className='w-full flex justify-center'>
                   <Button className='bg-sage-green hover:bg-sage-green/90 text-nav-foreground mt-6 w-3/4'>

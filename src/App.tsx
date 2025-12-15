@@ -4,6 +4,7 @@ import { About } from "./components/About";
 import { Lab } from "./components/Lab";
 import { Publications } from "./components/Publications";
 import { Research } from "./components/Research";
+import { PublicEngagement } from "./components/PublicEngagement";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { ScrollToTop } from "./components/ScrollToTop";
@@ -20,6 +21,7 @@ export default function App() {
             <Route path='/about' element={<About />} />
             <Route path='/publications' element={<Publications />} />
             <Route path='/research' element={<Research />} />
+            <Route path='/publicengagement' element={<PublicEngagement />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </main>

@@ -162,7 +162,7 @@ export function Research() {
 
   return (
     <>
-      <section id='chen-lab' className='py-16 px-6 bg-background'>
+      <section id='chen-lab' className='py-16 px-6 bg-background mt-8'>
         <div className='container mx-auto'>
           {/* Jefferson Projects */}
           <div>
