@@ -454,6 +454,23 @@ export const jeffersonProjects: JeffersonProject[] = [
     ],
     publications: [],
   },
+  {
+    title:
+      "CRIC Pilot Funding, Sidney Kimmel Comprehensive Cancer Center, Sifat & Milliron (MPI)",
+    description:
+      "Chinese Wellness Culinary Circle: A feasibility study to improve healthy cancer survivorship through a mind-body-culinary medicine approach",
+    detailedDescription:
+      "Chinese American cancer survivors face significant and persistent challenges in accessing culturally and linguistically appropriate support for nutrition and psychosocial well-being. To address these gaps, we have developed the Chinese Wellness Culinary Circle (CWCC)—a 12-week, culturally tailored, mind-body-culinary medicine program designed to promote cancer-preventive dietary behaviors, mindfulness, and overall well-being among adult Chinese cancer survivors. This single-arm pilot study will evaluate the feasibility and acceptability of CWCC and explore its potential to improve adherence to the American Institute for Cancer Research/World Cancer Research Fund (AICR/WCRF) recommendations for cancer prevention and healthy survivorship.",
+    status: "Active",
+    tags: [
+      "Culinary Medicine",
+      "Cancer Survivorship",
+      "Chinese American Health",
+      "Mind-Body Wellness",
+      "Health Disparities",
+    ],
+    publications: [],
+  },
 ];
 
 // ============================================================
