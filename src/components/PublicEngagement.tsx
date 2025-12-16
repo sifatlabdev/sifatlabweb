@@ -2,7 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Calendar, MapPin, Users, Presentation } from "lucide-react";
-import { publicEngagementSectionData, publicEngagementData } from "../data/data";
+import {
+  publicEngagementSectionData,
+  publicEngagementData,
+} from "../data/data";
 
 function EngagementCard({ item }: { item: any }) {
   return (
@@ -12,9 +15,7 @@ function EngagementCard({ item }: { item: any }) {
           <div className="flex-1">
             <CardTitle className="text-base mb-2">{item.title}</CardTitle>
             {item.type && (
-              <Badge 
-                className="bg-sage-green text-white border-0 text-xs mb-2"
-              >
+              <Badge className="bg-sage-green text-white border-0 text-xs mb-2">
                 {item.type}
               </Badge>
             )}
@@ -59,12 +60,21 @@ export function PublicEngagement() {
         </div>
 
         {/* Hero Image */}
-        <div className="mb-12 rounded-lg overflow-hidden shadow-lg">
-          <ImageWithFallback
-            src={publicEngagementSectionData.heroImage}
-            alt="Public Engagement and Conference Presentations"
-            className="w-full h-64 md:h-96 object-cover"
-          />
+        <div className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <ImageWithFallback
+              src={publicEngagementSectionData.pubImage}
+              alt="Academic Conference Presentations"
+              className="w-full h-64 md:h-[400px] lg:h-[500px] object-cover"
+            />
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <ImageWithFallback
+              src={publicEngagementSectionData.pubImage2}
+              alt="Research Workshops and Collaboration"
+              className="w-full h-64 md:h-[400px] lg:h-[500px] object-cover"
+            />
+          </div>
         </div>
 
         {/* Engagement Items by Year */}
@@ -75,15 +85,16 @@ export function PublicEngagement() {
                 <div className="flex items-center gap-4">
                   <h3 className="text-foreground">{yearData.year}</h3>
                   <div className="flex-1 h-px bg-gradient-to-r from-sage-green/50 to-transparent"></div>
-                  <Badge 
-                    variant="outline" 
+                  <Badge
+                    variant="outline"
                     className="border-sage-green text-sage-green"
                   >
-                    {yearData.items.length} {yearData.items.length === 1 ? 'Event' : 'Events'}
+                    {yearData.items.length}{" "}
+                    {yearData.items.length === 1 ? "Event" : "Events"}
                   </Badge>
                 </div>
               </div>
-              
+
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {yearData.items.map((item) => (
                   <EngagementCard key={item.id} item={item} />

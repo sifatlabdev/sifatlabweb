@@ -3,6 +3,8 @@ import img1 from "../assets/images/img1.jpg";
 import img2 from "../assets/images/img2.jpg";
 import img3 from "../assets/images/img3.jpg";
 import labimg from "../assets/images/labimg.jpg";
+import pubImage from "../assets/images/pubImage.jpg";
+import pubImage2 from "../assets/images/pubImage2.jpg";
 // ============================================================
 // TYPES & INTERFACES
 // ============================================================
@@ -1721,27 +1723,10 @@ export const publicEngagementSectionData = {
   title: "Public Engagement",
   subtitle:
     "Sharing research insights with the scientific community and general public through presentations, workshops, and outreach activities",
-  heroImage:
-    "https://images.unsplash.com/photo-1540575467063-178a50c2df87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwcHJlc2VudGF0aW9uJTIwYXVkaWVuY2V8ZW58MXx8fHwxNzU5MjE2Mjc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  pubImage: pubImage,
+
+  pubImage2: pubImage2,
 };
-
-// ============================================================================
-// INTERFACES
-// ============================================================================
-export interface PublicEngagementItem {
-  id: number;
-  authors: string;
-  title: string;
-  type?: string;
-  venue: string;
-  date: string;
-  location: string;
-}
-
-export interface PublicEngagementYear {
-  year: string;
-  items: PublicEngagementItem[];
-}
 
 // ============================================================================
 // PUBLIC ENGAGEMENT DATA
@@ -1807,9 +1792,9 @@ export const publicEngagementData: PublicEngagementYear[] = [
       {
         id: 6,
         authors: "Sifat, M.",
-        title: "N/A",
+        title: "Hepatitis B Foundation,",
         type: "Invited Speaker",
-        venue: "Hepatitis B Foundation, Liver Cancer Conference",
+        venue: "Liver Cancer Conference",
         date: "June 2025",
         location: "Virtual",
       },
