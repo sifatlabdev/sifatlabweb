@@ -474,6 +474,108 @@ export const jeffersonProjects: JeffersonProject[] = [
     publications: [],
   },
 ];
+// ============================================================================
+// Social IMPACT PROJECTS (Current Institution Only)
+// ============================================================================
+// ✅ COMPLETE
+export const socialImpactProjects: JeffersonProject[] = [
+  {
+    title:
+      "Project E-Shift: A Harm Reduction Intervention for Chronically Unhoused Adults Who Smoke",
+    description:
+      "Examining the feasibility of switching exclusively from combustible cigarettes (CC) to an FDA-authorized electronic cigarette (EC) and financial incentives to promote smoking cessation among adults with a history of homelessness.",
+    detailedDescription:
+      "This study examines the feasibility of switching exclusively from combustible cigarettes (CC) to an FDA-authorized electronic cigarette (EC) and financial incentives contingent on CC abstinence to promote CC cessation among adults with a history of homelessness and are now in Housing First programs (N=40). Participants accessing services from Project HOME/Pathways to Housing are randomly assigned to either standard care (counseling and nicotine replacement therapy) or EC switching with small financial incentives for carbon monoxide-verified CC abstinence plus counseling. The study addresses significant tobacco-related health disparities in a population for whom standard cessation practices have not historically led to long-term cessation of combustible cigarettes.",
+    status: "Active",
+    tags: [
+      "Tobacco Cessation",
+      "Harm Reduction",
+      "Homelessness",
+      "E-Cigarettes",
+      "Health Disparities",
+    ],
+    publications: [
+      {
+        title:
+          "E-cigarette switching and financial incentives to promote combustible cigarette cessation among adults accessing shelter services: A pilot study",
+        authors:
+          "Sifat, M., Alexander, A. C., Businelle, M. S., Frank-Pearce, S. G., Boozary, L. K., Wagener, T. L., Ahluwalia, J. S., & Kendzor, D. E.",
+        journal: "Drug Abuse and Dependence Reports",
+        year: "2024",
+
+        doi: "https://doi.org/10.1016/j.dadr.2024.100XXX",
+        pmid: "",
+      },
+    ],
+  },
+  {
+    title:
+      "Overcoming Barriers to Cervical Cancer Screening by Offering HPV Self-Sampling in Diverse Communities",
+    description:
+      "Developing and implementing protocols for HPV self-sampling through mobile screening units to increase cervical cancer screening in underserved communities.",
+    detailedDescription:
+      "This study developed a workflow for HPV self-sampling in community settings through the SKCCC mobile screening unit. The protocol was designed to offer HPV self-sampling kits (n=30) as an acceptable and feasible approach for future larger studies. Preliminary data show 20 HPV self-sampling kits were distributed in community settings, with 5 kits returned (25% return rate) and 1 testing positive for HPV (20% positive rate). The participant with the positive finding was successfully connected to the physician for follow-up care. This research has potential to significantly improve cervical cancer screening rates among cancer survivors and underserved populations.",
+    status: "Completed",
+    tags: [
+      "HPV",
+      "Cervical Cancer",
+      "Cancer Screening",
+      "Mobile Health Unit",
+      "Community Outreach",
+    ],
+    publications: [],
+  },
+  {
+    title:
+      "CRIC Pilot Funding, Sidney Kimmel Comprehensive Cancer Center, Sifat & Milliron (MPI)",
+    description:
+      "Chinese Wellness Culinary Circle: A feasibility study to improve healthy cancer survivorship through a mind-body-culinary medicine approach",
+    detailedDescription:
+      "Cancer is the leading cause of death in the U.S. Asian community. In Philadelphia, Chinese immigrants constitute the largest Asian subgroup. While many are aware of cancer prevention as a concept, they often lack the knowledge or tools to adopt preventive behaviors in daily life. To address this gap, the Chinese Wellness Culinary Circle (CWCC), a culturally tailored culinary medicine program, was developed for the local Chinese community. The primary aim of this pilot feasibility study was to evaluate feasibility and acceptability of the intervention. Secondary aims included exploring changes in cancer-preventive dietary behaviors, self-efficacy, and perceived nutrition-related barriers. Methods: The CWCC program was delivered in person from April to July 2025 and included six 2-hour sessions. Each session began with a 30-40 minute nutrition education segment focused on cancer-preventive properties of food commonly used in Chinese cuisine, followed by a culturally relevant hands-on cooking activity and group discussion. Topics included the gut-brain-body connection, immune system health, antioxidants and cancer-fighting foods, hypertension, and the psychological effects of food. Participants received bilingual materials and culturally tailored recipes. Engagement strategies included pre-session reminders and post-session emails with slides. Feasibility and acceptability were assessed using specific progression criteria (e.g., recruitment, retention, assessment feasibility, and intervention acceptability) to determine whether the study procedures are practicable and whether to proceed to a larger trial. Acceptability was evaluated through post-session surveys capturing satisfaction and likelihood of applying learned practices. Baseline and post-program surveys were used to measure changes in knowledge, dietary behaviors, and self-efficacy.Results: At baseline 14 participants (mean age: 54 years; range 32-80) enrolled. Most identified as female (79%) and Asian (85%), with 79% having resided in the US for more than 25 years. 71% of participants reported ‘somewhat’ or ‘very’ confident in choosing and cooking affordable healthy food. All participants cooked at home in the past week, though most consumed limited fruits (N=10) and vegetables (N=9). Common barriers included concerns about produce spoilage and low satiety. Key participant interests included improving nutrition knowledge, cooking skills, and chronic disease prevention/management. Final feasibility, acceptability, and potential efficacy data will be collected and reported prior to the conference. Conclusions: Preliminary findings suggest that CWCC is a feasible and acceptable community-based program; integrating cultural values, hands-on learning, and bilingual education may improve engagement and reduce nutrition-related disparities among Chinese community. Future studies should evaluate long-term dietary changes and clinical outcomes in larger samples.",
+    status: "Active",
+    tags: [
+      "Culinary Medicine",
+      "Cancer Survivorship",
+      "Chinese American Health",
+      "Mind-Body Wellness",
+      "Health Disparities",
+    ],
+    publications: [],
+  },
+  {
+    title: "Evaluation of Como Sano, Se Feliz (Eat Healthy, be happy)",
+    description:
+      "This project evaluates a 3-month cooking program that empowers Spanish-speaking cancer survivors through nutrition education and culinary skills training. Conducted at Mi Salud Wellness Center, the program teaches cancer-preventive cooking while building dietary confidence. By providing culturally-tailored, practical tools, it helps underserved communities reduce cancer risk and supports recovery—serving as a model for nutrition-focused community health interventions addressing health disparities.",
+    detailedDescription: `Principal Investigators:
+• Brandy-Joe Milliron, PhD, Drexel University
+• Munjireen Sifat, PhD, MPH, Sidney Kimmel Cancer Center
+
+Community Partner: Mi Salud Wellness Center, Keila Canete MPH
+
+Aims:
+The purpose of this project is to conduct an evaluation of the 3-month cooking program at Mi Salud Wellness. The primary aim is to determine the feasibility and acceptability of the cooking program. The secondary aim is to estimate the potential efficacy on cancer preventative dietary choices, cooking confidence, and cooking behaviors among Spanish-speaking individuals impacted by cancer.
+
+Program Details:
+The 3-month, bi-weekly cooking program is intended to increase familiarity, acceptance, and dietary intake of fruits, vegetables, whole grains, and plant-based protein while building cooking confidence and cancer preventive cooking behaviors.
+
+Topics Covered:
+• Cancer Fighting Foods • Healthy Immune System • Antioxidants
+
+• Blood Pressure Management • Mental Health & Wellness • The Mind-Body Connection
+
+Conclusion:
+Come Sano, Se Feliz (Eat Healthy, Be Happy) empowered underserved Spanish-speaking populations by providing the tools and knowledge to adopt healthier dietary practices, reduce cancer risks, and support recovery for survivors. This model demonstrates how culturally-tailored interventions can effectively address health disparities through nutrition education.`,
+    status: "Active",
+    tags: [
+      "Culinary Medicine",
+      "Cancer Survivorship",
+      "Nutrition Education",
+      "Cancer Prevention",
+      "Health Disparities",
+    ],
+    publications: [],
+  },
+];
 
 // ============================================================
 // Publications SECTION DATA -
@@ -1792,7 +1894,7 @@ export const publicEngagementData: PublicEngagementYear[] = [
       {
         id: 6,
         authors: "Sifat, M.",
-        title: "Hepatitis B Foundation,",
+        title: "Hepatitis B Foundation",
         type: "Invited Speaker",
         venue: "Liver Cancer Conference",
         date: "June 2025",

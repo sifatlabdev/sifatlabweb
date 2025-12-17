@@ -13,7 +13,7 @@ import {
 import {
   type Publication,
   type JeffersonProject,
-  jeffersonProjects,
+  socialImpactProjects,
 } from "../data/data";
 
 function PublicationCard({ publication }: { publication: Publication }) {
@@ -150,7 +150,7 @@ function getStatusColor(status: string) {
   }
 }
 
-export function Research() {
+export function Social() {
   const [selectedProject, setSelectedProject] =
     useState<JeffersonProject | null>(null);
 
@@ -161,14 +161,14 @@ export function Research() {
           {/* Jefferson Projects */}
           <div>
             <h2 className="mb-6 text-center text-foreground">
-              Current Research
+              Social Impact Projects
             </h2>
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Explore our research initiatives advancing health equity and
+              Explore our social impact projects advancing health equity and
               addressing critical health disparities in underserved communities.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
-              {jeffersonProjects.map((project, index) => (
+              {socialImpactProjects.map((project, index) => (
                 <Card
                   key={index}
                   className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-sage-green cursor-pointer"
