@@ -101,9 +101,16 @@ function ProjectDialog({
           {/* Detailed Description */}
           <div>
             <h4 className="text-sm text-primary mb-3">Project Overview</h4>
-            <p className="text-foreground leading-relaxed whitespace-pre-wrap">
-              {project.detailedDescription}
-            </p>
+            <div
+              className="text-foreground leading-relaxed whitespace-pre-wrap"
+              dangerouslySetInnerHTML={{
+                __html: project.detailedDescription.replace(
+                  /https?:\/\/[^\s]+/g,
+                  (url) =>
+                    `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">${url}</a>`
+                ),
+              }}
+            />
           </div>
 
           {/* Tags */}

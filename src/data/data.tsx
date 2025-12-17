@@ -575,6 +575,46 @@ Come Sano, Se Feliz (Eat Healthy, Be Happy) empowered underserved Spanish-speaki
     ],
     publications: [],
   },
+  {
+    title: "Cancer Screening Awareness and Education Programming",
+    description:
+      "Comprehensive community-based cancer screening awareness and education initiative led by the Community Outreach and Engagement Team at Sidney Kimmel Comprehensive Cancer Center. This program aims to increase cancer screening knowledge, improve health literacy, and promote early detection among underserved and diverse populations across the Philadelphia region.",
+    detailedDescription: `Our Cancer Screening Awareness and Education Programming represents a comprehensive community-based initiative developed and delivered by the Community Outreach and Engagement Team at Sidney Kimmel Comprehensive Cancer Center. This program is designed to address cancer screening disparities and barriers to preventive care access in underserved communities.
+
+Program Goals:
+The primary objectives are to increase awareness about cancer screening guidelines, improve health literacy regarding the importance of early detection, and empower community members to take proactive steps toward preventive care. We focus on multiple cancer types including breast, colorectal, cervical, and prostate cancers.
+
+Community Engagement Approach:
+We partner with community organizations, health centers, and local leaders to deliver culturally tailored education programs. Our approach emphasizes community participation, addresses social determinants of health, and integrates patient testimonies and survivor stories to create meaningful connections with diverse audiences.
+
+Educational Content:
+Programming covers cancer risk factors, screening recommendations, available screening resources, navigation of the healthcare system, and emotional support for individuals undergoing screening or diagnosis. Materials are available in multiple languages to ensure accessibility.
+
+Target Populations:
+We prioritize outreach to underserved populations including low-income communities, racial and ethnic minorities, immigrant and refugee communities, and individuals with limited access to preventive care. Special attention is given to populations with higher cancer burden and lower screening rates.
+
+Community Partnerships:
+Our work involves collaboration with community health centers, nonprofit organizations, faith-based organizations, and health departments to ensure programs meet local needs and leverage existing community infrastructure and trust.
+
+Impact:
+Through systematic outreach and education, we aim to increase cancer screening rates, reduce cancer mortality, and promote health equity across the Philadelphia region. Our programs contribute to the institutional commitment to advance health equity and eliminate cancer disparities.
+
+For more information about our community outreach initiatives, visit: 
+
+https://www.jeffersonhealth.org/clinical-specialties/cancer/community-outreach-engagement`,
+    status: "Active",
+    tags: [
+      "Cancer Screening",
+      "Community Education",
+      "Health Literacy",
+      "Cancer Prevention",
+      "Community Outreach",
+      "Health Equity",
+      "Cancer Awareness",
+      "Preventive Care",
+    ],
+    publications: [],
+  },
 ];
 
 // ============================================================
