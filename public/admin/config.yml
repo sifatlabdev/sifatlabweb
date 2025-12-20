@@ -1,0 +1,494 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: content
+    label: Content
+    files:
+      - name: hero
+        label: Hero
+        file: src/content/hero.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Name
+            name: name
+            widget: string
+          - label: Badge
+            name: badge
+            widget: string
+            required: false
+          - label: Title
+            name: title
+            widget: string
+          - label: Bio
+            name: bio
+            widget: text
+          - label: Expertise Tags
+            name: expertiseTags
+            widget: list
+            field:
+              label: Tag
+              name: tag
+              widget: string
+          - label: Faculty Page URL
+            name: facultyPageUrl
+            widget: string
+            required: false
+          - label: Image Key
+            name: image
+            widget: string
+            required: false
+
+      - name: educations
+        label: Education
+        file: src/content/educations.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Entries
+            name: items
+            widget: list
+            fields:
+              - label: Degree
+                name: degree
+                widget: string
+              - label: Institution
+                name: institution
+                widget: string
+              - label: Year
+                name: year
+                widget: string
+              - label: Description
+                name: description
+                widget: text
+
+      - name: experiences
+        label: Experience
+        file: src/content/experiences.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Entries
+            name: items
+            widget: list
+            fields:
+              - label: Position
+                name: position
+                widget: string
+              - label: Institution
+                name: institution
+                widget: string
+              - label: Period
+                name: period
+                widget: string
+              - label: Description
+                name: description
+                widget: text
+
+      - name: projects
+        label: Research Projects
+        file: src/content/projects.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Projects
+            name: items
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Short Description
+                name: description
+                widget: text
+              - label: Detailed Description
+                name: detailedDescription
+                widget: text
+              - label: Status
+                name: status
+                widget: string
+              - label: Tags
+                name: tags
+                widget: list
+                field:
+                  label: Tag
+                  name: tag
+                  widget: string
+              - label: Publications
+                name: publications
+                widget: list
+                required: false
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Authors
+                    name: authors
+                    widget: string
+                  - label: Journal
+                    name: journal
+                    widget: string
+                  - label: Year
+                    name: year
+                    widget: string
+                  - label: DOI
+                    name: doi
+                    widget: string
+                    required: false
+                  - label: PMID
+                    name: pmid
+                    widget: string
+                    required: false
+
+      - name: socialProjects
+        label: Social Impact Projects
+        file: src/content/social-projects.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Projects
+            name: items
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Short Description
+                name: description
+                widget: text
+              - label: Detailed Description
+                name: detailedDescription
+                widget: text
+              - label: Status
+                name: status
+                widget: string
+              - label: Tags
+                name: tags
+                widget: list
+                field:
+                  label: Tag
+                  name: tag
+                  widget: string
+              - label: Publications
+                name: publications
+                widget: list
+                required: false
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Authors
+                    name: authors
+                    widget: string
+                  - label: Journal
+                    name: journal
+                    widget: string
+                  - label: Year
+                    name: year
+                    widget: string
+                  - label: DOI
+                    name: doi
+                    widget: string
+                    required: false
+                  - label: PMID
+                    name: pmid
+                    widget: string
+                    required: false
+
+      - name: publications
+        label: Publications
+        file: src/content/publications.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Entries
+            name: items
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Authors
+                name: authors
+                widget: string
+              - label: Journal
+                name: journal
+                widget: string
+              - label: Year
+                name: year
+                widget: string
+              - label: DOI
+                name: doi
+                widget: string
+                required: false
+              - label: PMID
+                name: pmid
+                widget: string
+                required: false
+              - label: Category
+                name: category
+                widget: list
+                required: false
+                field:
+                  label: Category
+                  name: categoryItem
+                  widget: string
+              - label: Subcategory
+                name: subcategory
+                widget: list
+                required: false
+                field:
+                  label: Subcategory
+                  name: subcategoryItem
+                  widget: string
+
+      - name: contributions
+        label: Research Contributions
+        file: src/content/contributions.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Entries
+            name: items
+            widget: list
+            fields:
+              - label: ID
+                name: id
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: text
+              - label: Key Achievements
+                name: keyAchievements
+                widget: list
+                field:
+                  label: Achievement
+                  name: achievement
+                  widget: string
+              - label: Publications
+                name: publications
+                widget: list
+                required: false
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Authors
+                    name: authors
+                    widget: string
+                  - label: Journal
+                    name: journal
+                    widget: string
+                  - label: Year
+                    name: year
+                    widget: string
+                  - label: DOI
+                    name: doi
+                    widget: string
+                    required: false
+                  - label: PMID
+                    name: pmid
+                    widget: string
+                    required: false
+
+      - name: publicEngagement
+        label: Public Engagement
+        file: src/content/public-engagement.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Years
+            name: items
+            widget: list
+            fields:
+              - label: Year
+                name: year
+                widget: string
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - label: ID
+                    name: id
+                    widget: number
+                  - label: Authors
+                    name: authors
+                    widget: string
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Type
+                    name: type
+                    widget: string
+                    required: false
+                  - label: Venue
+                    name: venue
+                    widget: string
+                  - label: Date
+                    name: date
+                    widget: string
+                  - label: Location
+                    name: location
+                    widget: string
+
+      - name: team
+        label: Team
+        file: src/content/team.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Lab Director
+            name: labDirector
+            widget: object
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Image Key
+                name: image
+                widget: string
+              - label: Specialty
+                name: specialty
+                widget: list
+                field:
+                  label: Specialty
+                  name: specialtyItem
+                  widget: string
+              - label: URL
+                name: url
+                widget: string
+                required: false
+          - label: University Collaborators
+            name: universityCollaborators
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Image Key
+                name: image
+                widget: string
+              - label: Specialty
+                name: specialty
+                widget: list
+                field:
+                  label: Specialty
+                  name: specialtyItem
+                  widget: string
+              - label: URL
+                name: url
+                widget: string
+                required: false
+          - label: External Collaborators
+            name: externalCollaborators
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Image Key
+                name: image
+                widget: string
+              - label: Specialty
+                name: specialty
+                widget: list
+                field:
+                  label: Specialty
+                  name: specialtyItem
+                  widget: string
+              - label: URL
+                name: url
+                widget: string
+                required: false
+          - label: Graduate Researchers
+            name: graduateResearchers
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Image Key
+                name: image
+                widget: string
+              - label: Specialty
+                name: specialty
+                widget: list
+                field:
+                  label: Specialty
+                  name: specialtyItem
+                  widget: string
+              - label: URL
+                name: url
+                widget: string
+                required: false
+
+      - name: contact
+        label: Contact
+        file: src/content/contact.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Email
+            name: email
+            widget: string
+          - label: Office Location
+            name: officeLocation
+            widget: object
+            fields:
+              - label: Campus
+                name: campus
+                widget: string
+              - label: Address
+                name: address
+                widget: string
+              - label: City
+                name: city
+                widget: string
+          - label: Office Hours
+            name: officeHours
+            widget: string
+            required: false
+          - label: Section Title
+            name: sectionTitle
+            widget: string
+            required: false
+          - label: Section Description
+            name: sectionDescription
+            widget: text
+            required: false
+          - label: Card Description
+            name: cardDescription
+            widget: text
+            required: false

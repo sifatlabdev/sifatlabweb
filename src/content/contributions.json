@@ -1,0 +1,168 @@
+{
+  "items": [
+    {
+      "id": "tobacco-cessation",
+      "title": "Tobacco Cessation and Health Equity",
+      "description": "Promoting health equity amongst vulnerable populations by focusing on smoking cessation interventions tailored to individuals experiencing homelessness and other socioeconomically disadvantaged groups. Research explores e-cigarettes as harm reduction and the impact of financial incentives on cessation outcomes.",
+      "keyAchievements": [
+        "Developed innovative smoking cessation interventions for homeless populations",
+        "Evaluated e-cigarette switching as harm reduction strategy",
+        "Examined financial incentives impact on cessation outcomes",
+        "Published in high-impact journals including JAMA Network Open"
+      ],
+      "publications": [
+        {
+          "title": "E-cigarette switching and financial incentives to promote combustible cigarette cessation among adults accessing shelter services: A pilot study",
+          "authors": "Sifat, M., Alexander, A. C., Businelle, M. S., Frank-Pearce, S. G., Boozary, L. K., Wagener, T. L., Ahluwalia, J. S., & Kendzor, D. E.",
+          "journal": "Drug Abuse and Dependence Reports",
+          "year": "2024",
+          "doi": "https://doi.org/10.1016/j.dadr.2024.100XXX",
+          "pmid": ""
+        },
+        {
+          "title": "Small financial incentives for smoking cessation among socioeconomically disadvantaged adults: A randomized controlled trial",
+          "authors": "Kendzor, D. E ., Frank-Pearce, S. G., Waring, J. J.C., Chen, S., Hebert, E. T., Swartz, M. D., Alexander, A. C., Sifat, M. S., Boozary, L. K., Wetter, D. W",
+          "journal": "JAMA Network Open",
+          "year": "2024",
+          "doi": "",
+          "pmid": ""
+        },
+        {
+          "title": "Varenicline combined with oral nicotine replacement therapy and smartphone-based medication reminders for smoking cessation: Feasibility randomized controlled trial",
+          "authors": "Sifat, M. S., Hébert, E. T., Ahluwalia, J. S., Businelle, M. S., Waring, J. J. C., Frank-Pearce, S. G., Bryer, C., Benson, L., Madison, S., Planas, L. G., Baranskaya, I., & Kendzor, D. E.",
+          "journal": "JMIR Formative Research",
+          "year": "2023",
+          "doi": "https://doi.org/10.2196/48857",
+          "pmid": "37889541"
+        },
+        {
+          "title": "The influence of sociodemographic, tobacco use, and mental health characteristics on treatment adherence among adults enrolled in a community-based tobacco cessation program",
+          "authors": "Ogunsanya ME, Frank-Pearce S, Chen S, Sifat M, Cohn AM, Businelle MS, Kendzor DE",
+          "journal": "Addictive Behaviors Reports Journal",
+          "year": "2024",
+          "doi": "",
+          "pmid": ""
+        }
+      ]
+    },
+    {
+      "id": "community-engagement",
+      "title": "Community Engagement in Health Disparities Research",
+      "description": "Building partnerships with organizations serving marginalized populations to co-develop and implement culturally and contextually relevant interventions. Focus on cancer prevention, behavioral health, and amplifying voices of vulnerable communities through collaborative scholarship.",
+      "keyAchievements": [
+        "Established partnerships with mobile screening units and community organizations",
+        "Developed culturally tailored research with refugee populations",
+        "Published collaborative work with community-based researchers",
+        "Implemented HPV self-sampling protocols in diverse communities"
+      ],
+      "publications": [
+        {
+          "title": "Reaching the unheard: overcoming challenges in health research with hard-to-reach populations",
+          "authors": "Bekteshi, V., Sifat, M. and Kendzor, D.E",
+          "journal": "International Journal for Equity in Health, 23(1), p.61",
+          "year": "2024",
+          "doi": "",
+          "pmid": ""
+        },
+        {
+          "title": "Tobacco use characteristics, treatment preferences, and motivation to quit among adults accessing a day shelter in Oklahoma City",
+          "authors": "Boozary, L.K., Frank-Pearce, S.G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S. and Kendzor, D.E.",
+          "journal": "Drug and Alcohol Dependence Reports",
+          "year": "2022",
+          "doi": "https://doi.org/10.1016/j.dadr.2022.100117",
+          "pmid": ""
+        },
+        {
+          "title": "Greater Discrimination Frequency and Lower Distress Tolerance Are Associated with Mental Health Problems Among Racially Privileged and Minoritized Adults Accessing an Urban Day Shelter",
+          "authors": "Sifat, M. S., Ehlke, S. J., Ogunsanya, M., Frank-Pearce, S. G., Boozary, L. K., Alexander, A. C., Businelle, M. S., & Kendzor, D. E",
+          "journal": "Journal of racial and ethnic health disparities",
+          "year": "2023",
+          "doi": "https://doi.org/10.1007/s40615-022-01496-z",
+          "pmid": ""
+        }
+      ]
+    },
+    {
+      "id": "mental-health-protective-factors",
+      "title": "Mental Health and Protective Factors in Disadvantaged Populations",
+      "description": "Understanding modifiable factors related to help-seeking behaviors and health problems in socioeconomically disadvantaged populations. Research explores self-determining factors of behavior change and identifies protective factors like social support that buffer poor health outcomes.",
+      "keyAchievements": [
+        "Examined migration-related stress in Afghan refugee population",
+        "Identified barriers to mental health care access in university students",
+        "Studied family factors predicting suicidal ideation across life course",
+        "Published work on protective factors in African American cohort"
+      ],
+      "publications": [
+        {
+          "title": "The association of migration-related stress with poor mental health among recently resettled Afghan refugees",
+          "authors": "Sifat, M.S., Kenney, S., Bekteshi, V., Chiang, S.C., Ogunsanya, M., Boozary, L.K., Alexander, A.C. and Kendzor, D.E.",
+          "journal": "Journal of Migration and Health",
+          "year": "2024",
+          "doi": "https://doi.org/10.1016/j.jmh.2024.100282",
+          "pmid": ""
+        },
+        {
+          "title": "An Examination of Barriers to Accessing Mental Health Care, and Their Association with Depression, Stress, Suicidal Ideation, and Wellness in a Bangladeshi University Student Sample",
+          "authors": "Sifat M, Huq M, Baig M, Tasnim N, Green K",
+          "journal": "International Journal of Environmental Research and Public Health, 20(2):904",
+          "year": "2023",
+          "doi": "https://doi.org/10.3390/ijerph20020904",
+          "pmid": ""
+        },
+        {
+          "title": "Motivations and Barriers for Clinical Mental Health Help-Seeking in Bangladeshi University Students, A Cross-Sectional Study",
+          "authors": "Sifat M, Tasnim N, Hoque N, Saperstein S, Stoebenau K, Shin R, Feldman R, Green K.",
+          "journal": "Global Mental Health",
+          "year": "2022",
+          "doi": "",
+          "pmid": ""
+        },
+        {
+          "title": "Associations Between Family Factors, Social Integration, and Suicidal Ideation Across the Life Course of an Urban African American Cohort",
+          "authors": "Sifat, M. S., Kuo, C., Yoo, J. H., Holder, S., & Green, K. M.",
+          "journal": "Journal of Black Psychology",
+          "year": "2023",
+          "doi": "https://doi.org/10.1177/00957984221150062",
+          "pmid": ""
+        }
+      ]
+    },
+    {
+      "id": "digital-health",
+      "title": "Digital Health for Underserved Populations",
+      "description": "Leveraging digital health technologies to increase access to healthcare and improve service utilization, with focus on culturally competent implementation for specific populations. Research examines mobile health applications for mental wellness in low-income country populations.",
+      "keyAchievements": [
+        "Developed smartphone-based medication adherence interventions",
+        "Studied digital health acceptability in Bangladesh university students",
+        "Explored mindfulness-based mobile interventions cross-culturally",
+        "Published feasibility studies on mHealth for smoking cessation"
+      ],
+      "publications": [
+        {
+          "title": "Varenicline Combined With Oral Nicotine Replacement Therapy and Smartphone-Based Medication Reminders for Smoking Cessation: Feasibility Randomized Controlled Trial",
+          "authors": "Sifat M, Hébert ET, Ahluwalia JS, Businelle MS, Waring JJC, Frank-Pearce SG, Bryer C, Benson L, Madison S, Planas LG, Baranskaya I, Kendzor DE.",
+          "journal": "JMIR Formative Research",
+          "year": "2023",
+          "doi": "https://doi.org/10.2196/48857",
+          "pmid": "37889541"
+        },
+        {
+          "title": "Motivations Toward Using Digital Health and Exploring the Possibility of Using Digital Health for Mental Health in Bangladesh University Students",
+          "authors": "Sifat MS, Saperstein SL, Tasnim N, Green KM",
+          "journal": "JMIR Form Res; 6(3):e34901",
+          "year": "2022",
+          "doi": "https://doi.org/10.2196/34901",
+          "pmid": ""
+        },
+        {
+          "title": "A qualitative exploration of university student perspectives on mindfulness-based stress reduction exercises via smartphone app in Bangladesh",
+          "authors": "Sifat M, Tasnim N, Steobenou K, Green K.",
+          "journal": "International Journal of Qualitative Studies on Health and Well-being",
+          "year": "2022",
+          "doi": "https://doi.org/10.1080/17482631.2022.2113015",
+          "pmid": ""
+        }
+      ]
+    }
+  ]
+}

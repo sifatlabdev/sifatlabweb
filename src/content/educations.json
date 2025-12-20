@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "degree": "Postdoctoral Fellowship in Cancer Prevention/Health Disparities",
+      "institution": "The University of Oklahoma Health Sciences Center, Oklahoma City, OK",
+      "year": "2021-2023",
+      "description": "Specialized training in cancer prevention and health disparities research at the Stephenson Cancer Center's Health Promotion Research Center."
+    },
+    {
+      "degree": "Ph.D. in Public Health/Global Mental Health",
+      "institution": "The University of Maryland, College Park, MD",
+      "year": "2017-2021",
+      "description": "Doctoral research focused on global mental health and behavioral and community health with emphasis on vulnerable populations."
+    },
+    {
+      "degree": "Master of Public Health (MPH) in Health Promotion",
+      "institution": "The George Washington University, Washington, D.C.",
+      "year": "2014-2016",
+      "description": "Graduate studies in health promotion and public health strategies for community wellness."
+    },
+    {
+      "degree": "Bachelor of Science in Psychology (Neuroscience)",
+      "institution": "The Pennsylvania State University, University Park, PA",
+      "year": "2009-2013",
+      "description": "Undergraduate studies in psychology with neuroscience focus and biology minor."
+    }
+  ]
+}
