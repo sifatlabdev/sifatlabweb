@@ -32,19 +32,25 @@ function PublicationCard({ publication }: { publication: Publication }) {
         {(publication.category || publication.subcategory) && (
           <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
             <div className="flex flex-wrap gap-2">
-              {publication.category && (
-                <Badge className="bg-sage-green text-white border-0 text-xs whitespace-normal break-words max-w-full shrink">
-                  {publication.category}
-                </Badge>
-              )}
-              {publication.subcategory && (
-                <Badge
-                  variant="outline"
-                  className="border-beige-dark text-sage-green text-xs whitespace-normal break-words max-w-full shrink"
-                >
-                  {publication.subcategory}
-                </Badge>
-              )}
+              {publication.category &&
+                publication.category.map((cat) => (
+                  <Badge
+                    key={cat}
+                    className="bg-sage-green text-white border-0 text-xs whitespace-normal break-words max-w-full shrink"
+                  >
+                    {cat}
+                  </Badge>
+                ))}
+              {publication.subcategory &&
+                publication.subcategory.map((subcat) => (
+                  <Badge
+                    key={subcat}
+                    variant="outline"
+                    className="border-beige-dark text-sage-green text-xs whitespace-normal break-words max-w-full shrink"
+                  >
+                    {subcat}
+                  </Badge>
+                ))}
             </div>
           </div>
         )}
