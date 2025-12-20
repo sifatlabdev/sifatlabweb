@@ -475,7 +475,7 @@ export const jeffersonProjects: JeffersonProject[] = [
   },
 ];
 // ============================================================================
-// Social IMPACT PROJECTS (Current Institution Only)
+// Social Impact Initiatives (Current Institution Only)
 // ============================================================================
 // ✅ COMPLETE
 export const socialImpactProjects: JeffersonProject[] = [
@@ -1855,8 +1855,9 @@ export const contactInfo: ContactInfo = {
 
 export const contactSectionData = {
   title: "Contact & Collaboration",
-  description:
-    "We welcome collaboration opportunities with researchers, community organizations, and students dedicated to health equity. Reach out to discuss partnerships, research, media inquiries, or joining our team.",
+  description: `We welcome collaboration opportunities with researchers, community organizations, and students dedicated to health equity.
+
+We also welcome media inquiries from journalists seeking expert, research informed perspectives on health equity.`,
   cardDescription:
     "Multiple ways to connect for research collaboration and academic or media inquiries",
 };
@@ -1864,7 +1865,7 @@ export const contactSectionData = {
 export const publicEngagementSectionData = {
   title: "Public Engagement",
   subtitle:
-    "Sharing research insights with the scientific community and general public through presentations, workshops, and outreach activities",
+    "Engaging with ​the public, community partners, policymakers, ​and practitioners through ​public talks, workshops, and outreach​ activities, translating research findings into real ​- world policy and practice.",
   pubImage: pubImage,
 
   pubImage2: pubImage2,
@@ -1934,7 +1935,8 @@ export const publicEngagementData: PublicEngagementYear[] = [
       {
         id: 6,
         authors: "Sifat, M.",
-        title: "Hepatitis B Foundation",
+        title:
+          "Hepatitis B Foundation: Closing Remarks on Behalf of Sidney Kimmel Comprehensive Cancer Center",
         type: "Invited Speaker",
         venue: "Liver Cancer Conference",
         date: "June 2025",

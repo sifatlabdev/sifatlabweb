@@ -36,17 +36,17 @@ export function Header() {
                   Research
                 </button>
               </Link>
-              <Link to="/socialimpactprojects">
-                <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                  Social Impact Projects
-                </button>
-              </Link>
-
               <Link to="/publications">
                 <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
                   Publications
                 </button>
               </Link>
+              <Link to="/socialimpactprojects">
+                <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
+                  Social Impact Initiatives
+                </button>
+              </Link>
+
               <Link to="/publicengagement">
                 <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
                   Public Engagement
@@ -89,17 +89,17 @@ export function Header() {
                     Research
                   </button>
                 </Link>
-                <Link to="/socialimpactprojects">
-                  <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                    Social Impact Projects
-                  </button>
-                </Link>
-
                 <Link to="/publications">
                   <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
                     Publications
                   </button>
                 </Link>
+                <Link to="/socialimpactprojects">
+                  <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
+                    Social Impact Initiatives
+                  </button>
+                </Link>
+
                 <Link to="/publicengagement">
                   <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
                     Public Engagement

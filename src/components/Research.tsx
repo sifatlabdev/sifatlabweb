@@ -157,9 +157,24 @@ function getStatusColor(status: string) {
   }
 }
 
+function sortProjectsByStatus(
+  projects: JeffersonProject[]
+): JeffersonProject[] {
+  return [...projects].sort((a, b) => {
+    const statusOrder: { [key: string]: number } = {
+      Active: 0,
+      Ongoing: 0,
+      Planning: 1,
+      Completed: 2,
+    };
+    return (statusOrder[a.status] ?? 3) - (statusOrder[b.status] ?? 3);
+  });
+}
+
 export function Research() {
   const [selectedProject, setSelectedProject] =
     useState<JeffersonProject | null>(null);
+  const sortedProjects = sortProjectsByStatus(jeffersonProjects);
 
   return (
     <>
@@ -175,7 +190,7 @@ export function Research() {
               addressing critical health disparities in underserved communities.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
-              {jeffersonProjects.map((project, index) => (
+              {sortedProjects.map((project, index) => (
                 <Card
                   key={index}
                   className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-sage-green cursor-pointer"

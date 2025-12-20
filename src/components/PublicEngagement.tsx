@@ -52,10 +52,10 @@ export function PublicEngagement() {
           </p>
         </div>
 
-        {/* Two-Column Layout: Images on Left, List on Right */}
+        {/* Two-Column Layout: Images on Left, List on Right (Images first on mobile) */}
         <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Left Column - Engagement List by Year */}
-          <div className="space-y-8">
+          <div className="space-y-8 order-last lg:order-first">
             {publicEngagementData.map((yearData) => (
               <div key={yearData.year}>
                 <div className="mb-4">
@@ -82,7 +82,7 @@ export function PublicEngagement() {
           </div>
 
           {/* Right Column - Hero Images Stacked */}
-          <div className="space-y-6 lg:sticky lg:top-24">
+          <div className="space-y-6 lg:sticky lg:top-24 order-first lg:order-last">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <ImageWithFallback
                 src={publicEngagementSectionData.pubImage}
