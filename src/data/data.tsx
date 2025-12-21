@@ -628,28 +628,6 @@ export const researchSectionData = {
 };
 
 // ============================================================================
-// INTERFACES
-// ============================================================================
-export interface Publication {
-  title: string;
-  authors: string;
-  journal: string;
-  year: string;
-  doi: string;
-  pmid?: string;
-  category?: string[];
-  subcategory?: string[];
-}
-
-export interface ContributionToScience {
-  id: string;
-  title: string;
-  description: string;
-  keyAchievements: string[];
-  publications: Publication[];
-}
-
-// ============================================================================
 // CONTRIBUTIONS TO SCIENCE (Reorganized with New Categories)
 // ============================================================================
 export const contributions: ContributionToScience[] = [
@@ -852,6 +830,18 @@ export const contributions: ContributionToScience[] = [
     publications: [
       {
         title:
+          "Tobacco use characteristics, treatment preferences, and motivation to quit among adults accessing a day shelter in Oklahoma City",
+        authors:
+          "Boozary, L.K., Frank-Pearce, S.G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S. and Kendzor, D.E.",
+        journal: "Drug and Alcohol Dependence Reports",
+        year: "2022",
+        doi: "https://doi.org/10.1016/j.dadr.2022.100117",
+        pmid: "",
+        category: ["Cancer Prevention & Control"],
+        subcategory: [],
+      },
+      {
+        title:
           "E-cigarette switching and financial incentives to promote combustible cigarette cessation among adults accessing shelter services: A pilot study",
         authors:
           "Sifat, M., Alexander, A. C., Businelle, M. S., Frank-Pearce, S. G., Boozary, L. K., Wagener, T. L., Ahluwalia, J. S., & Kendzor, D. E.",
@@ -941,44 +931,6 @@ export const contributions: ContributionToScience[] = [
     ],
   },
   {
-    id: "access-care-navigation",
-    title: "Access to Care & Service Navigation",
-    description:
-      "Research examining barriers to healthcare access and strategies to improve service utilization among vulnerable populations. This work explores help-seeking behaviors, treatment adherence, healthcare navigation challenges, and the development of interventions to connect underserved communities with needed resources and services.",
-    keyAchievements: [
-      "Identified barriers to mental health care and cancer screening services",
-      "Examined treatment adherence patterns in community-based programs",
-      "Developed strategies to improve healthcare navigation for underserved populations",
-      "Investigated motivations and barriers for clinical help-seeking",
-    ],
-    publications: [
-      {
-        title:
-          "An Examination of Barriers to Accessing Mental Health Care, and Their Association with Depression, Stress, Suicidal Ideation, and Wellness in a Bangladeshi University Student Sample",
-        authors: "Sifat M, Huq M, Baig M, Tasnim N, Green K",
-        journal:
-          "International Journal of Environmental Research and Public Health",
-        year: "2023",
-        doi: "https://doi.org/10.3390/ijerph20020904",
-        pmid: "36673660",
-        category: ["Access to Care & Service Navigation"],
-        subcategory: [],
-      },
-      {
-        title:
-          "Tobacco use characteristics, treatment preferences, and motivation to quit among adults accessing a day shelter in Oklahoma City",
-        authors:
-          "Boozary, L.K., Frank-Pearce, S.G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S. and Kendzor, D.E.",
-        journal: "Drug and Alcohol Dependence Reports",
-        year: "2022",
-        doi: "https://doi.org/10.1016/j.dadr.2022.100117",
-        pmid: "",
-        category: ["Access to Care & Service Navigation"],
-        subcategory: [],
-      },
-    ],
-  },
-  {
     id: "digital-mobile-health",
     title: "Digital & Mobile Health Interventions",
     description:
@@ -1046,18 +998,6 @@ export const contributions: ContributionToScience[] = [
         journal: "International Journal for Equity in Health",
         year: "2024",
         doi: "",
-        pmid: "",
-        category: ["Community Engagement in Health Disparities Research"],
-        subcategory: [],
-      },
-      {
-        title:
-          "Tobacco use characteristics, treatment preferences, and motivation to quit among adults accessing a day shelter in Oklahoma City",
-        authors:
-          "Boozary, L.K., Frank-Pearce, S.G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S. and Kendzor, D.E.",
-        journal: "Drug and Alcohol Dependence Reports",
-        year: "2022",
-        doi: "https://doi.org/10.1016/j.dadr.2022.100117",
         pmid: "",
         category: ["Community Engagement in Health Disparities Research"],
         subcategory: [],
