@@ -543,7 +543,7 @@ export const socialImpactProjects: JeffersonProject[] = [
     publications: [],
   },
   {
-    title: "Evaluation of Como Sano, Se Feliz (Eat Healthy, be happy)",
+    title: "Evaluation of Como Sano, Se Feliz (Eat Healthy, Be Happy)",
     description:
       "This project evaluates a 3-month cooking program that empowers Spanish-speaking cancer survivors through nutrition education and culinary skills training. Conducted at Mi Salud Wellness Center, the program teaches cancer-preventive cooking while building dietary confidence. By providing culturally-tailored, practical tools, it helps underserved communities reduce cancer risk and supports recovery—serving as a model for nutrition-focused community health interventions addressing health disparities.",
     detailedDescription: `Principal Investigators:
@@ -565,7 +565,7 @@ Topics Covered:
 
 Conclusion:
 Come Sano, Se Feliz (Eat Healthy, Be Happy) empowered underserved Spanish-speaking populations by providing the tools and knowledge to adopt healthier dietary practices, reduce cancer risks, and support recovery for survivors. This model demonstrates how culturally-tailored interventions can effectively address health disparities through nutrition education.`,
-    status: "Active",
+    status: "Completed",
     tags: [
       "Culinary Medicine",
       "Cancer Survivorship",
@@ -627,16 +627,226 @@ export const researchSectionData = {
     "Our work addresses health equity through tobacco cessation, cancer prevention, mental health interventions, and digital health solutions. Browse our peer-reviewed publications spanning multiple disciplines.",
 };
 
+// ============================================================================
+// INTERFACES
+// ============================================================================
+export interface Publication {
+  title: string;
+  authors: string;
+  journal: string;
+  year: string;
+  doi: string;
+  pmid?: string;
+  category?: string[];
+  subcategory?: string[];
+}
+
+export interface ContributionToScience {
+  id: string;
+  title: string;
+  description: string;
+  keyAchievements: string[];
+  publications: Publication[];
+}
+
+// ============================================================================
+// CONTRIBUTIONS TO SCIENCE (Reorganized with New Categories)
+// ============================================================================
 export const contributions: ContributionToScience[] = [
   {
-    id: "tobacco-cessation",
-    title: "Tobacco Cessation and Health Equity",
+    id: "health-equity-sdoh",
+    title: "Health Equity & Social Determinants of Health",
     description:
-      "Promoting health equity amongst vulnerable populations by focusing on smoking cessation interventions tailored to individuals experiencing homelessness and other socioeconomically disadvantaged groups. Research explores e-cigarettes as harm reduction and the impact of financial incentives on cessation outcomes.",
+      "Research addressing the root causes of health disparities by examining social, economic, and environmental factors that influence health outcomes. This work focuses on developing interventions that address systemic barriers to healthcare access and promote equity across vulnerable populations, including refugees, marginalized communities, and underserved groups.",
     keyAchievements: [
-      "Developed innovative smoking cessation interventions for homeless populations",
-      "Evaluated e-cigarette switching as harm reduction strategy",
-      "Examined financial incentives impact on cessation outcomes",
+      "Examined health disparities across diverse racial, ethnic, and socioeconomic groups",
+      "Developed culturally tailored interventions for hard-to-reach populations",
+      "Published work on discrimination, structural barriers, and protective factors",
+      "Advanced understanding of migration-related stress and refugee health",
+    ],
+    publications: [
+      {
+        title:
+          "Reaching the unheard: overcoming challenges in health research with hard-to-reach populations",
+        authors: "Bekteshi, V., Sifat, M. and Kendzor, D.E",
+        journal: "International Journal for Equity in Health",
+        year: "2024",
+        doi: "",
+        pmid: "",
+        category: ["Health Equity & Social Determinants of Health"],
+        subcategory: [],
+      },
+      {
+        title:
+          "The association of migration-related stress with poor mental health among recently resettled Afghan refugees",
+        authors:
+          "Sifat, M.S., Kenney, S., Bekteshi, V., Chiang, S.C., Ogunsanya, M., Boozary, L.K., Alexander, A.C. and Kendzor, D.E.",
+        journal: "Journal of Migration and Health",
+        year: "2024",
+        doi: "https://doi.org/10.1016/j.jmh.2024.100282",
+        pmid: "",
+        category: ["Health Equity & Social Determinants of Health"],
+        subcategory: ["Refugee & Migrant Health"],
+      },
+      {
+        title:
+          "Greater Discrimination Frequency and Lower Distress Tolerance Are Associated with Mental Health Problems Among Racially Privileged and Minoritized Adults Accessing an Urban Day Shelter",
+        authors:
+          "Sifat, M. S., Ehlke, S. J., Ogunsanya, M., Frank-Pearce, S. G., Boozary, L. K., Alexander, A. C., Businelle, M. S., & Kendzor, D. E",
+        journal: "Journal of Racial and Ethnic Health Disparities",
+        year: "2023",
+        doi: "https://doi.org/10.1007/s40615-022-01496-z",
+        pmid: "",
+        category: ["Health Equity & Social Determinants of Health"],
+        subcategory: [],
+      },
+      {
+        title:
+          "Does parental racial socialization protect Black youth from the impact of racism on problematic substance use over the long term?",
+        authors: "Kuo, C., Ahn, L. H., Sifat, M., & Green, K. M.",
+        journal: "Cultural Diversity & Ethnic Minority Psychology",
+        year: "2025",
+        doi: "https://doi.org/10.1037/cdp0000759",
+        pmid: "",
+        category: ["Health Equity & Social Determinants of Health"],
+        subcategory: ["Faith & Cultural Contexts in Health"],
+      },
+      {
+        title:
+          "The Association of Cultural Identification with Obesity among African Americans",
+        authors:
+          "Nolan, M., Waring, J.J., Noble, B., Bradley, D., Olurotimi, O., Fronheiser, J., Sifat, M., Boozary, L.K., McQuoid, J., Kendzor, D.E. and Alexander, A.C",
+        journal: "Journal of Racial and Ethnic Health Disparities",
+        year: "2023",
+        doi: "https://doi.org/10.1007/s40615-023-01615-4",
+        pmid: "",
+        category: ["Health Equity & Social Determinants of Health"],
+        subcategory: ["Faith & Cultural Contexts in Health"],
+      },
+      {
+        title:
+          "The development and implementation of a custom-tailored suicide response training for Muslim communities",
+        authors:
+          "Awaad, Rania, Mona Midani, Tasmeer Ali, Munjireen S. Sifat, and Mawdah Albatnuni",
+        journal: "Journal of Religion and Health",
+        year: "2024",
+        doi: "",
+        pmid: "",
+        category: ["Health Equity & Social Determinants of Health"],
+        subcategory: [
+          "Faith & Cultural Contexts in Health",
+          "Implementation Science & Systems Change",
+        ],
+      },
+      {
+        title:
+          "Developing a suicide crisis response team in America: an Islamic perspective",
+        authors:
+          "Awaad, Rania, Zuha Durrani, Yasmeen Quadri, Munjireen S. Sifat, Anwar Hussein, Taimur Kouser, Osama El-Gabalawy, Neshwa Rajeh, and Sana Shareef",
+        journal: "Journal of Religion and Health",
+        year: "2024",
+        doi: "",
+        pmid: "",
+        category: ["Health Equity & Social Determinants of Health"],
+        subcategory: ["Faith & Cultural Contexts in Health"],
+      },
+    ],
+  },
+  {
+    id: "behavioral-mental-health",
+    title: "Behavioral & Mental Health",
+    description:
+      "Research exploring the complex relationships between behavioral factors, mental health outcomes, and health-seeking behaviors in vulnerable populations. This work examines barriers to mental health care, protective factors that buffer against poor outcomes, and interventions designed to improve mental wellness across diverse communities.",
+    keyAchievements: [
+      "Identified barriers to mental health care access in diverse populations",
+      "Examined protective factors and resilience in underserved communities",
+      "Studied family factors and social integration predicting mental health outcomes",
+      "Developed culturally appropriate mental health interventions",
+    ],
+    publications: [
+      {
+        title:
+          "An Examination of Barriers to Accessing Mental Health Care, and Their Association with Depression, Stress, Suicidal Ideation, and Wellness in a Bangladeshi University Student Sample",
+        authors: "Sifat M, Huq M, Baig M, Tasnim N, Green K",
+        journal:
+          "International Journal of Environmental Research and Public Health",
+        year: "2023",
+        doi: "https://doi.org/10.3390/ijerph20020904",
+        pmid: "36673660",
+        category: ["Behavioral & Mental Health"],
+        subcategory: [],
+      },
+      {
+        title:
+          "Motivations and Barriers for Clinical Mental Health Help-Seeking in Bangladeshi University Students, A Cross-Sectional Study",
+        authors:
+          "Sifat M, Tasnim N, Hoque N, Saperstein S, Stoebenau K, Shin R, Feldman R, Green K.",
+        journal: "Global Mental Health",
+        year: "2022",
+        doi: "",
+        pmid: "",
+        category: ["Behavioral & Mental Health"],
+        subcategory: [],
+      },
+      {
+        title:
+          "Associations Between Family Factors, Social Integration, and Suicidal Ideation Across the Life Course of an Urban African American Cohort",
+        authors:
+          "Sifat, M. S., Kuo, C., Yoo, J. H., Holder, S., & Green, K. M.",
+        journal: "Journal of Black Psychology",
+        year: "2023",
+        doi: "https://doi.org/10.1177/00957984221150062",
+        pmid: "",
+        category: ["Behavioral & Mental Health"],
+        subcategory: [],
+      },
+      {
+        title:
+          "College Students' Coping, Resilience, Well-Being, Academic Experiences, and Help-Seeking Attitudes During COVID-19",
+        authors:
+          "Wang, Y. W., Abebe, I., Cruz, T. E., Arévalo Avalos, M. R., Sifat, M., Abdelwahab, S., & Li, T.",
+        journal: "The Counseling Psychologist",
+        year: "2024",
+        doi: "https://doi.org/10.1177/00110000241234567",
+        pmid: "",
+        category: ["Behavioral & Mental Health"],
+        subcategory: [],
+      },
+      {
+        title:
+          "Pandemic-related stress is associated with poor mental health outcomes among African Americans",
+        authors:
+          "Brewer, K., Waring, J.J.C., Noble, B., Bradley, D., Olurotimi, O., Fronheiser, J., Sifat, M., Ehlke, S.J., Boozary, L.K., McQuoid, J., Kendzor, D. & Alexander, A.C.",
+        journal: "Journal of Racial and Ethnic Health Disparities",
+        year: "2022",
+        doi: "https://doi.org/10.1007/s40615-022-01383-7",
+        pmid: "",
+        category: ["Behavioral & Mental Health"],
+        subcategory: [],
+      },
+      {
+        title:
+          "Perceptions of Mental Health and Exploring the Role of Social Activism Among African Americans Exposed to Media Coverage of Police Brutality and Protests",
+        authors:
+          "Alexander, A.C., Waring, J.J.C., Noble, B., Bradley, D. Olurotimi, O., Fronheiser, J., Sifat, M., Ehlke, S.J., Boozary, L.K., McQuoid, J., & Kendzor, D.E.",
+        journal: "Journal of Racial and Ethnic Health Disparities",
+        year: "2022",
+        doi: "https://doi.org/10.1007/s40615-022-01326-2",
+        pmid: "",
+        category: ["Behavioral & Mental Health"],
+        subcategory: [],
+      },
+    ],
+  },
+  {
+    id: "cancer-prevention-control",
+    title: "Cancer Prevention & Control",
+    description:
+      "Research focused on reducing cancer risk and improving cancer screening rates in underserved populations. This work addresses tobacco-related cancers, cancer screening barriers, and the development of innovative approaches to cancer prevention including HPV self-sampling, mobile screening units, and culturally tailored interventions.",
+    keyAchievements: [
+      "Developed smoking cessation interventions targeting cancer prevention",
+      "Examined cancer screening disparities and beliefs in diverse communities",
+      "Evaluated financial incentives and behavioral interventions for tobacco cessation",
       "Published in high-impact journals including JAMA Network Open",
     ],
     publications: [
@@ -647,18 +857,20 @@ export const contributions: ContributionToScience[] = [
           "Sifat, M., Alexander, A. C., Businelle, M. S., Frank-Pearce, S. G., Boozary, L. K., Wagener, T. L., Ahluwalia, J. S., & Kendzor, D. E.",
         journal: "Drug Abuse and Dependence Reports",
         year: "2024",
-
         doi: "https://doi.org/10.1016/j.dadr.2024.100XXX",
         pmid: "",
+        category: ["Cancer Prevention & Control"],
+        subcategory: ["Tobacco Control & Harm Reduction"],
       },
       {
         title:
           "Small financial incentives for smoking cessation among socioeconomically disadvantaged adults: A randomized controlled trial",
         authors:
-          "Kendzor, D. E ., Frank-Pearce, S. G., Waring, J. J.C., Chen, S., Hebert, E. T., Swartz, M. D., Alexander, A. C., Sifat, M. S., Boozary, L. K., Wetter, D. W",
+          "Kendzor, D. E., Frank-Pearce, S. G., Waring, J. J.C., Chen, S., Hebert, E. T., Swartz, M. D., Alexander, A. C., Sifat, M. S., Boozary, L. K., Wetter, D. W",
         journal: "JAMA Network Open",
         year: "2024",
         doi: "",
+        pmid: "",
         category: ["Cancer Prevention & Control"],
         subcategory: [
           "Tobacco Control & Harm Reduction",
@@ -667,54 +879,89 @@ export const contributions: ContributionToScience[] = [
       },
       {
         title:
-          "Varenicline combined with oral nicotine replacement therapy and smartphone-based medication reminders for smoking cessation: Feasibility randomized controlled trial",
-        authors:
-          "Sifat, M. S., Hébert, E. T., Ahluwalia, J. S., Businelle, M. S., Waring, J. J. C., Frank-Pearce, S. G., Bryer, C., Benson, L., Madison, S., Planas, L. G., Baranskaya, I., & Kendzor, D. E.",
-        journal: "JMIR Formative Research",
-        year: "2023",
-
-        doi: "https://doi.org/10.2196/48857",
-        pmid: "37889541",
-      },
-      {
-        title:
           "The influence of sociodemographic, tobacco use, and mental health characteristics on treatment adherence among adults enrolled in a community-based tobacco cessation program",
         authors:
           "Ogunsanya ME, Frank-Pearce S, Chen S, Sifat M, Cohn AM, Businelle MS, Kendzor DE",
-        journal: "Addictive Behaviors Reports Journal",
+        journal: "Addictive Behaviors Reports",
         year: "2024",
         doi: "",
+        pmid: "",
+        category: ["Cancer Prevention & Control"],
+        subcategory: ["Tobacco Control & Harm Reduction"],
+      },
+      {
+        title:
+          "Incentivizing Tobacco Helpline Engagement in Persistent Poverty Counties: A Randomized Trial",
+        authors:
+          "Kendzor, D. E., Davie, M., Chen, M., Hart, J., Frank-Pearce, S. G., Doescher, M. P., Alexander, A. C., Businelle, M. S., Ogunsanya, M. E., Sifat, M. S., Boozary, L. K",
+        journal: "American Journal of Preventive Medicine",
+        year: "2024",
+        doi: "",
+        pmid: "",
         category: ["Cancer Prevention & Control"],
         subcategory: [
-          "Health Equity & Social Determinants of Health",
-          "Digital & Mobile Health Interventions",
-          "Behavioral & Mental Health",
-          "Access to Care & Service Navigation",
           "Tobacco Control & Harm Reduction",
+          "Implementation Science & Systems Change",
         ],
+      },
+      {
+        title:
+          "Sociodemographic Correlates of Cancer-Related Beliefs Among Chinese Speaking Adults in Greater Philadelphia",
+        authors: "Song, Y., Sifat, M., Phan, L. et al.",
+        journal: "Journal of Racial and Ethnic Health Disparities",
+        year: "2025",
+        doi: "https://doi.org/10.1007/s40615-025-02565-9",
+        pmid: "",
+        category: ["Cancer Prevention & Control"],
+        subcategory: ["Faith & Cultural Contexts in Health"],
+      },
+      {
+        title:
+          "Mobile health (mHealth) interventions in prostate cancer survivorship: a scoping review",
+        authors:
+          "Ogunsanya, M. E., Sifat, M., Bamidele, O. O., Ezenwankwo, E. F., Clifton, S., Ton, C., Knight, J. M., Odedina, F. T., Greer, J. A., Dwyer, K., & Kendzor, D. E",
+        journal: "Journal of Cancer Survivorship",
+        year: "2023",
+        doi: "https://doi.org/10.1007/s11764-022-01328-3",
+        pmid: "",
+        category: ["Cancer Prevention & Control"],
+        subcategory: [],
+      },
+      {
+        title: "Cannabis Use Among Adults Undergoing Cancer Treatment",
+        authors:
+          "Azizoddin, D.R., Cohn, A.M., Ulahannan, S.V., Henson, C.E., Alexander, A.C., Moore, K.N., Holman, L.L., Boozary, L.K., Sifat, M.S., and Kendzor, D.E.",
+        journal: "Cancer",
+        year: "2023",
+        doi: "https://doi.org/10.1002/cncr.34922",
+        pmid: "",
+        category: ["Cancer Prevention & Control"],
+        subcategory: [],
       },
     ],
   },
   {
-    id: "community-engagement",
-    title: "Community Engagement in Health Disparities Research",
+    id: "access-care-navigation",
+    title: "Access to Care & Service Navigation",
     description:
-      "Building partnerships with organizations serving marginalized populations to co-develop and implement culturally and contextually relevant interventions. Focus on cancer prevention, behavioral health, and amplifying voices of vulnerable communities through collaborative scholarship.",
+      "Research examining barriers to healthcare access and strategies to improve service utilization among vulnerable populations. This work explores help-seeking behaviors, treatment adherence, healthcare navigation challenges, and the development of interventions to connect underserved communities with needed resources and services.",
     keyAchievements: [
-      "Established partnerships with mobile screening units and community organizations",
-      "Developed culturally tailored research with refugee populations",
-      "Published collaborative work with community-based researchers",
-      "Implemented HPV self-sampling protocols in diverse communities",
+      "Identified barriers to mental health care and cancer screening services",
+      "Examined treatment adherence patterns in community-based programs",
+      "Developed strategies to improve healthcare navigation for underserved populations",
+      "Investigated motivations and barriers for clinical help-seeking",
     ],
     publications: [
       {
         title:
-          "Reaching the unheard: overcoming challenges in health research with hard-to-reach populations",
-        authors: "Bekteshi, V., Sifat, M. and Kendzor, D.E",
-        journal: "International Journal for Equity in Health, 23(1), p.61",
-        year: "2024",
-        doi: "",
-        category: ["Health Equity & Social Determinants of Health"],
+          "An Examination of Barriers to Accessing Mental Health Care, and Their Association with Depression, Stress, Suicidal Ideation, and Wellness in a Bangladeshi University Student Sample",
+        authors: "Sifat M, Huq M, Baig M, Tasnim N, Green K",
+        journal:
+          "International Journal of Environmental Research and Public Health",
+        year: "2023",
+        doi: "https://doi.org/10.3390/ijerph20020904",
+        pmid: "36673660",
+        category: ["Access to Care & Service Navigation"],
         subcategory: [],
       },
       {
@@ -724,93 +971,23 @@ export const contributions: ContributionToScience[] = [
           "Boozary, L.K., Frank-Pearce, S.G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S. and Kendzor, D.E.",
         journal: "Drug and Alcohol Dependence Reports",
         year: "2022",
-
         doi: "https://doi.org/10.1016/j.dadr.2022.100117",
         pmid: "",
-      },
-      {
-        title:
-          "Greater Discrimination Frequency and Lower Distress Tolerance Are Associated with Mental Health Problems Among Racially Privileged and Minoritized Adults Accessing an Urban Day Shelter",
-        authors:
-          "Sifat, M. S., Ehlke, S. J., Ogunsanya, M., Frank-Pearce, S. G., Boozary, L. K., Alexander, A. C., Businelle, M. S., & Kendzor, D. E",
-        journal: "Journal of racial and ethnic health disparities",
-        year: "2023",
-        doi: "https://doi.org/10.1007/s40615-022-01496-z",
-        category: ["Health Equity & Social Determinants of Health"],
-        subcategory: ["Behavioral & Mental Health"],
+        category: ["Access to Care & Service Navigation"],
+        subcategory: [],
       },
     ],
   },
   {
-    id: "mental-health-protective-factors",
-    title: "Mental Health and Protective Factors in Disadvantaged Populations",
+    id: "digital-mobile-health",
+    title: "Digital & Mobile Health Interventions",
     description:
-      "Understanding modifiable factors related to help-seeking behaviors and health problems in socioeconomically disadvantaged populations. Research explores self-determining factors of behavior change and identifies protective factors like social support that buffer poor health outcomes.",
+      "Research leveraging digital health technologies to increase healthcare access and improve service utilization with culturally competent implementation for specific populations. This work examines smartphone-based interventions for medication adherence, mindfulness applications, and the acceptability of digital health tools in low-income countries and underserved communities.",
     keyAchievements: [
-      "Examined migration-related stress in Afghan refugee population",
-      "Identified barriers to mental health care access in university students",
-      "Studied family factors predicting suicidal ideation across life course",
-      "Published work on protective factors in African American cohort",
-    ],
-    publications: [
-      {
-        title:
-          "The association of migration-related stress with poor mental health among recently resettled Afghan refugees",
-        authors:
-          "Sifat, M.S., Kenney, S., Bekteshi, V., Chiang, S.C., Ogunsanya, M., Boozary, L.K., Alexander, A.C. and Kendzor, D.E.",
-        journal: "Journal of Migration and Health",
-        year: "2024",
-
-        doi: "https://doi.org/10.1016/j.jmh.2024.100282",
-        pmid: "",
-        category: ["Health Equity & Social Determinants of Health"],
-        subcategory: ["Behavioral & Mental Health", "Refugee & Migrant Health"],
-      },
-      {
-        title:
-          "An Examination of Barriers to Accessing Mental Health Care, and Their Association with Depression, Stress, Suicidal Ideation, and Wellness in a Bangladeshi University Student Sample",
-        authors: "Sifat M, Huq M, Baig M, Tasnim N, Green K",
-        journal:
-          "International Journal of Environmental Research and Public Health, 20(2):904",
-        year: "2023",
-        doi: "https://doi.org/10.3390/ijerph20020904",
-        category: ["Behavioral & Mental Health"],
-        subcategory: ["Access to Care & Service Navigation"],
-      },
-      {
-        title:
-          "Motivations and Barriers for Clinical Mental Health Help-Seeking in Bangladeshi University Students, A Cross-Sectional Study",
-        authors:
-          "Sifat M, Tasnim N, Hoque N, Saperstein S, Stoebenau K, Shin R, Feldman R, Green K.",
-        journal: "Global Mental Health",
-        year: "2022",
-
-        doi: "",
-        pmid: "",
-      },
-      {
-        title:
-          "Associations Between Family Factors, Social Integration, and Suicidal Ideation Across the Life Course of an Urban African American Cohort",
-        authors:
-          "Sifat, M. S., Kuo, C., Yoo, J. H., Holder, S., & Green, K. M.",
-        journal: "Journal of Black Psychology",
-        year: "2023",
-
-        doi: "https://doi.org/10.1177/00957984221150062",
-        pmid: "",
-      },
-    ],
-  },
-  {
-    id: "digital-health",
-    title: "Digital Health for Underserved Populations",
-    description:
-      "Leveraging digital health technologies to increase access to healthcare and improve service utilization, with focus on culturally competent implementation for specific populations. Research examines mobile health applications for mental wellness in low-income country populations.",
-    keyAchievements: [
-      "Developed smartphone-based medication adherence interventions",
-      "Studied digital health acceptability in Bangladesh university students",
-      "Explored mindfulness-based mobile interventions cross-culturally",
-      "Published feasibility studies on mHealth for smoking cessation",
+      "Developed smartphone-based medication adherence interventions for smoking cessation",
+      "Studied digital health acceptability and motivations in international student populations",
+      "Explored mindfulness-based mobile interventions across cultural contexts",
+      "Published feasibility studies on mHealth interventions for health promotion",
     ],
     publications: [
       {
@@ -820,19 +997,21 @@ export const contributions: ContributionToScience[] = [
           "Sifat M, Hébert ET, Ahluwalia JS, Businelle MS, Waring JJC, Frank-Pearce SG, Bryer C, Benson L, Madison S, Planas LG, Baranskaya I, Kendzor DE.",
         journal: "JMIR Formative Research",
         year: "2023",
-
         doi: "https://doi.org/10.2196/48857",
         pmid: "37889541",
+        category: ["Digital & Mobile Health Interventions"],
+        subcategory: [],
       },
       {
         title:
           "Motivations Toward Using Digital Health and Exploring the Possibility of Using Digital Health for Mental Health in Bangladesh University Students",
         authors: "Sifat MS, Saperstein SL, Tasnim N, Green KM",
-        journal: "JMIR Form Res; 6(3):e34901",
+        journal: "JMIR Formative Research",
         year: "2022",
         doi: "https://doi.org/10.2196/34901",
+        pmid: "35254267",
         category: ["Digital & Mobile Health Interventions"],
-        subcategory: ["Behavioral & Mental Health"],
+        subcategory: [],
       },
       {
         title:
@@ -841,127 +1020,78 @@ export const contributions: ContributionToScience[] = [
         journal:
           "International Journal of Qualitative Studies on Health and Well-being",
         year: "2022",
-
         doi: "https://doi.org/10.1080/17482631.2022.2113015",
         pmid: "",
+        category: ["Digital & Mobile Health Interventions"],
+        subcategory: [],
+      },
+    ],
+  },
+  {
+    id: "community-engagement",
+    title: "Community Engagement in Health Disparities Research",
+    description:
+      "Building partnerships with organizations serving marginalized populations to co-develop and implement culturally and contextually relevant interventions. Focus on cancer prevention, behavioral health, and amplifying voices of vulnerable communities through collaborative scholarship and community-based participatory research.",
+    keyAchievements: [
+      "Established partnerships with mobile screening units and community organizations",
+      "Developed culturally tailored research with refugee and homeless populations",
+      "Published collaborative work with community-based researchers",
+      "Implemented research in shelter settings and hard-to-reach communities",
+    ],
+    publications: [
+      {
+        title:
+          "Reaching the unheard: overcoming challenges in health research with hard-to-reach populations",
+        authors: "Bekteshi, V., Sifat, M. and Kendzor, D.E",
+        journal: "International Journal for Equity in Health",
+        year: "2024",
+        doi: "",
+        pmid: "",
+        category: ["Community Engagement in Health Disparities Research"],
+        subcategory: [],
+      },
+      {
+        title:
+          "Tobacco use characteristics, treatment preferences, and motivation to quit among adults accessing a day shelter in Oklahoma City",
+        authors:
+          "Boozary, L.K., Frank-Pearce, S.G., Alexander, A.C., Sifat, M.S., Kurien, J., Waring, J.J., Ehlke, S.J., Businelle, M.S., Ahluwalia, J.S. and Kendzor, D.E.",
+        journal: "Drug and Alcohol Dependence Reports",
+        year: "2022",
+        doi: "https://doi.org/10.1016/j.dadr.2022.100117",
+        pmid: "",
+        category: ["Community Engagement in Health Disparities Research"],
+        subcategory: [],
+      },
+      {
+        title:
+          "Greater Discrimination Frequency and Lower Distress Tolerance Are Associated with Mental Health Problems Among Racially Privileged and Minoritized Adults Accessing an Urban Day Shelter",
+        authors:
+          "Sifat, M. S., Ehlke, S. J., Ogunsanya, M., Frank-Pearce, S. G., Boozary, L. K., Alexander, A. C., Businelle, M. S., & Kendzor, D. E",
+        journal: "Journal of Racial and Ethnic Health Disparities",
+        year: "2023",
+        doi: "https://doi.org/10.1007/s40615-022-01496-z",
+        pmid: "",
+        category: ["Community Engagement in Health Disparities Research"],
+        subcategory: [],
       },
     ],
   },
 ];
 
+// ============================================================================
+// OTHER PUBLICATIONS
+// ============================================================================
 export const otherPublications: Publication[] = [
-  // 2025
-  {
-    title:
-      "Sociodemographic Correlates of Cancer-Related Beliefs Among Chinese Speaking Adults in Greater Philadelphia",
-    authors: "Song, Y., Sifat, M., Phan, L. et al.",
-    journal: "Journal of Racial and Ethnic Health Disparities",
-    year: "2025",
-    // TODO: Update from Google Scholar
-    doi: "https://doi.org/10.1007/s40615-025-02565-9",
-    pmid: "",
-    category: ["Cancer Prevention & Control"],
-    subcategory: [
-      "Health Equity & Social Determinants of Health",
-      "Faith & Cultural Contexts in Health",
-    ],
-  },
-  {
-    title:
-      "Does parental racial socialization protect Black youth from the impact of racism on problematic substance use over the long term?",
-    authors: "Kuo, C., Ahn, L. H., Sifat, M., & Green, K. M.",
-    journal: "Cultural Diversity & Ethnic Minority Psychology",
-    year: "2025",
-    // TODO: Update from Google Scholar
-    doi: "https://doi.org/10.1037/cdp0000759",
-    pmid: "",
-    category: ["Health Equity & Social Determinants of Health"],
-    subcategory: [
-      "Behavioral & Mental Health",
-      "Faith & Cultural Contexts in Health",
-    ],
-  },
-
-  // 2024
-  {
-    title:
-      "College Students' Coping, Resilience, Well-Being, Academic Experiences, and Help-Seeking Attitudes During COVID-19",
-    authors:
-      "Wang, Y. W., Abebe, I., Cruz, T. E., Arévalo Avalos, M. R., Sifat, M., Abdelwahab, S., & Li, T.",
-    journal: "The Counseling Psychologist",
-    year: "2024",
-    // TODO: Update from Google Scholar
-    doi: "https://doi.org/10.1177/00110000241234567",
-    pmid: "",
-    category: ["Behavioral & Mental Health"],
-  },
-  {
-    title:
-      "Incentivizing Tobacco Helpline Engagement in Persistent Poverty Counties: A Randomized Trial",
-    authors:
-      "Kendzor, D. E., Davie, M., Chen, M., Hart, J., Frank-Pearce, S. G., Doescher, M. P., Alexander, A. C., Businelle, M. S., Ogunsanya, M. E., Sifat, M. S., Boozary, L. K",
-    journal: "American Journal of Preventive Medicine",
-    year: "2024",
-    doi: "",
-    category: ["Cancer Prevention & Control"],
-    subcategory: [
-      "Health Equity & Social Determinants of Health",
-      "Access to Care & Service Navigation",
-      "Tobacco Control & Harm Reduction",
-      "Implementation Science & Systems Change",
-    ],
-  },
-  {
-    title:
-      "The development and implementation of a custom-tailored suicide response training for Muslim communities",
-    authors:
-      "Awaad, Rania, Mona Midani, Tasmeer Ali, Munjireen S. Sifat, and Mawdah Albatnuni",
-    journal: "Journal of religion and health, 1-13",
-    year: "2024",
-    doi: "",
-    category: ["Health Equity & Social Determinants of Health"],
-    subcategory: [
-      "Behavioral & Mental Health",
-      "Faith & Cultural Contexts in Health",
-      "Implementation Science & Systems Change",
-    ],
-  },
-  {
-    title:
-      "Developing a suicide crisis response team in America: an Islamic perspective",
-    authors:
-      "Awaad, Rania, Zuha Durrani, Yasmeen Quadri, Munjireen S. Sifat, Anwar Hussein, Taimur Kouser, Osama El-Gabalawy, Neshwa Rajeh, and Sana Shareef",
-    journal: "Journal of religion and health, 1-17",
-    year: "2024",
-    doi: "",
-    category: ["Health Equity & Social Determinants of Health"],
-    subcategory: [
-      "Behavioral & Mental Health",
-      "Faith & Cultural Contexts in Health",
-    ],
-  },
-  {
-    title:
-      "An exploratory qualitative analysis of the Stanford-Templeton convenings on Islam and suicide",
-    authors:
-      "Awaad, R., Quadri, Y., Sifat, M., Elzamzamy, K., Suleiman, K., Rehman, O., Husain, A., Abdelrehim, A., Rushdi, R., Belanger, C.C. and Hill, T.D.",
-    journal: "Journal of Religion and Health",
-    year: "2024",
-    // TODO: Update from Google Scholar
-    doi: "",
-    pmid: "",
-  },
-
-  // 2023
   {
     title: "Impacts Of Census Categories On Muslim American Health",
     authors:
       "Awaad, Rania, Neshwa B. Rajeh, Kubra Cabuk, Munjireen Sifat, Ali Raza Khan.",
     journal: "Health Affairs Forefront",
     year: "2023",
-    // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1377/forefront.20230614.685636",
     pmid: "",
+    category: [],
+    subcategory: ["Faith & Cultural Contexts in Health"],
   },
   {
     title:
@@ -970,44 +1100,23 @@ export const otherPublications: Publication[] = [
       "Abebe, Israel; Wang, Yu-Wei; O'Connor, Seini; Cruz, Tiana; Keum, Brian; Sifat, Munjireen.",
     journal: "Current Psychology",
     year: "2023",
-    // TODO: Update from Google Scholar
     doi: "",
     pmid: "",
+    category: [],
+    subcategory: [],
   },
   {
     title:
-      "The Association of Cultural Identification with Obesity among African Americans",
+      "An exploratory qualitative analysis of the Stanford-Templeton convenings on Islam and suicide",
     authors:
-      "Nolan, M., Waring, J.J., Noble, B., Bradley, D., Olurotimi, O., Fronheiser, J., Sifat, M., Boozary, L.K., McQuoid, J., Kendzor, D.E. and Alexander, A.C",
-    journal: "Journal of Racial and Ethnic Health Disparities, pp.1-9",
-    year: "2023",
-    doi: "https://doi.org/10.1007/s40615-023-01615-4",
-    category: ["Health Equity & Social Determinants of Health"],
+      "Awaad, R., Quadri, Y., Sifat, M., Elzamzamy, K., Suleiman, K., Rehman, O., Husain, A., Abdelrehim, A., Rushdi, R., Belanger, C.C. and Hill, T.D.",
+    journal: "Journal of Religion and Health",
+    year: "2024",
+    doi: "",
+    pmid: "",
+    category: [],
     subcategory: ["Faith & Cultural Contexts in Health"],
   },
-  {
-    title: "Cannabis Use Among Adults Undergoing Cancer Treatment",
-    authors:
-      "Azizoddin, D.R., Cohn, A.M., Ulahannan, S.V., Henson, C.E., Alexander, A.C., Moore, K.N., Holman, L.L., Boozary, L.K., Sifat, M.S., and Kendzor, D.E.",
-    journal: "Cancer",
-    year: "2023",
-    // TODO: Update from Google Scholar
-    doi: "https://doi.org/10.1002/cncr.34922",
-    pmid: "",
-  },
-  {
-    title:
-      "Mobile health (mHealth) interventions in prostate cancer survivorship: a scoping review",
-    authors:
-      "Ogunsanya, M. E., Sifat, M., Bamidele, O. O., Ezenwankwo, E. F., Clifton, S., Ton, C., Knight, J. M., Odedina, F. T., Greer, J. A., Dwyer, K., & Kendzor, D. E",
-    journal: "Journal of cancer survivorship",
-    year: "2023",
-    doi: "https://doi.org/10.1007/s11764-022-01328-3",
-    category: ["Cancer Prevention & Control"],
-    subcategory: ["Digital & Mobile Health Interventions"],
-  },
-
-  // 2022
   {
     title:
       "Co-Occurring Intimate Partner Violence and Child Abuse in Eastern Democratic Republic of Congo: The Influence of Early Life Experiences of Abuse",
@@ -1015,9 +1124,10 @@ export const otherPublications: Publication[] = [
       "Falb, K. L., Blackwell, A., Hategekimana, J. de D., Sifat, M., Roth, D., & O'Connor, M.",
     journal: "Violence Against Women",
     year: "2022",
-    // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/10778012221145302",
     pmid: "",
+    category: [],
+    subcategory: [],
   },
   {
     title:
@@ -1026,9 +1136,10 @@ export const otherPublications: Publication[] = [
       "Ehlke, S. J., Kendzor, D. E., Smith, M. A., Sifat, M. S., Boozary, L. K., & Cohn, A. M.",
     journal: "The American Journal on Addictions",
     year: "2022",
-    // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1111/ajad.13344",
     pmid: "",
+    category: [],
+    subcategory: [],
   },
   {
     title:
@@ -1036,43 +1147,21 @@ export const otherPublications: Publication[] = [
     authors: "Holder, S., Sifat, M., Green, K.",
     journal: "Education and Urban Society",
     year: "2022",
-    // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/00131245221124871",
     pmid: "",
+    category: [],
+    subcategory: [],
   },
-  {
-    title:
-      "Pandemic-related stress is associated with poor mental health outcomes among African Americans",
-    authors:
-      "Brewer, K., Waring, J.J.C., Noble, B., Bradley, D., Olurotimi, O., Fronheiser, J., Sifat, M., Ehlke, S.J., Boozary, L.K., McQuoid, J., Kendzor, D. & Alexander, A.C.",
-    journal: "Journal of Racial and Ethnic Health Disparities",
-    year: "2022",
-    // TODO: Update from Google Scholar
-    doi: "https://doi.org/10.1007/s40615-022-01383-7",
-    pmid: "",
-  },
-  {
-    title:
-      "Perceptions of Mental Health and Exploring the Role of Social Activism Among African Americans Exposed to Media Coverage of Police Brutality and Protests",
-    authors:
-      "Alexander, A.C., Waring, J.J.C., Noble, B., Bradley, D. Olurotimi, O., Fronheiser, J., Sifat, M., Ehlke, S.J., Boozary, L.K., McQuoid, J., & Kendzor, D.E.",
-    journal: "Journal of Racial and Ethnic Health Disparities",
-    year: "2022",
-    // TODO: Update from Google Scholar
-    doi: "https://doi.org/10.1007/s40615-022-01326-2",
-    pmid: "",
-  },
-
-  // 2019-2021
   {
     title:
       "Beyond Performative Activism- An Exploration of Motivators to Participate Social Media Activism Through the Lens of Self-Determination Theory",
     authors: "Sifat, M., Chiang, S., Irfan, A., Green, K.",
     journal: "Harvard Public Health Review",
     year: "2021",
-    // TODO: Update from Google Scholar
     doi: "",
     pmid: "",
+    category: [],
+    subcategory: [],
   },
   {
     title:
@@ -1080,9 +1169,10 @@ export const otherPublications: Publication[] = [
     authors: "Irfan A, Sifat M, Brown Z.",
     journal: "Harvard Public Health Review",
     year: "2020",
-    // TODO: Update from Google Scholar
     doi: "",
     pmid: "",
+    category: [],
+    subcategory: [],
   },
   {
     title:
@@ -1091,9 +1181,10 @@ export const otherPublications: Publication[] = [
       "Winston, G., Sifat, M., Phillips, E., Dietz, W., Wikner, E., Barrow, M., Khurana, K., & Charlson, M.",
     journal: "Health Education & Behavior",
     year: "2019",
-    // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1177/1090198119853005",
     pmid: "",
+    category: [],
+    subcategory: [],
   },
   {
     title:
@@ -1101,9 +1192,10 @@ export const otherPublications: Publication[] = [
     authors: "Green, K. M., Doherty, E. E., Sifat, M. S., & Ensminger, M. E.",
     journal: "Drug and Alcohol Dependence",
     year: "2019",
-    // TODO: Update from Google Scholar
     doi: "https://doi.org/10.1016/j.drugalcdep.2018.09.033",
     pmid: "",
+    category: [],
+    subcategory: [],
   },
 ];
 
@@ -1207,7 +1299,7 @@ export const publicEngagementData: PublicEngagementYear[] = [
         title:
           "Closing Remarks on Behalf of Sidney Kimmel Comprehensive Cancer Center",
         type: "Invited Speaker",
-        venue: "Liver Cancer Conference",
+        venue: "Liver Cancer Conference, Hepatitis B Foundation",
         date: "June 2025",
         location: "Virtual",
       },
