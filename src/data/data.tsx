@@ -359,3 +359,7 @@ export const joinUsData = {
   howToApply:
     "Please send your CV, research statement, and names of 2-3 references to munjireen.sifat@jefferson.edu with the subject line 'SIFAT Lab Application - [Position]'.",
 };
+
+// ============================================================
+// META DATA
+// ============================================================
