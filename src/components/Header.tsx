@@ -7,10 +7,18 @@ import {
   SheetDescription,
 } from "./ui/sheet";
 import { Menu } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { navigationData } from "../data/data";
 
 export function Header() {
+  const location = useLocation();
+
+  const isActive = (path: string) => {
+    if (path === "/" && location.pathname === "/") return true;
+    if (path !== "/" && location.pathname.startsWith(path)) return true;
+    return false;
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-nav-background/95 backdrop-blur-sm border-b border-nav-muted/30 z-50 flex-shrink-0">
       <div className="container mx-auto px-6 py-4">
@@ -29,8 +37,17 @@ export function Header() {
             <div className="hidden md:flex items-center space-x-6">
               {navigationData.map((item) => (
                 <Link key={item.path} to={item.path}>
-                  <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
+                  <button
+                    className={`transition-colors cursor-pointer relative pb-1 ${
+                      isActive(item.path)
+                        ? "text-sage-green font-semibold"
+                        : "text-nav-muted hover:text-nav-foreground"
+                    }`}
+                  >
                     {item.label}
+                    {isActive(item.path) && (
+                      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-sage-green rounded-full"></div>
+                    )}
                   </button>
                 </Link>
               ))}
@@ -63,8 +80,17 @@ export function Header() {
               <nav className="flex flex-col space-y-6 mt-6 items-center pb-6">
                 {navigationData.map((item) => (
                   <Link key={item.path} to={item.path}>
-                    <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
+                    <button
+                      className={`transition-colors cursor-pointer relative pb-1 ${
+                        isActive(item.path)
+                          ? "text-sage-green font-semibold"
+                          : "text-nav-muted hover:text-nav-foreground"
+                      }`}
+                    >
                       {item.label}
+                      {isActive(item.path) && (
+                        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-sage-green rounded-full"></div>
+                      )}
                     </button>
                   </Link>
                 ))}
