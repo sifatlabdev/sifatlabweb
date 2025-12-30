@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "course": "Cultural Humility & Competence",
+      "level": "Graduate/Professional",
+      "period": "Current (2023-Present)",
+      "description": "Course focusing on developing cultural humility and competence in healthcare and public health practice. Emphasizes culturally appropriate intervention development and community-based approaches to health equity."
+    },
+    {
+      "course": "GCH626: Migrant Health",
+      "level": "Graduate",
+      "period": "January 2023 - May 2023",
+      "description": "Comprehensive course covering health challenges, policies, and interventions for migrant and refugee populations. Topics include migration-related stress, access to healthcare, and culturally competent care."
+    },
+    {
+      "course": "HLTH 106/H: Drug Use and Abuse",
+      "level": "Undergraduate",
+      "period": "August 2019 - February 2020",
+      "description": "Undergraduate course examining substance use and abuse, prevention strategies, and public health approaches to addiction. Covers behavioral and community health perspectives."
+    }
+  ]
+}

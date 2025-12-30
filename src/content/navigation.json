@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "label": "About Me", "path": "/about" },
+    { "label": "Research", "path": "/research" },
+    { "label": "Publications", "path": "/publications" },
+    { "label": "Social Impact Initiatives", "path": "/socialimpactprojects" },
+    { "label": "Public Engagement", "path": "/publicengagement" }
+  ]
+}

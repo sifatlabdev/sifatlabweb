@@ -2,7 +2,7 @@
   "labDirector": {
     "name": "Munjireen Sifat, PhD",
     "title": "Lab Director & Principal Investigator",
-    "image": "heroImage",
+    "image": "/images/heroImage.jpg",
     "specialty": [
       "Health Equity",
       "Cancer Prevention",
@@ -15,7 +15,7 @@
     {
       "name": "Joshua Godbolt, MSEd",
       "title": "Clinical Research Coordinator",
-      "image": "img1",
+      "image": "/images/img1.jpg",
       "specialty": [
         "Oncology",
         "Population Science",
@@ -29,7 +29,7 @@
     {
       "name": "Shawn C. Chiang",
       "title": "Assistant Professor, Department of Health Behavior, Texas A&M University School of Public Health",
-      "image": "img2",
+      "image": "/images/img2.jpg",
       "specialty": [
         "Cancer Prevention",
         "HPV-Related Cancers",
@@ -43,7 +43,7 @@
     {
       "name": "Lauren Thompson",
       "title": "Medical Student, Scholarly Inquiry",
-      "image": "img3",
+      "image": "/images/img3.jpg",
       "specialty": ["Oncology", "Public Health", "Community Health"],
       "url": "www.linkedin.com/in/lauren-thompson-b4aa14398"
     }

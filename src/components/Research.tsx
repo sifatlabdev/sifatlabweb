@@ -41,24 +41,6 @@ function PublicationCard({ publication }: { publication: Publication }) {
             PMID: {publication.pmid}
           </span>
         </div>
-        <div className="flex gap-2 mt-4">
-          <Button
-            variant="outline"
-            size="sm"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer text-xs"
-          >
-            <FileText className="w-3 h-3 mr-1" />
-            PDF
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            className="border-sage-green text-sage-green hover:bg-sage-green hover:text-white cursor-pointer text-xs"
-          >
-            <ExternalLink className="w-3 h-3 mr-1" />
-            DOI
-          </Button>
-        </div>
       </CardContent>
     </Card>
   );
