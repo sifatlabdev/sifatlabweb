@@ -1,8 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: sifatlabdev/sifatlabweb
   branch: main
-
-local_backend: true
+  auth_endpoint: api/auth
 
 media_folder: public/images
 public_folder: /images
