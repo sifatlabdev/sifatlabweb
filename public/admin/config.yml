@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: sifatlabdev/sifatlabweb
   branch: main
+  auth_endpoint: api/auth
 
 site_url: https://sifatlab.netlify.app
 
