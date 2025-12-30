@@ -1,5 +1,0 @@
-# Decap CMS Admin Routes
-/admin/*  /admin/index.html  200
-
-# Single Page App fallback
-/*    /index.html   200
