@@ -83,20 +83,15 @@ export function PublicEngagement() {
 
           {/* Right Column - Hero Images Stacked */}
           <div className="space-y-6 lg:sticky lg:top-24 order-first lg:order-last">
-            <div className="rounded-lg overflow-hidden shadow-lg">
-              <ImageWithFallback
-                src={publicEngagementSectionData.pubImage}
-                alt="Academic Conference Presentations"
-                className="w-full h-64 md:h-[400px] object-cover"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden shadow-lg">
-              <ImageWithFallback
-                src={publicEngagementSectionData.pubImage2}
-                alt="Research Workshops and Collaboration"
-                className="w-full h-64 md:h-[400px] object-cover"
-              />
-            </div>
+            {publicEngagementSectionData.images?.map((image, index) => (
+              <div key={index} className="rounded-lg overflow-hidden shadow-lg">
+                <ImageWithFallback
+                  src={image}
+                  alt={`Public Engagement Image ${index + 1}`}
+                  className="w-full h-64 md:h-[400px] object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

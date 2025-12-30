@@ -21,7 +21,6 @@ import {
   researchSectionData,
   contributions,
   otherPublications,
-  citations,
 } from "../data/data";
 import { Link } from "react-router-dom";
 

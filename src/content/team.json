@@ -1,0 +1,51 @@
+{
+  "labDirector": {
+    "name": "Munjireen Sifat, PhD",
+    "title": "Lab Director & Principal Investigator",
+    "image": "/images/heroImage.jpg",
+    "specialty": [
+      "Health Equity",
+      "Cancer Prevention",
+      "Tobacco Cessation",
+      "Refugee Health"
+    ],
+    "url": "https://www.jefferson.edu/academics/colleges-schools-institutes/population-health/administration-faculty-staff/faculty/sifat.html"
+  },
+  "universityCollaborators": [
+    {
+      "name": "Joshua Godbolt, MSEd",
+      "title": "Clinical Research Coordinator",
+      "image": "/images/img1.jpg",
+      "specialty": [
+        "Oncology",
+        "Population Science",
+        "Health Disparities",
+        "Clinical Trials"
+      ],
+      "url": ""
+    }
+  ],
+  "externalCollaborators": [
+    {
+      "name": "Shawn C. Chiang",
+      "title": "Assistant Professor, Department of Health Behavior, Texas A&M University School of Public Health",
+      "image": "/images/img2.jpg",
+      "specialty": [
+        "Cancer Prevention",
+        "HPV-Related Cancers",
+        "Health Communication",
+        "Digital Media"
+      ],
+      "url": "https://www.shawnchiang.com/"
+    }
+  ],
+  "graduateResearchers": [
+    {
+      "name": "Lauren Thompson",
+      "title": "Medical Student, Scholarly Inquiry",
+      "image": "/images/img3.jpg",
+      "specialty": ["Oncology", "Public Health", "Community Health"],
+      "url": "www.linkedin.com/in/lauren-thompson-b4aa14398"
+    }
+  ]
+}

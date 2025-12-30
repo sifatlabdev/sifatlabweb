@@ -8,6 +8,7 @@ import {
 } from "./ui/sheet";
 import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
+import { navigationData } from "../data/data";
 
 export function Header() {
   return (
@@ -26,32 +27,13 @@ export function Header() {
               <div className="ml-2 w-2 h-2 bg-sage-green rounded-full"></div>
             </div>
             <div className="hidden md:flex items-center space-x-6">
-              <Link to="/about">
-                <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                  About Me
-                </button>
-              </Link>
-              <Link to="/research">
-                <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                  Research
-                </button>
-              </Link>
-              <Link to="/publications">
-                <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                  Publications
-                </button>
-              </Link>
-              <Link to="/socialimpactprojects">
-                <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                  Social Impact Initiatives
-                </button>
-              </Link>
-
-              <Link to="/publicengagement">
-                <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                  Public Engagement
-                </button>
-              </Link>
+              {navigationData.map((item) => (
+                <Link key={item.path} to={item.path}>
+                  <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
+                    {item.label}
+                  </button>
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -79,32 +61,13 @@ export function Header() {
                 Navigate through different sections of the portfolio
               </SheetDescription>
               <nav className="flex flex-col space-y-6 mt-6 items-center pb-6">
-                <Link to="/about">
-                  <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                    About Me
-                  </button>
-                </Link>
-                <Link to="/research">
-                  <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                    Research
-                  </button>
-                </Link>
-                <Link to="/publications">
-                  <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                    Publications
-                  </button>
-                </Link>
-                <Link to="/socialimpactprojects">
-                  <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                    Social Impact Initiatives
-                  </button>
-                </Link>
-
-                <Link to="/publicengagement">
-                  <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
-                    Public Engagement
-                  </button>
-                </Link>
+                {navigationData.map((item) => (
+                  <Link key={item.path} to={item.path}>
+                    <button className="text-nav-muted hover:text-nav-foreground transition-colors cursor-pointer">
+                      {item.label}
+                    </button>
+                  </Link>
+                ))}
 
                 <Link to="/contact" className="w-full flex justify-center">
                   <Button className="bg-sage-green hover:bg-sage-green/90 text-nav-foreground mt-6 w-3/4">
