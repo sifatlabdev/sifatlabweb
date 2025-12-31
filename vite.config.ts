@@ -69,6 +69,28 @@ export default defineConfig({
   build: {
     target: "esnext",
     outDir: "dist",
+    minify: "terser",
+    terserOptions: {
+      compress: {
+        drop_console: true,
+      },
+    },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          "vendor-react": ["react", "react-dom"],
+          "vendor-radix": [
+            "@radix-ui/react-dialog",
+            "@radix-ui/react-dropdown-menu",
+            "@radix-ui/react-select",
+            "@radix-ui/react-tabs",
+          ],
+          "vendor-charts": ["recharts"],
+        },
+      },
+    },
+    cssMinify: "lightningcss",
+    reportCompressedSize: false,
   },
   server: {
     port: 3000,

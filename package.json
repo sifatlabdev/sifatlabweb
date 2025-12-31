@@ -54,6 +54,8 @@
             "@types/react-dom": "^19.2.2",
             "@vitejs/plugin-react-swc": "^3.10.2",
             "autoprefixer": "^10.4.23",
+            "lightningcss": "^1.30.2",
+            "terser": "^5.44.1",
             "vite": "^6.4.1"
       },
       "scripts": {
