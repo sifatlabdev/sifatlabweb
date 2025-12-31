@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "title": "Project E-Shift: A Harm Reduction Intervention for Chronically Unhoused Adults Who Smoke",
+      "description": "Examining the feasibility of switching exclusively from combustible cigarettes (CC) to an FDA-authorized electronic cigarette (EC) and financial incentives to promote smoking cessation among adults with a history of homelessness.",
+      "detailedDescription": "This study examines the feasibility of switching exclusively from combustible cigarettes (CC) to an FDA-authorized electronic cigarette (EC) and financial incentives contingent on CC abstinence to promote CC cessation among adults with a history of homelessness and are now in Housing First programs (N=40). Participants accessing services from Project HOME/Pathways to Housing are randomly assigned to either standard care (counseling and nicotine replacement therapy) or EC switching with small financial incentives for carbon monoxide-verified CC abstinence plus counseling. The study addresses significant tobacco-related health disparities in a population for whom standard cessation practices have not historically led to long-term cessation of combustible cigarettes.",
+      "status": "Ongoing",
+      "tags": [
+        "Tobacco Cessation",
+        "Harm Reduction",
+        "Homelessness",
+        "E-Cigarettes",
+        "Health Disparities"
+      ],
+      "publications": [
+        {
+          "title": "E-cigarette switching and financial incentives to promote combustible cigarette cessation among adults accessing shelter services: A pilot study",
+          "authors": "Sifat, M., Alexander, A. C., Businelle, M. S., Frank-Pearce, S. G., Boozary, L. K., Wagener, T. L., Ahluwalia, J. S., & Kendzor, D. E.",
+          "journal": "Drug Abuse and Dependence Reports",
+          "year": "2024",
+          "doi": "https://doi.org/10.1016/j.dadr.2024.100XXX",
+          "pmid": ""
+        }
+      ]
+    },
+    {
+      "title": "From Screening to Support: A Multi-Method Analysis of HRSN Integration in Cancer Care",
+      "description": "Multi-method assessment examining why high-risk cancer patients decline care linkage after health-related social needs (HRSN) screening.",
+      "detailedDescription": "The primary aim of this study is to conduct a multi-method assessment of cancer patients who complete HRSN screening using Health System Assessments (HSAs). This assessment delves into the reasons why high-risk cancer patients decline care linkage, providing insights into potential barriers. Qualitative interviews with cancer patients offer a comprehensive view of the challenges and perceptions surrounding HRSN integration in oncology care.",
+      "status": "Ongoing",
+      "tags": [
+        "Social Determinants of Health",
+        "Cancer Care",
+        "Health Systems",
+        "Patient Barriers",
+        "Qualitative Research"
+      ],
+      "publications": []
+    },
+    {
+      "title": "Driving Equitable Cancer Patient Outcomes by Addressing the Social Determinants of Health",
+      "description": "Comprehensive assessment of social determinants of health workflows and infrastructure within Philadelphia healthcare systems.",
+      "detailedDescription": "This project involves conducting Health System Assessments (HSAs) to examine Social Determinants of Health workflows and infrastructure within a Philadelphia healthcare system. An action plan with a decision matrix is being developed to enhance SDOH screening, resource referral, and community collaboration. The project includes creating a community collaborative to assess cancer-related SDOH priorities, available resources, and identify gaps, culminating in an Action Plan for staff education, goal-setting, and interventions.",
+      "status": "Completed",
+      "tags": [
+        "Health Equity",
+        "SDOH",
+        "Cancer Care",
+        "Community Partnerships",
+        "Healthcare Systems"
+      ],
+      "publications": []
+    },
+    {
+      "title": "A Randomized Factorial Trial of Varenicline with Nicotine Lozenges and a Smartphone Medication Adherence Intervention",
+      "description": "Evaluating the efficacy of combining varenicline with oral nicotine replacement therapy and smartphone-based adherence interventions for smoking cessation.",
+      "detailedDescription": "This randomized factorial trial evaluates the efficacy of combining varenicline with oral nicotine replacement therapy (lozenges) and a smartphone-based medication adherence intervention to improve smoking cessation outcomes. As Co-Investigator, Dr. Sifat contributes to study design, implementation, and analysis, with a focus on behavioral mechanisms and health disparities. The overarching goal is to improve smoking cessation treatment and decrease tobacco-related cancer risk.",
+      "status": "Ongoing",
+      "tags": [
+        "Tobacco Cessation",
+        "Varenicline",
+        "Digital Health",
+        "Cancer Prevention",
+        "Randomized Trial"
+      ],
+      "publications": [
+        {
+          "title": "Varenicline combined with oral nicotine replacement therapy and smartphone-based medication reminders for smoking cessation: Feasibility randomized controlled trial",
+          "authors": "Sifat, M. S., Hébert, E. T., Ahluwalia, J. S., Businelle, M. S., Waring, J. J. C., Frank-Pearce, S. G., Bryer, C., Benson, L., Madison, S., Planas, L. G., Baranskaya, I., & Kendzor, D. E.",
+          "journal": "JMIR Formative Research",
+          "year": "2023",
+          "doi": "https://doi.org/10.2196/48857",
+          "pmid": "37889541"
+        }
+      ]
+    },
+    {
+      "title": "Overcoming Barriers to Cervical Cancer Screening by Offering HPV Self-Sampling in Diverse Communities",
+      "description": "Developing and implementing protocols for HPV self-sampling through mobile screening units to increase cervical cancer screening in underserved communities.",
+      "detailedDescription": "This study developed a workflow for HPV self-sampling in community settings through the SKCCC mobile screening unit. The protocol was designed to offer HPV self-sampling kits (n=30) as an acceptable and feasible approach for future larger studies. Preliminary data show 20 HPV self-sampling kits were distributed in community settings, with 5 kits returned (25% return rate) and 1 testing positive for HPV (20% positive rate). The participant with the positive finding was successfully connected to the physician for follow-up care. This research has potential to significantly improve cervical cancer screening rates among cancer survivors and underserved populations.",
+      "status": "Completed",
+      "tags": [
+        "HPV",
+        "Cervical Cancer",
+        "Cancer Screening",
+        "Mobile Health Unit",
+        "Community Outreach"
+      ],
+      "publications": []
+    },
+    {
+      "title": "CRIC Pilot Funding, Sidney Kimmel Comprehensive Cancer Center, Sifat & Milliron (MPI)",
+      "description": "Chinese Wellness Culinary Circle: A feasibility study to improve healthy cancer survivorship through a mind-body-culinary medicine approach",
+      "detailedDescription": "Chinese American cancer survivors face significant and persistent challenges in accessing culturally and linguistically appropriate support for nutrition and psychosocial well-being. To address these gaps, we have developed the Chinese Wellness Culinary Circle (CWCC)—a 12-week, culturally tailored, mind-body-culinary medicine program designed to promote cancer-preventive dietary behaviors, mindfulness, and overall well-being among adult Chinese cancer survivors. This single-arm pilot study will evaluate the feasibility and acceptability of CWCC and explore its potential to improve adherence to the American Institute for Cancer Research/World Cancer Research Fund (AICR/WCRF) recommendations for cancer prevention and healthy survivorship.",
+      "status": "Ongoing",
+      "tags": [
+        "Culinary Medicine",
+        "Cancer Survivorship",
+        "Chinese American Health",
+        "Mind-Body Wellness",
+        "Health Disparities"
+      ],
+      "publications": []
+    }
+  ]
+}

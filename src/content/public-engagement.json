@@ -1,0 +1,292 @@
+{
+  "items": [
+    {
+      "year": "2026",
+      "items": [
+        {
+          "id": 1,
+          "authors": "Sifat, M.",
+          "title": "Community Centered Cancer Research in Philadelphia",
+          "type": "Invited Talk",
+          "venue": "MCC Seminar Series, University of Minnesota",
+          "date": "March 2026",
+          "location": "Minneapolis, MN"
+        },
+        {
+          "id": 2,
+          "authors": "Sifat, M.",
+          "title": "Combustible Cigarette and E-Cigarette Use and Cancer Fatalism in Philadelphia",
+          "type": "Invited Talk",
+          "venue": "Jefferson Health 14th Annual Lung Cancer Symposium",
+          "date": "March 12, 2026",
+          "location": "Philadelphia, PA"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "items": [
+        {
+          "id": 3,
+          "authors": "Sifat, M.",
+          "title": "Making the Switch: A Mobile E-Cigarette Incentive Intervention to Promote Combustible Cigarette Abstinence in Adults with a History of Homelessness",
+          "type": "Invited Pop Talk",
+          "venue": "Population Science Division of Medical Oncology, Sidney Kimmel Comprehensive Cancer Center",
+          "date": "December 11, 2025",
+          "location": "Philadelphia, PA"
+        },
+        {
+          "id": 4,
+          "authors": "M Sifat, S Chiang, D Kendzor",
+          "title": "Correlates of Self-Rated Health Among Newly Resettled Afghan Refugees in Oklahoma City",
+          "type": "Presentation",
+          "venue": "International Refugee and Migration Health Conference",
+          "date": "June 26-29, 2025",
+          "location": "Nova Scotia, Canada"
+        },
+        {
+          "id": 5,
+          "authors": "Sifat, M.",
+          "title": "Importance of community outreach",
+          "type": "Invited Speaker",
+          "venue": "SKCCC Summer FOCUS Program",
+          "date": "June 25, 2025",
+          "location": "Philadelphia, PA"
+        },
+        {
+          "id": 6,
+          "authors": "Sifat, M.",
+          "title": "Closing Remarks on Behalf of Sidney Kimmel Comprehensive Cancer Center",
+          "type": "Invited Speaker",
+          "venue": "Liver Cancer Conference",
+          "date": "June 2025",
+          "location": "Virtual"
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "items": [
+        {
+          "id": 7,
+          "authors": "Sifat, M; Cammy, R; Dimino, M",
+          "title": "Impact of SDOH Screening on Cancer Care: Uncovering Needs and Enhancing Community Connections",
+          "type": "Presentation",
+          "venue": "CCCIF Annual Meeting",
+          "date": "2024",
+          "location": "Salt Lake City, UT"
+        },
+        {
+          "id": 8,
+          "authors": "Munjireen Sifat, Amy Leader, Yawei Song, Rebecca Melillo, Joshua Banks",
+          "title": "Exploring Reasons for Ethnic and Racial Disparities in Cancer Screening in the Greater Philadelphia Area",
+          "type": "Presentation",
+          "venue": "Annual Society for Behavioral Medicine Conference",
+          "date": "2024",
+          "location": "Philadelphia, PA"
+        },
+        {
+          "id": 9,
+          "authors": "Munjireen Sifat, Meng Chen, Morgan Davie, Amy M. Cohn, Adam C. Alexander, Michael S. Businelle, Laili Kharazi Boozary, Motolani Ogunsanya, Darla E. Kendzor",
+          "title": "The Association of Cannabis Use with Smoking Dependence and Cessation among Tobacco Helpline Callers from Persistent Poverty Counties",
+          "type": "Presentation",
+          "venue": "Annual SRNT Conference, Society for Research on Nicotine and Tobacco",
+          "date": "2024",
+          "location": "Edinburgh, Scotland"
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "items": [
+        {
+          "id": 10,
+          "authors": "Sifat, M.S.",
+          "title": "Culture and Faith as Healing: Caring for the Mental Health of Refugees After Resettlement",
+          "type": "Invited Speaker (Symposium)",
+          "venue": "Society for the Study of Psychiatry and Culture Annual Meeting: Practices that Harm Practices that Heal",
+          "date": "April 2023",
+          "location": "San Diego, CA"
+        },
+        {
+          "id": 11,
+          "authors": "Sifat, M.S., Zaring-Hinkle, B.",
+          "title": "Tobacco Cessation",
+          "type": "Co-Presenters (Lecture)",
+          "venue": "Psychiatry Grand Rounds, University of Oklahoma Health Science Center",
+          "date": "February 21, 2023",
+          "location": "Oklahoma City, OK"
+        },
+        {
+          "id": 12,
+          "authors": "Munjireen Sifat, Bishop Noble, Brittany Zaring-Hinkle, Shawn Chiang, Darla Kendzor",
+          "title": "Tobacco Use Among Afghan Refugees Resettled In The U.S.",
+          "type": "Poster Presentation",
+          "venue": "SRNT 2023 Annual Meeting",
+          "date": "2023",
+          "location": "San Antonio, TX"
+        },
+        {
+          "id": 13,
+          "authors": "Shawn Chiang, Munjireen Sifat, Phillip Massey",
+          "title": "Patterns of Tobacco Product Use Among Adult Tobacco Users in the Wave 5 of the PATH study: A Latent Class Analysis",
+          "type": "Poster Presentation",
+          "venue": "American Academy of Health Behavior Meeting",
+          "date": "March 2023",
+          "location": "San Francisco, CA"
+        },
+        {
+          "id": 14,
+          "authors": "Munjireen Sifat, Bishop Noble, Darla Kendzor",
+          "title": "Post-Migration Stress in Afghan Refugees Resettled in Oklahoma City",
+          "type": "Poster Presentation",
+          "venue": "15th Annual Muslim Mental Health Conference",
+          "date": "March 10-11, 2023",
+          "location": "Lansing, MI (Online)"
+        },
+        {
+          "id": 15,
+          "authors": "Munjireen S. Sifat, Emily T. Hébert, Jasjit S. Ahluwalia, Michael S. Businelle, Joseph J.C. Waring, Summer G. Frank-Pearce, Bishop Noble, Chase Bryer, Stefani Madison, Lourdes G. Planas, Darla E. Kendzor",
+          "title": "Smartphone-Based Medication Reminders Increase Daily Medication Adherence and Decrease the Likelihood of Daily Smoking",
+          "type": "Poster Presentation",
+          "venue": "Society for Behavioral Medicine Scientific Meeting",
+          "date": "April 2023",
+          "location": "Phoenix, AZ"
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "items": [
+        {
+          "id": 16,
+          "authors": "Sifat, M.",
+          "title": "Mental Health In University Students In Bangladesh: An Examination Of The Current Use Of Practices And Services And Acceptability Of Mhealth For Mental Health",
+          "type": "Invited Guest Speaker",
+          "venue": "University of Maryland, School of Public Health, Behavioral and Community Health Seminar",
+          "date": "April 4, 2022",
+          "location": "College Park, MD"
+        },
+        {
+          "id": 17,
+          "authors": "Sifat M., Ehlke S., Alexander A., Boozary L., Businelle M., Kendzor, D.",
+          "title": "Higher Distress Tolerance Protects Against Discrimination-Related Mental Health Problems Among Non-White Adults Experiencing Homelessness",
+          "type": "Presentation",
+          "venue": "Society for Prevention Research 30th Annual Meeting",
+          "date": "May 31-June 3, 2022",
+          "location": "Seattle, WA"
+        },
+        {
+          "id": 18,
+          "authors": "Sifat M.",
+          "title": "Refugee Mental Health, and overview and case studies of Syrian and Afghan refugees",
+          "type": "Invited Guest Lecture",
+          "venue": "University of Arkansas, PBHL 4643: Multicultural Health",
+          "date": "April 2022",
+          "location": "Fayetteville, AR"
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "items": [
+        {
+          "id": 19,
+          "authors": "Sifat, M.",
+          "title": "Mental Health in College Students",
+          "type": "Invited Guest Lecture",
+          "venue": "University of Arkansas, PBHL 1103 – Personal Health & Safety",
+          "date": "September 2021",
+          "location": "Fayetteville, AR"
+        },
+        {
+          "id": 20,
+          "authors": "M Sifat, S Chiang, N Amin, A Irfan, K Green",
+          "title": "Beyond Performative Activism- An Exploration of Motivators to Participate Social Media Activism Through the Lens of Self-Determination Theory",
+          "type": "Poster Presentation",
+          "venue": "SPR Virtual 29th Annual Meeting",
+          "date": "June 2021",
+          "location": "Washington, DC (Virtual)"
+        },
+        {
+          "id": 21,
+          "authors": "Sifat, Munjireen, Tasnim, Naima, Sarker, Abheet, Green, Kerry",
+          "title": "Mental Health in University Students in Bangladesh: An Examination Of Current Practices & Service Use For Mental Health",
+          "type": "Virtual Poster Presentation",
+          "venue": "Public Health Research Day",
+          "date": "April 2021",
+          "location": "College Park, MD (Virtual)"
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "items": [
+        {
+          "id": 22,
+          "authors": "Sifat, Munjireen",
+          "title": "Muslim mental health and the impact of COVID-19",
+          "type": "Video Presentation",
+          "venue": "Helping Hand Chapter at University of Maryland, Instagram",
+          "date": "October 30, 2020",
+          "location": "Instagram (Virtual)"
+        },
+        {
+          "id": 23,
+          "authors": "Sifat M, Kuo C, Green K",
+          "title": "An Examination of Adolescent Social Factors in Predicting Midlife Mental Health Outcomes in an African American Cohort",
+          "type": "Poster Presentation",
+          "venue": "Society for Prevention Research 28th Annual Meeting",
+          "date": "July 2020",
+          "location": "Washington, DC (Virtual)"
+        }
+      ]
+    },
+    {
+      "year": "2019",
+      "items": [
+        {
+          "id": 24,
+          "authors": "Sifat, M., Green, K., Holder, S., Kuo, C.",
+          "title": "How Family Factors in Childhood and Adolescence Influence Suicidal Ideation in Midlife in an Urban African-American Cohort",
+          "type": "Poster Presentation",
+          "venue": "American Public Health Association 2019 Annual Meeting and Expo",
+          "date": "November 2-6, 2019",
+          "location": "Philadelphia, PA"
+        },
+        {
+          "id": 25,
+          "authors": "Holder, S., Sifat, M., Green, K., Kuo, C.",
+          "title": "Role of Adolescent Anxious Mood in the School to Prison Pipeline: Educational Attainment and Incarceration among urban African-Americans",
+          "type": "Poster Presentation",
+          "venue": "American Public Health Association 2019 Annual Meeting and Expo",
+          "date": "November 2-6, 2019",
+          "location": "Philadelphia, PA"
+        },
+        {
+          "id": 26,
+          "authors": "Sifat, Munjireen, Holder S, Green, Kerry",
+          "title": "The Relationship between Social Integration and Suicidal Ideation Among African Americans in a Longitudinal Study",
+          "type": "Poster Presentation",
+          "venue": "Society for Preventative Research Annual Conference",
+          "date": "June 1-4, 2019",
+          "location": "San Diego, CA"
+        }
+      ]
+    },
+    {
+      "year": "2017",
+      "items": [
+        {
+          "id": 27,
+          "authors": "Sifat, M.",
+          "title": "Adverse Childhood Experiences as a Moderating Factor between Healthy Days Amongst Adults with Obesity",
+          "type": "Presentation",
+          "venue": "GW Research Days",
+          "date": "April 2017",
+          "location": "Washington, DC"
+        }
+      ]
+    }
+  ]
+}
