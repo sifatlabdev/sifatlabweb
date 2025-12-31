@@ -85,22 +85,38 @@ export function Contact() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <form className='space-y-4'>
+              <form 
+                name='contact' 
+                method='POST' 
+                data-netlify='true'
+                netlify-honeypot='bot-field'
+                className='space-y-4'
+              >
+                <input type='hidden' name='form-name' value='contact' />
+                <p className='hidden'>
+                  <label>
+                    Don't fill this out if you're human: <input name='bot-field' />
+                  </label>
+                </p>
                 <div className='grid grid-cols-2 gap-4'>
                   <div className='space-y-2'>
                     <Label htmlFor='firstName'>First Name</Label>
                     <Input
                       id='firstName'
+                      name='firstName'
                       placeholder='Your first name'
                       className='border-sage-green/30 focus:border-sage-green'
+                      required
                     />
                   </div>
                   <div className='space-y-2'>
                     <Label htmlFor='lastName'>Last Name</Label>
                     <Input
                       id='lastName'
+                      name='lastName'
                       placeholder='Your last name'
                       className='border-primary/30 focus:border-primary'
+                      required
                     />
                   </div>
                 </div>
@@ -108,15 +124,18 @@ export function Contact() {
                   <Label htmlFor='email'>Email</Label>
                   <Input
                     id='email'
+                    name='email'
                     type='email'
                     placeholder='your.email@example.com'
                     className='border-sage-green/30 focus:border-sage-green'
+                    required
                   />
                 </div>
                 <div className='space-y-2'>
                   <Label htmlFor='institution'>Institution/Organization</Label>
                   <Input
                     id='institution'
+                    name='institution'
                     placeholder='Your affiliation'
                     className='border-primary/30 focus:border-primary'
                   />
@@ -125,16 +144,20 @@ export function Contact() {
                   <Label htmlFor='subject'>Subject</Label>
                   <Input
                     id='subject'
+                    name='subject'
                     placeholder='Brief subject line'
                     className='border-sage-green/30 focus:border-sage-green'
+                    required
                   />
                 </div>
                 <div className='space-y-2'>
                   <Label htmlFor='message'>Message</Label>
                   <Textarea
                     id='message'
+                    name='message'
                     placeholder='Your message here...'
                     className='min-h-[120px] border-primary/30 focus:border-primary'
+                    required
                   />
                 </div>
                 <Button
