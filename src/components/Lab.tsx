@@ -6,11 +6,9 @@ import {
   Users,
   Microscope,
   Lightbulb,
-  ExternalLink,
-  FileText,
 } from "lucide-react";
 
-import { chenLabData, joinUsData } from "../data/data";
+import { chenLabData } from "../data/data";
 
 import { Team } from "./Team";
 import { Research } from "./Research";
@@ -120,33 +118,12 @@ export function Lab() {
             </Card>
           </div>
 
-          {/* Jefferson Projects */}
+          {/* Research Projects */}
           <Research />
         </div>
 
         <Team />
 
-        {/* Join Us Section */}
-        <div className='mt-12 px-6 py-12 container mx-auto'>
-          <div className='bg-beige/10 rounded-lg p-8 md:p-12 border border-sage-green/30'>
-            <h3 className='mb-6 text-center text-foreground'>
-              {joinUsData.title}
-            </h3>
-            <p className='text-center text-muted-foreground mb-8 max-w-3xl mx-auto text-sm md:text-base leading-relaxed px-4'>
-              {joinUsData.description}
-            </p>
-
-            {/* How to Apply */}
-            <div className='bg-card rounded-lg p-6 md:p-8 max-w-3xl mx-auto border border-sage-green/20 hover:shadow-md transition-shadow duration-200'>
-              <h4 className='text-center mb-4 text-sage-green font-semibold'>
-                How to Apply
-              </h4>
-              <p className='text-sm text-muted-foreground text-center px-2 leading-relaxed'>
-                {joinUsData.howToApply}
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
     </>
   );

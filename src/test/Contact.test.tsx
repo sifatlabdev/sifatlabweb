@@ -1,47 +1,26 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import { Contact } from '../components/Contact';
-
-// Mock the data module
-vi.mock('../data/data', () => ({
-  contactSectionData: {
-    title: 'Get In Touch',
-    description: 'We would love to hear from you',
-    cardDescription: 'Reach out to us through any of these channels',
-  },
-  contactInfo: {
-    email: 'contact@example.com',
-    officeLocation: {
-      campus: 'Main Campus',
-      address: '123 University Ave',
-      city: 'City, State 12345',
-    },
-    officeHours: 'Monday - Friday\n9:00 AM - 5:00 PM',
-  },
-}));
 
 describe('Contact Component', () => {
   it('renders contact section with title and description', () => {
     render(<Contact />);
     
-    expect(screen.getByText('Get In Touch')).toBeInTheDocument();
-    expect(screen.getByText('We would love to hear from you')).toBeInTheDocument();
+    expect(screen.getByText('Contact & Collaboration')).toBeInTheDocument();
+    expect(screen.getByText(/We welcome collaboration opportunities/)).toBeInTheDocument();
   });
 
-  it('displays contact information', () => {
+  it('does not display a public university email or office address', () => {
     render(<Contact />);
     
-    expect(screen.getByText('contact@example.com')).toBeInTheDocument();
-    expect(screen.getByText(/Main Campus/)).toBeInTheDocument();
-    expect(screen.getByText(/123 University Ave/)).toBeInTheDocument();
+    expect(screen.queryByText(/jefferson|sidney kimmel/i)).not.toBeInTheDocument();
+    expect(screen.queryByText('Office Location')).not.toBeInTheDocument();
   });
 
-  it('displays office hours correctly', () => {
+  it('does not display an empty office hours section', () => {
     render(<Contact />);
     
-    expect(screen.getByText(/Monday - Friday/)).toBeInTheDocument();
-    expect(screen.getByText(/9:00 AM - 5:00 PM/)).toBeInTheDocument();
+    expect(screen.queryByText('Office Hours')).not.toBeInTheDocument();
   });
 
   it('renders contact form with all required fields', () => {

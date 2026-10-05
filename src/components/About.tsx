@@ -8,7 +8,6 @@ import {
 } from "../data/data";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { ExternalLink } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Link } from "react-router-dom";
 
@@ -75,15 +74,6 @@ function Hero() {
                 {heroData.name}
               </h2>
               <p className='text-lg text-muted-foreground'>{heroData.title}</p>
-              <a
-                href={heroData.facultyPageUrl}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='inline-flex items-center gap-1 text-sm text-sage-green hover:text-primary transition-colors cursor-pointer'
-              >
-                View Faculty Page
-                <ExternalLink className='w-3 h-3' />
-              </a>
             </div>
           </div>
         </div>

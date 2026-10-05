@@ -1,14 +1,13 @@
 {
   "title": "SIFAT Lab",
-  "subtitle": "Behavioral Health & Cancer Prevention Research at Thomas Jefferson University",
+  "subtitle": "Behavioral Health & Cancer Prevention Research",
   "heroImage": "/images/labimg.jpg",
   "mission": "To advance health equity through innovative research and community partnerships that address the root causes of health disparities. We are committed to reducing tobacco-related cancer burden and improving preventive care access in underserved populations by developing culturally informed interventions, integrating social determinants of health into oncology care, and leveraging digital health solutions to create lasting, meaningful change.",
   "whoWeAre": {
-    "description": "We are a multidisciplinary research team based at Thomas Jefferson University's Sidney Kimmel Cancer Center, dedicated to advancing health equity through innovative behavioral interventions. Led by Dr. Munjireen Sifat, our work bridges public health, psychology, and oncology to address disparities in cancer prevention and behavioral health among underserved populations.",
+    "description": "Led by Dr. Munjireen Sifat, our work bridges public health, psychology, and oncology to address disparities in cancer prevention and behavioral health among underserved populations.",
     "stats": [
       "3 Researchers",
-      "Est. 2023",
-      "Thomas Jefferson University"
+      "Est. 2023"
     ]
   },
   "mainFocus": [

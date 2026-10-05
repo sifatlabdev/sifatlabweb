@@ -14,7 +14,6 @@ import teachingDataRaw from "../content/teaching.json";
 import labDataRaw from "../content/lab.json";
 import navigationDataRaw from "../content/navigation.json";
 import footerDataRaw from "../content/footer.json";
-import joinUsDataRaw from "../content/join-us.json";
 import researchSectionDataRaw from "../content/research-section.json";
 import publicEngagementSectionDataRaw from "../content/public-engagement-section.json";
 import teamSectionDataRaw from "../content/team-section.json";
@@ -84,17 +83,6 @@ export interface HeroData {
   bio: string;
   image: string;
   expertiseTags: string[];
-  facultyPageUrl: string;
-}
-
-export interface ContactInfo {
-  email: string;
-  officeLocation: {
-    campus: string;
-    address: string;
-    city: string;
-  };
-  officeHours: string;
 }
 
 export interface PublicEngagementItem {
@@ -150,15 +138,9 @@ export const contributions: ContributionToScience[] = (
 export const otherPublications: Publication[] = (
   publicationsDataRaw as ItemsWrapper<Publication>
 ).items;
-export const contactInfo: ContactInfo = {
-  email: contactDataRaw.email,
-  officeLocation: contactDataRaw.officeLocation,
-  officeHours: contactDataRaw.officeHours,
-} as ContactInfo;
 export const contactSectionData = {
   title: contactDataRaw.sectionTitle,
   description: contactDataRaw.sectionDescription,
-  cardDescription: contactDataRaw.cardDescription,
 };
 export const publicEngagementSectionData = publicEngagementSectionDataRaw;
 export const publicEngagementData: PublicEngagementYear[] = (
@@ -166,4 +148,3 @@ export const publicEngagementData: PublicEngagementYear[] = (
 ).items;
 export const navigationData = navigationDataRaw.items;
 export const footerData = footerDataRaw;
-export const joinUsData = joinUsDataRaw;

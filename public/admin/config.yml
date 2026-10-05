@@ -42,10 +42,6 @@ collections:
               label: Tag
               name: tag
               widget: string
-          - label: Faculty Page URL
-            name: facultyPageUrl
-            widget: string
-            required: false
 
   - name: aboutPage
     label: About Me
@@ -566,36 +562,12 @@ collections:
         editor:
           preview: false
         fields:
-          - label: Email
-            name: email
-            widget: string
-          - label: Office Location
-            name: officeLocation
-            widget: object
-            fields:
-              - label: Campus
-                name: campus
-                widget: string
-              - label: Address
-                name: address
-                widget: string
-              - label: City
-                name: city
-                widget: string
-          - label: Office Hours
-            name: officeHours
-            widget: string
-            required: false
           - label: Section Title
             name: sectionTitle
             widget: string
             required: false
           - label: Section Description
             name: sectionDescription
-            widget: text
-            required: false
-          - label: Card Description
-            name: cardDescription
             widget: text
             required: false
 
@@ -639,19 +611,3 @@ collections:
               - label: URL
                 name: href
                 widget: string
-      - name: joinUs
-        label: Join Us
-        file: src/content/join-us.json
-        format: json
-        editor:
-          preview: false
-        fields:
-          - label: Title
-            name: title
-            widget: string
-          - label: Description
-            name: description
-            widget: text
-          - label: How To Apply
-            name: howToApply
-            widget: text

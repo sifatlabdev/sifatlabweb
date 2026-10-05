@@ -110,15 +110,18 @@ export function Team() {
                 />
               </div>
               <CardContent className="pt-4 pb-4 text-center">
-                <a
-                  href={labDirector.url || "#"}
-                  className="font-semibold text-foreground mb-1 inline-block hover:text-primary transition-colors cursor-pointer"
-                  onClick={(e) => {
-                    if (!labDirector.url) e.preventDefault();
-                  }}
-                >
-                  {labDirector.name}
-                </a>
+                {labDirector.url ? (
+                  <a
+                    href={labDirector.url}
+                    className="font-semibold text-foreground mb-1 inline-block hover:text-primary transition-colors cursor-pointer"
+                  >
+                    {labDirector.name}
+                  </a>
+                ) : (
+                  <p className="font-semibold text-foreground mb-1">
+                    {labDirector.name}
+                  </p>
+                )}
                 <p className="text-sm text-muted-foreground mb-2">
                   {labDirector.title}
                 </p>
