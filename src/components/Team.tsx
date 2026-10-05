@@ -25,7 +25,7 @@ function TeamMemberCard({
   const categoryLabel = category ? `${category} Collaborator` : null;
 
   return (
-    <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+    <Card className="w-full min-w-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
       <div className="aspect-square relative overflow-hidden">
         <ImageWithFallback
           src={image}
@@ -148,13 +148,11 @@ export function Team() {
         <div className="mb-16">
           <h3 className="mb-6 text-center text-sage-green">Collaborators</h3>
 
-          {/* Responsive grid: adjust columns at breakpoints */}
-          <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 auto-rows-max">
-              {allCollaborators.map((member, index) => (
-                <TeamMemberCard key={index} {...member} />
-              ))}
-            </div>
+          {/* Center two equal columns beneath the heading; stack on mobile. */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
+            {allCollaborators.map((member, index) => (
+              <TeamMemberCard key={index} {...member} />
+            ))}
           </div>
         </div>
       </div>

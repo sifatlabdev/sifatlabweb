@@ -3,9 +3,24 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { Lab } from '../components/Lab';
 import { About } from '../components/About';
+import { Team } from '../components/Team';
 import { heroData, jeffersonProjects, socialImpactProjects } from '../data/data';
 
 describe('University-neutral website updates', () => {
+  it('centers two equal collaborator columns and stacks them on mobile', () => {
+    render(<Team />);
+
+    const heading = screen.getByRole('heading', { name: 'Collaborators' });
+    const row = heading.nextElementSibling;
+    expect(row).toHaveClass('grid', 'grid-cols-1', 'sm:grid-cols-2', 'gap-6', 'w-full', 'max-w-4xl', 'mx-auto');
+    expect(row).not.toHaveClass('md:grid-cols-3');
+    expect(row?.children).toHaveLength(2);
+    Array.from(row?.children ?? []).forEach(card => {
+      expect(card).toHaveClass('w-full', 'min-w-0');
+      expect(card).not.toHaveClass('max-w-xs');
+    });
+  });
+
   it('shows the revised homepage without university branding or recruitment', () => {
     const { container } = render(<Lab />);
 
