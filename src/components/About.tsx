@@ -188,9 +188,11 @@ export function About() {
                         {exp.period}
                       </Badge>
                     </div>
-                    <p className='text-sm text-muted-foreground mt-2'>
-                      {exp.description}
-                    </p>
+                    {exp.description && (
+                      <p className='text-sm text-muted-foreground mt-2'>
+                        {exp.description}
+                      </p>
+                    )}
                   </div>
                 ))}
               </CardContent>

@@ -21,6 +21,16 @@ export function Contact() {
           <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
             {contactSectionData.description}
           </p>
+          {contactSectionData.email && (
+            <p className='mt-4 text-lg'>
+              <a
+                href={`mailto:${contactSectionData.email}`}
+                className='text-primary underline break-all'
+              >
+                {contactSectionData.email}
+              </a>
+            </p>
+          )}
         </div>
 
         <div className='max-w-3xl mx-auto'>

@@ -9,10 +9,10 @@ public_folder: /images
 
 collections:
   - name: heroPage
-    label: Hero Page
+    label: Personal Profile
     files:
       - name: hero
-        label: Hero Content
+        label: Biography, Title & Portrait (About Page)
         file: src/content/hero.json
         format: json
         editor:
@@ -46,19 +46,55 @@ collections:
   - name: aboutPage
     label: About Me
     files:
-      - name: about
-        label: About Section
-        file: src/content/about.json
+      - name: experiences
+        label: Employment History
+        file: src/content/experiences.json
         format: json
         editor:
           preview: false
         fields:
-          - label: Name
-            name: name
-            widget: string
-          - label: Description
-            name: description
-            widget: text
+          - label: Positions
+            name: items
+            widget: list
+            summary: '{{fields.position}} — {{fields.institution}}'
+            fields:
+              - label: Position
+                name: position
+                widget: string
+              - label: Institution / Department
+                name: institution
+                widget: string
+              - label: Period
+                name: period
+                widget: string
+              - label: Description
+                name: description
+                widget: text
+                required: false
+      - name: educations
+        label: Education
+        file: src/content/educations.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Qualifications
+            name: items
+            widget: list
+            summary: '{{fields.degree}}'
+            fields:
+              - label: Degree
+                name: degree
+                widget: string
+              - label: Institution
+                name: institution
+                widget: string
+              - label: Years
+                name: year
+                widget: string
+              - label: Description
+                name: description
+                widget: text
       - name: teaching
         label: Teaching Courses
         file: src/content/teaching.json
@@ -418,6 +454,7 @@ collections:
           - label: University Collaborators
             name: universityCollaborators
             widget: list
+            required: false
             fields:
               - label: Name
                 name: name
@@ -442,6 +479,7 @@ collections:
           - label: External Collaborators
             name: externalCollaborators
             widget: list
+            required: false
             fields:
               - label: Name
                 name: name
@@ -466,6 +504,7 @@ collections:
           - label: Graduate Researchers
             name: graduateResearchers
             widget: list
+            required: false
             fields:
               - label: Name
                 name: name
@@ -562,6 +601,10 @@ collections:
         editor:
           preview: false
         fields:
+          - label: Public Contact Email
+            name: email
+            widget: string
+            required: false
           - label: Section Title
             name: sectionTitle
             widget: string

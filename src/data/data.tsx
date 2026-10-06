@@ -139,6 +139,7 @@ export const otherPublications: Publication[] = (
   publicationsDataRaw as ItemsWrapper<Publication>
 ).items;
 export const contactSectionData = {
+  email: contactDataRaw.email,
   title: contactDataRaw.sectionTitle,
   description: contactDataRaw.sectionDescription,
 };

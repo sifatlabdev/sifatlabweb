@@ -4,9 +4,22 @@ import { MemoryRouter } from 'react-router-dom';
 import { Lab } from '../components/Lab';
 import { About } from '../components/About';
 import { Team } from '../components/Team';
-import { heroData, jeffersonProjects, socialImpactProjects } from '../data/data';
+import { experience, heroData, jeffersonProjects, socialImpactProjects } from '../data/data';
 
 describe('University-neutral website updates', () => {
+  it('shows the Oklahoma role first and ends Jefferson employment in October 2026', () => {
+    render(<MemoryRouter><About /></MemoryRouter>);
+
+    expect(experience[0].position).toBe('Assistant Professor of Research');
+    expect(screen.getByText('Assistant Professor of Research')).toBeInTheDocument();
+    expect(screen.getByText('University of Oklahoma, Department of Family and Preventative Medicine')).toBeInTheDocument();
+    expect(screen.getByText('October 2026 - Present')).toBeInTheDocument();
+    expect(screen.getByText('August 2023 - October 2026')).toBeInTheDocument();
+    expect(screen.queryByText('August 2023 - Present')).not.toBeInTheDocument();
+    expect(experience.find(item => item.institution.includes('Thomas Jefferson'))?.description)
+      .not.toMatch(/Current projects|Also serving/);
+  });
+
   it('centers two equal collaborator columns and stacks them on mobile', () => {
     render(<Team />);
 

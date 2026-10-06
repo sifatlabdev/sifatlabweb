@@ -17,6 +17,13 @@ describe('Contact Component', () => {
     expect(screen.queryByText('Office Location')).not.toBeInTheDocument();
   });
 
+  it('links to the approved non-university contact email', () => {
+    render(<Contact />);
+
+    expect(screen.getByRole('link', { name: 'Munjireen.sifat@gmail.com' }))
+      .toHaveAttribute('href', 'mailto:Munjireen.sifat@gmail.com');
+  });
+
   it('does not display an empty office hours section', () => {
     render(<Contact />);
     
