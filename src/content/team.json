@@ -2,7 +2,7 @@
   "labDirector": {
     "name": "Munjireen Sifat, PhD",
     "title": "Lab Director & Principal Investigator",
-    "image": "/images/heroImage.jpg",
+    "image": "/images/msifat_window.png",
     "specialty": [
       "Health Equity",
       "Cancer Prevention",
@@ -31,7 +31,11 @@
       "name": "Lauren Thompson",
       "title": "Medical Student, Scholarly Inquiry",
       "image": "/images/img3.jpg",
-      "specialty": ["Oncology", "Public Health", "Community Health"],
+      "specialty": [
+        "Oncology",
+        "Public Health",
+        "Community Health"
+      ],
       "url": "www.linkedin.com/in/lauren-thompson-b4aa14398"
     }
   ]
